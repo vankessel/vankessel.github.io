@@ -1,1 +1,9 @@
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "posts"
+  
 permalink: pretty
