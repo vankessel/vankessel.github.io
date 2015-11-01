@@ -2,8 +2,15 @@ defaults:
   -
     scope:
       path: ""
+    values:
+      layout: "default"
+      author: "Kevin Van Kessel"
+  -
+    scope:
+      path: ""
       type: "posts"
     values:
       layout: "posts"
-  
+    
 permalink: blog/:year/:month/:day/:title
+highlighter: pygments
