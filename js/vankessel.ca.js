@@ -21,6 +21,7 @@ function generateBackground() {
     height: window.innerHeight,
     cell_size: 256,
     variance: 0.75,
+    stroke_width: 2.01,
     seed: document.title
   }).canvas();
     
