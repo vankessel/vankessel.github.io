@@ -6,4 +6,4 @@ defaults:
     values:
       layout: "posts"
   
-permalink: pretty
+permalink: blog/:year/:month/:day/:title
