@@ -21,8 +21,7 @@ function generateBackground() {
     height: window.innerHeight,
     cell_size: 256,
     variance: 0.75,
-    stroke_width: 1.4,
-    seed: document.title
+    stroke_width: 1.4
   }).svg();
   
   svg.setAttribute("xmlns", "http://www.w3.org/2000/svg");
