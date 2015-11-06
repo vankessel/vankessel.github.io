@@ -22,7 +22,7 @@ function generateBackground() {
     cell_size: 256,
     variance: 0.75,
     stroke_width: 1.4,
-    seed: document.title
+    seed: (new Date).toDateString() + document.title
   }).svg();
   
   svg.setAttribute("xmlns", "http://www.w3.org/2000/svg");
