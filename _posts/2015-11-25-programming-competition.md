@@ -5,28 +5,6 @@ title: The ACM Programming competition in Vancouver
 {{ page.title }}
 ================
 
-Hello World!
+On the 14th this year, I went to the pacific northwest regionals of the ACM
 
-{% highlight ruby %}
-def show
-  @widget = Widget(params[:id])
-  respond_to do |format|
-    format.html # show.html.erb
-    format.json { render json: @widget }
-  end
-end
-{% endhighlight %}
-
-Non-jeckyll highlighting:
-
-```ruby
-def show
-  @widget = Widget(params[:id])
-  respond_to do |format|
-    format.html # show.html.erb
-    format.json { render json: @widget }
-  end
-end
-```
-
-![Programming group]({{site.url}}/assets/comp_group.jpg)
+![Programming group]({{site.url}}/assets/images/comp_group.jpg)
