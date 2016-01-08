@@ -1,7 +1,9 @@
 $(document).ready(function() {
   
   //Initialize background
-  generateBackground();
+  var w = $(document).width();
+  var h = $(document).height();
+  generateBackground(w, h);
   applyBlur();
   
   /*/Update on window resize
@@ -15,10 +17,10 @@ $(document).ready(function() {
   //*/
 });
 
-function generateBackground() {
+function generateBackground(w, h) {
   var svg = Trianglify({
-    width: window.innerWidth,
-    height: window.innerHeight,
+    width: w,
+    height: h,
     cell_size: 256,
     variance: 0.75,
     stroke_width: 1.4,
@@ -35,7 +37,7 @@ function applyBlur() {
   $('.blur, .highlight').blurjs({
     source: 'html',
     radius: 16,
-    overlay: 'rgba(255,255,255,0.10)'
+    overlay: 'rgba(255,255,255,0.20)'
   });
 }
 
