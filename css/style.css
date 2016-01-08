@@ -1,5 +1,4 @@
 #post img, .blur {
-  display: inline-block;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -14,10 +13,14 @@
 
 #site {
   padding: 0px 16px;
+}
+
+#post-container {
   width: 40%;
 }
 
 #post {
+  display: inline-block;
   padding: 0px 16px;
 }
 
