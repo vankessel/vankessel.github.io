@@ -1,12 +1,11 @@
+$(window).load(function() {
+  generateBackground();
+  applyBlur();
+});
+
 $(document).ready(function() {
   
-  //FOR SOME REASON TAKING THIS OUT OF THE TIMEOUT RETURNS THE WRONG WIDTH???
-  setTimeout(function(){
-    //Initialize background
-    generateBackground();
-    setCenterContainerWidth();
-    applyBlur();
-  }, 0);
+  setCenterContainerWidth();
   
   var resizable = true;
   //Update on window resize
