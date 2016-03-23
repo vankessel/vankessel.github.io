@@ -63,7 +63,7 @@ function generateBackground(seed) {
 
 function applyBlur() {
   
-  $('.blur, .highlight').blurjs({
+  $('.blur').blurjs({
     source: 'html',
     radius: 16,
     overlay: 'rgba(255,255,255,0.20)'
