@@ -1,30 +1,59 @@
 $(document).ready(function() {
   
-  //Initialize background
-  var w = $(document).width();
-  var h = $(document).height();
-  generateBackground(w, h);
-  applyBlur();
+  //FOR SOME REASON TAKING THIS OUT OF THE TIMEOUT RETURNS THE WRONG WIDTH???
+  setTimeout(function(){
+    //Initialize background
+    generateBackground();
+    setCenterContainerWidth();
+    applyBlur();
+  }, 0);
   
-  /*/Update on window resize
+  var resizable = true;
+  //Update on window resize
   $(window).resize(function() {
-    //200ms before it can be applied again
-    setTimeout(function() {
-      generateBackground();
-      applyBlur();
-    }, 200);
+    if(resizable) {
+      resizable = false;
+      //Perform actions and allow event to fire again after timeout
+      setTimeout(function() {
+        //Reset .center-container width
+        setCenterContainerWidth();
+        generateBackground();
+        applyBlur();
+        resizable = true;
+      }, 500)
+    }
   });
-  //*/
+  
 });
 
-function generateBackground(w, h) {
+function setCenterContainerWidth() {
+  
+  var w = $(window).width();
+  var h = $(window).height();
+  
+  //If landscape
+  if(w > h) {
+    $('.center-container').css('width', h * 32 / 45); //Magic beauty-constant
+  }
+  //If portrait
+  else {
+    $('.center-container').css('width', '100%');
+  }
+}
+
+function generateBackground(seed) {
+  
+  var w = $(document).width();
+  var h = $(document).height();
+  var seed = seed == null ? "" : seed;
+  
   var svg = Trianglify({
     width: w,
     height: h,
     cell_size: 256,
     variance: 0.75,
     stroke_width: 1.4,
-    seed: (new Date).toDateString() + document.title
+    seed: "Tue Mar 22 2016" + document.title + seed //(new Date).toDateString()
   }).svg();
   
   svg.setAttribute("xmlns", "http://www.w3.org/2000/svg");
@@ -34,6 +63,7 @@ function generateBackground(w, h) {
 }
 
 function applyBlur() {
+  
   $('.blur, .highlight').blurjs({
     source: 'html',
     radius: 16,

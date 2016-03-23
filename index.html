@@ -2,11 +2,14 @@
 title: Kevin Van Kessel
 layout: default
 ---
-
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
+<div class="center-container">
+  <div class="fill blur">
+    <ul>
+        <li><a href="{{ site.url }}/github">GitHub Summary</a></li>
+        <br>
+      {% for post in site.posts %}
+        <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

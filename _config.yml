@@ -11,6 +11,5 @@ defaults:
       type: "posts"
     values:
       layout: "posts"
-    
-permalink: blog/:year/:month/:day/:title
-highlighter: pygments
+      permalink: :categories/:year-:month-:day-:title
+      
