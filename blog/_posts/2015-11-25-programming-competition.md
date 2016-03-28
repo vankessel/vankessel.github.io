@@ -5,13 +5,13 @@ title: The ACM Programming competition in Vancouver
 {{ page.title }}
 ================
 
-On the 14th this year, I went to the pacific northwest regionals of the ACM programming competition.
+On the 14th of November this year, I went to the Pacific Northwest regionals of the ACM programming competition.
 
 <a href="#" data-featherlight="{{ site.url }}/assets/images/comp_group.jpg">
     ![Programming group]({{ site.url }}/assets/images/comp_group.jpg)
 </a>
 
-That's me on the right there. The competition was hosted at the beautiful SFU Surrey campus in vancouver. It ended up being loads of fun.
+That's me on the right there. The competition was hosted at the beautiful SFU Surrey campus in Vancouver. It ended up being loads of fun.
 There were a lot a interesting and challenging questions and we ended up solving 6 out of 11 getting 31st (59th percentile) out of the 75 teams in our division.
 
 We were very close to getting one additional question, but it was failing on some edge-case that we just could not discover.

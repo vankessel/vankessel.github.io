@@ -49,7 +49,7 @@ function generateBackground(seed) {
   var svg = Trianglify({
     width: w,
     height: h,
-    cell_size: 256,
+    cell_size: 192,
     variance: 0.75,
     stroke_width: 1.4,
     seed: "Tue Mar 22 2016" + document.title + seed //(new Date).toDateString()
