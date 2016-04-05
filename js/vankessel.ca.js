@@ -23,6 +23,11 @@ $(document).ready(function() {
     }
   });
   
+  //Automatically set lightboxes for images in #post
+  $("#post img").each(function() {
+    $(this).attr("data-featherlight", $(this).attr("src"));
+  });
+  
 });
 
 function setCenterContainerWidth() {
