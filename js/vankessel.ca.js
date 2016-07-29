@@ -57,7 +57,7 @@ function generateBackground(seed) {
     cell_size: 192,
     variance: 0.75,
     stroke_width: 1.4,
-    seed: "Tue Mar 22 2016" + document.title + seed //(new Date).toDateString()
+    seed: (new Date).toDateString() + document.title + seed //"Tue Mar 22 2016"
   }).svg();
   
   svg.setAttribute("xmlns", "http://www.w3.org/2000/svg");
