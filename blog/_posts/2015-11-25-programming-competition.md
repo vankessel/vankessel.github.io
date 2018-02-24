@@ -19,4 +19,4 @@ The next time we compete I am confident that we will do even better.
 
 You can check out the exact standings and questions for our year (and any other year) [here.](http://www.acmicpc-pacnw.org/results.htm)
 
-[Programming group]: {{ site.url }}/assets/images/comp_group.jpg
+[Programming group]: {{ "/assets/images/acm_2015.jpg" | absolute_url }}
