@@ -1,6 +1,6 @@
 ---
 title: GitHub Summary
-layout: github-summary
+layout: github
 ---
 
 {{ page.title }}

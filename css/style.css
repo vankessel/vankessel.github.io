@@ -1,4 +1,4 @@
-#post img, .blur {
+#post img, .blur, .highlight {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -13,7 +13,7 @@
 }
 
 .blur {
-  
+
 }
 
 .fill {
@@ -43,7 +43,7 @@
 }
 
 #post {
-  
+
 }
 
 a {

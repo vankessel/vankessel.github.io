@@ -10,6 +10,5 @@ defaults:
       path: ""
       type: "posts"
     values:
-      layout: "posts"
-      permalink: :categories/:year-:month-:day-:title
-      
+      layout: "post"
+      permalink: :categories/:year/:month/:day/:title
