@@ -4,9 +4,9 @@ $(window).load(function() {
 });
 
 $(document).ready(function() {
-  
+
   setCenterContainerWidth();
-  
+
   var resizable = true;
   //Update on window resize
   $(window).resize(function() {
@@ -22,22 +22,22 @@ $(document).ready(function() {
       }, 500)
     }
   });
-  
+
   //Automatically set lightboxes for images in #post
   $("#post img").each(function() {
     $(this).attr("data-featherlight", $(this).attr("src"));
   });
-  
+
 });
 
 function setCenterContainerWidth() {
-  
+
   var w = $(window).width();
   var h = $(window).height();
-  
+
   //If landscape
   if(w > h) {
-    $('.center-container').css('width', '50%'); //Magic beauty-constant
+    $('.center-container').css('width', '55%'); //Magic beauty-constant
   }
   //If portrait
   else {
@@ -46,11 +46,11 @@ function setCenterContainerWidth() {
 }
 
 function generateBackground(seed) {
-  
+
   var w = $(document).width();
   var h = $(document).height();
   var seed = seed == null ? "" : seed;
-  
+
   var svg = Trianglify({
     width: w,
     height: h,
@@ -59,15 +59,15 @@ function generateBackground(seed) {
     stroke_width: 1.4,
     seed: (new Date).toDateString() + document.title + seed //"Tue Mar 22 2016"
   }).svg();
-  
+
   svg.setAttribute("xmlns", "http://www.w3.org/2000/svg");
   svg.setAttribute("version", "1.1");
-  
+
   $("html").css( "background", "url('data:image/svg+xml;utf8," + encodeURIComponent(svg.outerHTML) + "')" );
 }
 
 function applyBlur() {
-  
+
   $('.blur').blurjs({
     source: 'html',
     radius: 16,
@@ -82,7 +82,7 @@ I read that you can simply put your svg code right after data:image/svg+xml;utf8
 and that it will be read correctly. Nope, didn't work. So I learned that one can
 encode the string as a uri with safe characters (e.g. # -> %23) and that would likely
 fix it. Nope. Then I learned there are different uri encodings, encodeURIComponent() being
-more strict than encodeURI(), so I tried that. Nope. After many hours sulking stackoverflow, 
+more strict than encodeURI(), so I tried that. Nope. After many hours sulking stackoverflow,
 comparing code on jsfiddle, and generally looking in the wrong direction I found my answer.
 svg.outerHTML doesn't return the element's code with the fucking xmlns attribute. (xmlns
 defines the namespace for the xml, in this case, svg). I also added the version number

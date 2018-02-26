@@ -1,0 +1,99 @@
+---
+---
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin box-shadow($h_off, $v_off, $blur, $spread, $color) {
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.25);
+     -moz-box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.25);
+      -ms-box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.25);
+          box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.25);
+}
+
+@mixin box-sizing($sizing) {
+  -webkit-box-sizing: $sizing;
+     -moz-box-sizing: $sizing;
+      -ms-box-sizing: $sizing;
+          box-sizing: $sizing;
+}
+
+#post {
+  padding: 0px 16px;
+  width: 100%;
+  display: inline-block;
+}
+
+#post img, .blur, .highlight {
+  @include border-radius(4px);
+  @include box-shadow(4px, 4px, 8px, 0px, rgba(0,0,0,0.25));
+}
+
+#post img {
+  width: 100%;
+  margin: auto;
+}
+
+.fill {
+  width: 100%;
+  @include box-sizing(border-box);
+}
+
+#site {
+  padding: 0px 16px;
+}
+
+.center-container {
+/*width is dynamically set by vankessel.ca.js*/
+  width: 100%;
+  margin: auto;
+
+  @media screen and (min-width: 30em) {
+    width: 50%;
+  }
+}
+
+a {
+  font-family: 'Ubuntu', sans-serif;
+  text-decoration: none;
+}
+
+.title {
+  color: black;
+  text-align: center;
+  margin:auto;
+}
+
+.title a {
+  color: black;
+}
+
+h1 {
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+}
+
+h2, h3 {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+p {
+  font-family: 'Ubuntu', sans-serif;
+  text-align: left;
+}
+
+li {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+pre, code {
+  font-family: 'Ubuntu Mono', monospace;
+}
+
+figure.highlight {
+  background-color: rgba(255,255,255,0.4);
+}
