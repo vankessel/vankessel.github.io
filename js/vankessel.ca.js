@@ -37,11 +37,11 @@ function setCenterContainerWidth() {
 
   //If landscape
   if(w > h) {
-    $('.center-container').css('width', '55%'); //Magic beauty-constant
+    $('#center-container').css('width', '50%'); //Magic beauty-constant
   }
   //If portrait
   else {
-    $('.center-container').css('width', '100%');
+    $('#center-container').css('width', '100%');
   }
 }
 
