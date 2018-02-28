@@ -1,5 +1,5 @@
 ---
-title: The ACM Programming competition in Vancouver
+title: The 2017 ACM Programming Competition
 author: Kevin Van Kessel
 ---
 
