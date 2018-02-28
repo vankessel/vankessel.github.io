@@ -1,34 +1,11 @@
-$(window).load(function() {
-  generateBackground();
-  applyBlur();
-});
+function applyBlur() {
 
-$(document).ready(function() {
-
-  setCenterContainerWidth();
-
-  var resizable = true;
-  //Update on window resize
-  $(window).resize(function() {
-    if(resizable) {
-      resizable = false;
-      //Perform actions and allow event to fire again after timeout
-      setTimeout(function() {
-        //Reset .center-container width
-        setCenterContainerWidth();
-        generateBackground();
-        applyBlur();
-        resizable = true;
-      }, 500)
-    }
+  $('.blur').blurjs({
+    source: 'html',
+    radius: 16,
+    overlay: 'rgba(255,255,255,0.20)'
   });
-
-  //Automatically set lightboxes for images in #post
-  $("#post img").each(function() {
-    $(this).attr("data-featherlight", $(this).attr("src"));
-  });
-
-});
+}
 
 function setCenterContainerWidth() {
 
@@ -66,14 +43,37 @@ function generateBackground(seed) {
   $("html").css( "background", "url('data:image/svg+xml;utf8," + encodeURIComponent(svg.outerHTML) + "')" );
 }
 
-function applyBlur() {
+$(window).load(function() {
+  generateBackground();
+  applyBlur();
+});
 
-  $('.blur').blurjs({
-    source: 'html',
-    radius: 16,
-    overlay: 'rgba(255,255,255,0.20)'
+$(document).ready(function() {
+
+  setCenterContainerWidth();
+
+  var resizable = true;
+  //Update on window resize
+  $(window).resize(function() {
+    if(resizable) {
+      resizable = false;
+      //Perform actions and allow event to fire again after timeout
+      setTimeout(function() {
+        //Reset .center-container width
+        setCenterContainerWidth();
+        generateBackground();
+        applyBlur();
+        resizable = true;
+      }, 500)
+    }
   });
-}
+
+  //Automatically set lightboxes for images in #post
+  $("#post img").each(function() {
+    $(this).attr("data-featherlight", $(this).attr("src"));
+  });
+
+});
 
 /*
 I need to document my struggle for those who come after me. This shit took me days.

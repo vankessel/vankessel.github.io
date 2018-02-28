@@ -1,5 +1,5 @@
 ---
-title: The ACM Programming competition in Vancouver
+title: The 2015 ACM Programming competition
 author: Kevin Van Kessel
 ---
 
