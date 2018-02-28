@@ -23,7 +23,6 @@
 }
 
 #post {
-  padding: 0px 16px;
   width: 100%;
   display: inline-block;
 }
@@ -43,15 +42,14 @@
   @include box-sizing(border-box);
 }
 
+/*width is dynamically set by vankessel.ca.js*/
 #center-container {
-  padding: 0px 16px;
   margin: auto;
   /*TODO: Use media directive*/
   width: 50%;
 }
 
 .section {
-/*width is dynamically set by vankessel.ca.js*/
   width: 100%;
   margin: auto;
 }
@@ -65,27 +63,27 @@ a {
   text-decoration: none;
 }
 
-.title {
+#name a {
   color: black;
-  text-align: center;
-  margin:auto;
 }
 
-.title a {
-  color: black;
+%text {
+  font-family: 'Ubuntu', sans-serif;
+  margin-left: 16px;
+  margin-right: 16px;
 }
 
 h1, h2 {
-  font-family: 'Ubuntu', sans-serif;
+  @extend %text;
   text-align: center;
 }
 
 h3 {
-  font-family: 'Ubuntu', sans-serif;
+  @extend %text;
 }
 
 p {
-  font-family: 'Ubuntu', sans-serif;
+  @extend %text;
   text-align: left;
   line-height: 1.5;
 }
