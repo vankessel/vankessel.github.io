@@ -4,7 +4,7 @@ author: Kevin Van Kessel
 ---
 
 {{ page.title }}
-================
+----------------
 
 I went back to the ACM programming competition!
 This year I participated in division 1 with my teammates Xingyu and Jeff.

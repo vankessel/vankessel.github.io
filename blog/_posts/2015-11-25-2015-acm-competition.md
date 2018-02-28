@@ -4,7 +4,7 @@ author: Kevin Van Kessel
 ---
 
 {{ page.title }}
-================
+----------------
 
 On the 14th of November this year, I went to the Pacific Northwest regionals of the ACM programming competition.
 
