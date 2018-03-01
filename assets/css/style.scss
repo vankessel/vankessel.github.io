@@ -85,16 +85,22 @@
 #post {
   width: 100%;
   display: inline-block;
+  padding: 1em;
+  margin-bottom: 1em;
+
+  ul {
+    margin: 0;
+  }
+
+  img {
+    width: 100%;
+    margin: auto;
+  }
 }
 
 #post img, .blur, .highlight {
   @include border-radius(4px);
   @include box-shadow(4px, 4px, 8px, 0px, rgba(0,0,0,0.25));
-}
-
-#post img {
-  width: 100%;
-  margin: auto;
 }
 
 .fill {
@@ -121,10 +127,13 @@
   display: table;
 
   $name: "Kevin\AVan Kessel";
+  $size: 5em;
   #name {
     position: relative;
     text-align: left;
-    font-size: 4em;
+    font-size: $size;
+    margin-top: $size/16;
+    margin-bottom: $size/16;
     color: black;
     -webkit-text-fill-color: transparent;
     background-image: url('../images/heic1509a.jpg');
@@ -170,6 +179,11 @@ p {
   @extend %text;
   text-align: left;
   line-height: 1.5;
+}
+
+ul {
+  margin: 1em 0;
+  padding-left: 1.5em;
 }
 
 li {
