@@ -83,10 +83,11 @@
 /* STYLES */
 
 #post {
-  width: 100%;
   display: inline-block;
+  width: 100%;
   padding: 1em;
   margin-bottom: 1em;
+  @include box-sizing(border-box);
 
   ul {
     margin: 0;
@@ -101,11 +102,6 @@
 #post img, .blur, .highlight {
   @include border-radius(4px);
   @include box-shadow(4px, 4px, 8px, 0px, rgba(0,0,0,0.25));
-}
-
-.fill {
-  width: 100%;
-  @include box-sizing(border-box);
 }
 
 /*width is dynamically set by vankessel.ca.js*/
