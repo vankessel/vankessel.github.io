@@ -1,6 +1,8 @@
 ---
 ---
 
+/* HELPERS */
+
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
      -moz-border-radius: $radius;
@@ -28,6 +30,57 @@
       -ms-background-clip: $clip;
           background-clip: $clip;
 }
+
+@mixin animation($name, $dur, $timing: linear, $iters: infinite, $dir: normal) {
+  -webkit-animation: $name $dur $timing $iters $dir;
+     -moz-animation: $name $dur $timing $iters $dir;
+      -ms-animation: $name $dur $timing $iters $dir;
+          animation: $name $dur $timing $iters $dir;
+}
+
+/* ANIMATIONS */
+
+@mixin translate($axis:x, $start:0%, $end:100%) {
+  from {
+    background-position-#{$axis}: $start;
+  }
+  to {
+    background-position-#{$axis}: $end;
+  }
+}
+
+@keyframes translate-x {
+  @include translate(x);
+}
+@-webkit-keyframes translate-x {
+  @include translate(x);
+}
+@-moz-keyframes translate-x {
+  @include translate(x);
+}
+
+@keyframes translate-y {
+  @include translate(y);
+}
+@-webkit-keyframes translate-y {
+  @include translate(y);
+}
+@-moz-keyframes translate-y {
+  @include translate(y);
+}
+
+@mixin drift($x-period: 16s, $y-period: 16s) {
+  -webkit-animation: translate-x $x-period ease-in-out infinite alternate,
+                     translate-y $y-period ease-in-out $y-period/-2 infinite alternate;
+     -moz-animation: translate-x $x-period ease-in-out infinite alternate,
+                     translate-y $y-period ease-in-out $y-period/-2 infinite alternate;
+      -ms-animation: translate-x $x-period ease-in-out infinite alternate,
+                     translate-y $y-period ease-in-out $y-period/-2 infinite alternate;
+         -animation: translate-x $x-period ease-in-out infinite alternate,
+                     translate-y $y-period ease-in-out $y-period/-2 infinite alternate;
+}
+
+/* STYLES */
 
 #post {
   width: 100%;
@@ -61,20 +114,39 @@
   margin: auto;
 }
 
+$name: "Kevin\AVan Kessel";
 #name-container {
   width: auto;
   margin: auto;
   display: table;
 
   #name {
+    position: relative;
     text-align: left;
-    background:url('../images/space.jpg');
-    background-repeat: repeat;
-    background-position: 0 0;
-    background-size: 100% 100%;
-    @include background-clip(text);
     font-size: 4em;
-    color: transparent;
+    color: black;
+    -webkit-text-fill-color: transparent;
+    background-image: url('../images/heic1509a.jpg');
+    background-repeat: repeat;
+    background-size: 300% 400%;
+    @include background-clip(text);
+    @include drift(32s, 512s);
+  }
+
+  #name:before {
+    content: $name;
+    white-space: pre;
+  }
+
+  #name:after {
+    content: $name;
+    white-space: pre;
+    position: absolute;
+    top: 0; left: 0;
+    color: black;
+    -webkit-text-fill-color: black;
+    text-shadow: 1px 1px 4px rgba(0,0,0,1);
+    z-index: -1;
   }
 }
 
