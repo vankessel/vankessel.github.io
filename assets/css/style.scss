@@ -50,13 +50,13 @@
 }
 
 @keyframes translate-x {
-  @include translate(x);
+  @include translate(x, 100%, 0%);
 }
 @-webkit-keyframes translate-x {
-  @include translate(x);
+  @include translate(x, 100%, 0%);
 }
 @-moz-keyframes translate-x {
-  @include translate(x);
+  @include translate(x, 100%, 0%);
 }
 
 @keyframes translate-y {
@@ -70,13 +70,13 @@
 }
 
 @mixin drift($x-period: 16s, $y-period: 16s) {
-  -webkit-animation: translate-x $x-period ease-in-out infinite alternate,
+  -webkit-animation: translate-x $x-period ease-in-out              infinite alternate,
                      translate-y $y-period ease-in-out $y-period/-2 infinite alternate;
-     -moz-animation: translate-x $x-period ease-in-out infinite alternate,
+     -moz-animation: translate-x $x-period ease-in-out              infinite alternate,
                      translate-y $y-period ease-in-out $y-period/-2 infinite alternate;
-      -ms-animation: translate-x $x-period ease-in-out infinite alternate,
+      -ms-animation: translate-x $x-period ease-in-out              infinite alternate,
                      translate-y $y-period ease-in-out $y-period/-2 infinite alternate;
-         -animation: translate-x $x-period ease-in-out infinite alternate,
+         -animation: translate-x $x-period ease-in-out              infinite alternate,
                      translate-y $y-period ease-in-out $y-period/-2 infinite alternate;
 }
 
@@ -114,12 +114,13 @@
   margin: auto;
 }
 
-$name: "Kevin\AVan Kessel";
+
 #name-container {
   width: auto;
   margin: auto;
   display: table;
 
+  $name: "Kevin\AVan Kessel";
   #name {
     position: relative;
     text-align: left;

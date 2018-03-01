@@ -53,13 +53,11 @@ $(document).ready(function() {
   setCenterContainerWidth();
 
   var resizable = true;
-  //Update on window resize
   $(window).resize(function() {
     if(resizable) {
       resizable = false;
       //Perform actions and allow event to fire again after timeout
       setTimeout(function() {
-        //Reset .center-container width
         setCenterContainerWidth();
         generateBackground();
         applyBlur();
