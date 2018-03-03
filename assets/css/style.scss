@@ -132,9 +132,11 @@
     margin-bottom: $size/16;
     color: black;
     -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px;
     background-image: url('../images/heic1509a.jpg');
+    //background-attachment: fixed;
     background-repeat: repeat;
-    background-size: 300% 400%;
+    background-size: 1280px 1024px;
     @include background-clip(text);
     @include drift(32s, 512s);
   }
