@@ -1,6 +1,7 @@
 ---
 title: The 2015 ACM Programming competition
 author: Kevin Van Kessel
+tags: blog
 ---
 
 {{ page.title }}

@@ -49,23 +49,23 @@
   }
 }
 
-@keyframes translate-x {
-  @include translate(x, 100%, 0%);
-}
 @-webkit-keyframes translate-x {
   @include translate(x, 100%, 0%);
 }
 @-moz-keyframes translate-x {
   @include translate(x, 100%, 0%);
 }
-
-@keyframes translate-y {
-  @include translate(y);
+@keyframes translate-x {
+  @include translate(x, 100%, 0%);
 }
+
 @-webkit-keyframes translate-y {
   @include translate(y);
 }
 @-moz-keyframes translate-y {
+  @include translate(y);
+}
+@keyframes translate-y {
   @include translate(y);
 }
 
@@ -82,16 +82,15 @@
 
 /* STYLES */
 
+html {
+  font-family: 'Ubuntu', sans-serif;
+}
+
 #post {
   display: inline-block;
   width: 100%;
-  padding: 1em;
-  margin-bottom: 1em;
+  padding: 1em 2em;
   @include box-sizing(border-box);
-
-  ul {
-    margin: 0;
-  }
 
   img {
     width: 100%;
@@ -157,39 +156,25 @@
   }
 }
 
-%text {
-  font-family: 'Ubuntu', sans-serif;
-  margin-left: 16px;
-  margin-right: 16px;
+iframe {
+  display: block;
+  margin: auto;
 }
 
 h1, h2 {
-  @extend %text;
   text-align: center;
 }
 
-h3 {
-  @extend %text;
-}
-
 p {
-  @extend %text;
   text-align: left;
   line-height: 1.5;
 }
 
-ul {
-  margin: 1em 0;
-  padding-left: 1.5em;
-}
-
 li {
-  @extend %text;
   margin: 8px 0;
 }
 
 a {
-  font-family: 'Ubuntu', sans-serif;
   text-decoration: none;
 }
 
@@ -199,4 +184,9 @@ pre, code {
 
 figure.highlight {
   background-color: rgba(255,255,255,0.4);
+}
+
+figcaption {
+  font-size: 15px;
+  text-align: center;
 }

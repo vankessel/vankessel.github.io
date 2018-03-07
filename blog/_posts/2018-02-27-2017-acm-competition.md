@@ -1,6 +1,7 @@
 ---
 title: The 2017 ACM Programming Competition
 author: Kevin Van Kessel
+tags: blog
 ---
 
 {{ page.title }}
