@@ -98,7 +98,7 @@ html {
   }
 }
 
-#post img, .blur, .highlight {
+#post img, .blur, figure {
   @include border-radius(4px);
   @include box-shadow(4px, 4px, 8px, 0px, rgba(0,0,0,0.25));
 }
@@ -182,11 +182,13 @@ pre, code {
   font-family: 'Ubuntu Mono', monospace;
 }
 
-figure.highlight {
+figure {
+  margin: 1em;
   background-color: rgba(255,255,255,0.4);
 }
 
 figcaption {
+  line-height: 1.5em;
   font-size: 15px;
   text-align: center;
 }
