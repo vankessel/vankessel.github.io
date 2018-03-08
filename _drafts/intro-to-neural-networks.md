@@ -28,7 +28,7 @@ Generative Adversarial Networks
 {% endcomment %}
 
 ### What is a Neural Network?
-A neural network is a black-box statistical model inspired by the connections found in the human brain. A black-box is a function that transforms input into an output, but exactly how it is done is unknown or at least very difficult to determine. This may not be the case in the future as [work is being done](https://youtu.be/zjaz2mC1KhM) to glean insight into these mysterious and powerful models.
+A neural network is a black box model inspired by the connections found in the human brain. A black box is a function that transforms input into an output, but the exact process behind the function is unknown. Neural networks are effectively black boxes as their internal process once fully trained is hard to reverse engineer. This may not be the case in the future as [work is being done](https://youtu.be/zjaz2mC1KhM) to glean insight into these mysterious and powerful models.
 
 {% include image.html url="/assets/images/nn_layers.png" desc="The basic structure of a neural network." %}
 
@@ -62,3 +62,5 @@ Here are some example networks to see the kinds of problems neural networks can 
 ### Anatomy of a Neuron
 
 The most essential part of any network is the neuron. A neuron consists of an activation function
+
+{% include image.html url="/assets/images/neuron.svg" desc="A diagram of a standard neuron." %}
