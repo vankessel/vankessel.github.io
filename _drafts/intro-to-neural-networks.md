@@ -36,7 +36,7 @@ So how does one make a neural network? Trivially, you need a problem to solve, b
 
 Once you have an architecture, you will need a dataset to train on. A dataset should consist of pairs of input and outputs to the network. (Although sometimes in more advanced networks pairs are not needed, only the data distribution itself.) This is what the network will train against to learn how to correlate an input to an output.
 
-Training is performed by letting the untrained network try to produce an output from an input taken from the dataset. This output will likely be random garbage for an untrained network. This garbage output is compared to the intended output, and an error is obtained. This error is propogated back through the network to nudge its parameters in a direction that decreases this error. This is repeated until the error is reduced to an acceptable amount.
+Training is performed by letting the untrained network try to produce an output from an input taken from the dataset. This output will likely be random garbage for an untrained network. This garbage output is compared to the intended output, and an error is obtained. This error is propagated back through the network to nudge its parameters in a direction that decreases this error. This is repeated until the error is reduced to an acceptable amount.
 
 
 ### Example networks
@@ -61,6 +61,6 @@ Here are some example networks to see the kinds of problems neural networks can 
 
 ### Anatomy of a Neuron
 
-The most essential part of any network is the neuron. A neuron consists of an activation function
+The most essential part of any network is a neuron. A neuron consists of inputs from the previous layer, weights to multiply those inputs by, a bias, and the activation function. 
 
-{% include image.html url="/assets/images/neuron.svg" desc="A diagram of a standard neuron." %}
+{% include image.html url="/assets/images/nn_neuron.svg" desc="A diagram of a standard neuron." %}
