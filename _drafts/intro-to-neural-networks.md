@@ -10,17 +10,14 @@ tags: tutorial ai
 Sections:
 What is a neural network?
 Example networks
-Structure of a neuron
-- Activation functions (Threshold, Sigmoid, Tanh, RELU, ELU, Special: Softmax)
-- Bias
-- Weights
+
 
 Layers and connections:
-- Dropout (Overfitting) -- Vanishing gradient
+- Residual Dropout (Overfitting) -- Vanishing gradient
 
 Feedforward
 Error functions (Squared Error, Cross-Entropy)
-Backpropogation
+Backpropagation
 Convolutional Networks
 - Feature maps
 Recurrent networks
@@ -64,7 +61,31 @@ Here are some example networks to see the kinds of problems neural networks can 
 
 ### Structure of a Neural Network
 
-A neural network is built out of layers of interconnected neurons. The depth of a layer is correlated to how abstract the information processing at that layer is. The number of neurons in a layer is correlated to the processing power of that layer. The first layer is called the input layer and takes data from the dataset as input, the middle layers are called the hidden layers and take the previous layer's output as input. The last layer is called the output layer and outputs the final result of the network. The fact that each layer passes its output to the next makes this a description of a **feedforward** neural network.
+A neural network is built out of layers of interconnected neurons. The depth of a layer is correlated to how abstract the information processing at that layer is. The number of neurons in a layer is correlated to the processing power of that layer. The first layer is called the input layer and takes data from the dataset as input, the middle layers are called the hidden layers and take the previous layer's output as input. The last layer is called the output layer and outputs the final result of the network. The fact that each layer passes its output to the next makes this a description of a **feedforward** neural network. Every network also needs a **loss function**, which measures the difference between an output and the expected output, and an **optimizer** that uses the loss to determine how to shift the network's weights.
+
+#### Layer Connections
+
+Layers in a neural network are typically fully connected; each neuron in a layer gets its inputs from every neuron in the previous layer.
+
+Sometimes these connections are altered such as in the case of [residual networks](https://arxiv.org/abs/1512.03385), where the input to a neuron is added to its output. This means if the neuron naturally outputs 0, it will now output its input, making it an [identity function](https://en.wikipedia.org/wiki/Identity_function). The ability for neurons to easily form an identity function allows for residual networks to become very deep by reducing the [**vanishing gradient problem**](https://en.wikipedia.org/wiki/Vanishing_gradient_problem#Residual_networks).
+
+[**Dropout**](https://en.wikipedia.org/wiki/Dropout_(neural_networks)) is another method of connecting layers. This method reduces the problem of [**overfitting**](https://en.wikipedia.org/wiki/Overfitting), which is when your program is plagiarizing the training data instead of generalizing it. Dropout will randomly disconnect a given percentage of connections between two layers during training. Will this not break the network? The answer is no, it actually makes it more robust, it learns how to arrive at the correct answer even with missing data. When the network is fully trained, dropout is no longer applied and all the connections are active. There is one issue with this, if the network was trained to give a correct answer with 50% of the connections, the trained network will now use 100% of the connections with about twice the data being fed to the next layer. To account for this, the trained network will multiply all values passing through the connections by the dropout percentage.
+
+#### Loss Function
+
+A [loss function](https://en.wikipedia.org/wiki/Loss_function) is a measure of how dissimilar two things are. A loss of zero should mean the two things being measured are identical. An example loss function would be the distance between two points: If the distance is 0 the points are identical, with increasing distances indicating that the points are less and less similar.
+
+A common loss function is the **squared error**. You take the difference between two numbers and square it. This has the benefit of keeping the loss positive, and penalizing large differences.
+
+#### Optimizer
+
+An optimizer is a method that uses the loss function and dataset to determine how to change the parameters (weights) of the network.
+
+Gradient descent is the optimization process of running a sample input from the dataset through the network, then using the derivative of the error of a with respect to the weights of the network (The [gradient]()) to nudge the weights in a direction that lowers that error.
+
+Stochastic gradient descent (SGD) is the same process except the gradients of a bunch of random samples are averaged to reduce the chance of a single sample being an outlier. (This is technically mini-batch gradient descent, but SGD is the common term for this now).
+
+There are more variants of gradient descent such as ones that involve momentum and adaptive learning rates which you can read more about [here](https://arxiv.org/abs/1609.04747).
 
 ### Anatomy of a Neuron
 
@@ -106,16 +127,14 @@ The activation function is a function that defines the output of a neuron. Activ
 
 {% include image.html url="/assets/images/nn_tanh.svg" desc="The hyperbolic tangent function." %}
 
-This is sort of equivalent to a continuous form of a binary choice: A large negative value becomes -1, and a large positive value becomes 1, with smaller numbers somewhere in-between. -1 and 1 can be thought of as analogous to false and true, or 0 and 1.
+This is sort of equivalent to a continuous form of a binary choice: A large negative value becomes -1, and a large positive value becomes 1, with smaller numbers somewhere in-between. -1 and 1 can be thought of as analogous to false and true, respectively.
 
 The non-linearity of this function is what makes the whole network non-linear. This non-linearity is what allows neural networks to approximate any function.
 
-### Stochastic Gradient Descent
+##### Vanishing Gradient problem
+Rework
+The [**vanishing gradient problem**](https://en.wikipedia.org/wiki/Vanishing_gradient_problem) is an issue where a neural network's training slows down to the point where training is no longer effective. Imagine a half-trained network where one of the weights has become very large, this means if tanh is being used it will output either -1 or 1. If you look at the previous graph of tanh, the slope of the function becomes very flat as you approach -1 or 1. This slope, the derivative, is used in the calculation for training, but since the slope is near 0 it will not change very fast. Now if you continue training the network, if there is a better solution where the weight should be less in magnitude it will have a difficult time reaching it.
 
-Gradient descent is the process running a sample input from the dataset through the network, then using the derivative of the error of a with respect to the weights of the network (The "gradient") to nudge the weights in a direction that lowers that error.
+### Backpropagation
 
-Stochastic gradient descent (SGD) is the same process except the gradients of a bunch of random samples are averaged to reduce the chance of a single sample being an outlier. (This is technically Mini-batch gradient descent, but SGD commonly means this now).
-
-There are more variants of gradient descent such as ones that involve momentum and adaptive learning rates which you can read more about [here](https://arxiv.org/abs/1609.04747).
-
-### Backpropogation
+Backpropagation is the meat of a neural network's training algorithm. It is how one finds the derivative of the loss function with respect of the weights.

@@ -5,8 +5,7 @@ layout: default
 ---
 <div id="post" class="section blur">
   <ul>
-      <li><a href="{{ site.url }}/github">GitHub Summary</a></li>
-      <br>
+      <!--<li><a href="{{ site.url }}/github">GitHub Summary</a></li><br>-->
     {% for post in site.posts %}
       <li><a href="{{ post.url }}">{{ post.title }}</a> &laquo; <span>{{ post.date | date_to_string }}</span></li>
     {% endfor %}

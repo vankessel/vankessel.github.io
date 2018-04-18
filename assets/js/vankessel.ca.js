@@ -43,20 +43,18 @@ function generateBackground(seed) {
   $("html").css( "background", "url('data:image/svg+xml;utf8," + encodeURIComponent(svg.outerHTML) + "')" );
 }
 
-$(window).load(function() {
-  generateBackground();
-  applyBlur();
-});
-
 $(document).ready(function() {
 
   setCenterContainerWidth();
+  generateBackground();
+  applyBlur();
 
   var resizable = true;
   $(window).resize(function() {
     if(resizable) {
       resizable = false;
-      //Perform actions and allow event to fire again after timeout
+      //Perform actions and allow event to fire again after timeout so
+      //these expensive functions don't get called many times during a resize
       setTimeout(function() {
         setCenterContainerWidth();
         generateBackground();
