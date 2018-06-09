@@ -1,37 +1,23 @@
-var requiredScriptsFinished = {
-  jquery: false,
-  mathjax: false
-};
-
 $(document).ready(function() {
-  if(checkReady('jquery')) {
-    main();
-  }
+  main();
 });
 
 MathJax.Hub.Register.StartupHook("End", function() {
-  if(checkReady('mathjax')) {
-    main();
-  }
+  resetVisuals();
 });
-
-function checkReady(scriptName) {
-  requiredScriptsFinished[scriptName] = true;
-  return Object.values(requiredScriptsFinished).every(identity)
-}
 
 function main() {
 
   resetVisuals();
 
+  //Perform actions and allow event to fire again after timeout so
+  //these expensive functions don't get called many times during a resize
   var resizable = true;
   $(window).resize(function() {
     if(resizable) {
       resizable = false;
-      //Perform actions and allow event to fire again after timeout so
-      //these expensive functions don't get called many times during a resize
+      resetVisuals();
       setTimeout(function() {
-        resetVisuals();
         resizable = true;
       }, 500)
     }
@@ -92,8 +78,4 @@ function generateBackground(seed) {
   svg.setAttribute("version", "1.1");
 
   $("html").css( "background", "url('data:image/svg+xml;utf8," + encodeURIComponent(svg.outerHTML) + "')" );
-}
-
-function identity(x) {
-  return x;
 }
