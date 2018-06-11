@@ -63,7 +63,7 @@ An optimizer is a method that uses the loss function and dataset to determine ho
 
 Stochastic gradient descent (SGD) is the optimization process of running a sample input from the dataset through the network, then using the derivative of the error of a with respect to the weights of the network (The [**gradient**](https://en.wikipedia.org/wiki/Gradient)) to nudge the weights in a direction that lowers that error.
 
-Mini-batch gradient descent is the same process except the gradients from a batch of random samples from the dataset are averaged to reduce the chance of a single sample being an outlier.
+Mini-batch gradient descent is the same process except the gradients from a batch of random samples from the dataset are averaged. This helps ensure the gradient is pointing in a direction that optimizes in a general way for many sample inputs and not just individual inputs.
 
 There are more variants of gradient descent such as ones that involve momentum and adaptive learning rates which you can read more about [here](https://arxiv.org/abs/1609.04747).
 
