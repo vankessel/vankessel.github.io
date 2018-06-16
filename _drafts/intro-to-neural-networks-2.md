@@ -1,7 +1,7 @@
 ---
 title: Introduction to Neural Networks - Part 2
 author: Kevin Van Kessel
-tags: tutorial ai
+tags: tutorial neural-networks machine-learning ai series part-2
 ---
 
 # {{ page.title }}
