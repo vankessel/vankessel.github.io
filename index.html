@@ -7,7 +7,7 @@ layout: default
   <ul>
       <!--<li><a href="{{ site.url }}/github">GitHub Summary</a></li><br>-->
     {% for post in site.posts %}
-      <li><a href="{{ post.url }}">{{ post.title }}</a><span>&nbsp;&laquo; {{ post.date | date_to_string }}</span></li>
+      <li><a href="{{ post.url }}">{{ post.title }}</a><div class="date">{{ post.date | date_to_string }}</div></li>
     {% endfor %}
   </ul>
 </div>

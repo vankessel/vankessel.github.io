@@ -10,7 +10,7 @@ layout: default
   <h3>Related Posts</h3>
   <ul class="posts">
     {% for post in site.related_posts limit:3 %}
-      <li><a href="{{ post.url }}">{{ post.title }}</a><span>&nbsp;&laquo; {{ post.date | date_to_string }}</span></li>
+      <li><a href="{{ post.url }}">{{ post.title }}</a><div class="date">{{ post.date | date_to_string }}</div></li>
     {% endfor %}
   </ul>
 </div>

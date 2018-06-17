@@ -180,18 +180,21 @@ p {
   margin-bottom: 0;
 }
 
+.date {
+  font-size: 0.75em;
+}
+
 ul {
   display: table;
   margin: 0 auto;
   padding-left: 1em;
+  div {
+    margin-top: 4px;
+  }
 }
 
 li {
   margin: 1em 0;
-  span {
-    float: right;
-    clear: both;
-  }
 }
 
 a {
