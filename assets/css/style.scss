@@ -89,7 +89,6 @@ html {
 
 #center-container {
   margin: auto;
-  text-align: center;
   > * {
     width: 100%;
     margin: auto;
@@ -176,10 +175,13 @@ p {
   line-height: 1.5;
 }
 
+#related > h3 {
+  text-align: center;
+}
+
 ul {
-  display: inline-block;
+  display: table;
   margin: 1em auto;
-  text-align: left;
 }
 
 li {
