@@ -91,6 +91,7 @@ html {
   margin: auto;
   > * {
     width: 100%;
+    margin: auto;
   }
   @media screen and (orientation: landscape) {
     width: 50%;
@@ -105,7 +106,6 @@ html {
 
 #name-container {
   width: auto;
-  margin: auto;
   display: table;
 
   $name: "Kevin\AVan Kessel";
