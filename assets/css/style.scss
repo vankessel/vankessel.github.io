@@ -177,12 +177,13 @@ p {
 }
 
 ul {
-  text-align: left;
+  display: inline-block;
   margin: 1em auto;
+  text-align: left;
 }
 
 li {
-  margin: 8px 0;
+  margin: 0.5em 0;
 }
 
 a {
