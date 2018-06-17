@@ -87,25 +87,11 @@ html {
   background-color: gray;
 }
 
-#post {
-  display: inline-block;
-  padding: 1em 2em;
-  @include box-sizing(border-box);
-
-  img {
-    width: 100%;
-    margin: auto;
-    background-color: white;
-  }
-}
-
-#post img, .blur, figure {
-  @include border-radius(4px);
-  @include box-shadow(4px, 4px, 8px, 0px, rgba(0,0,0,0.25));
-}
-
 #center-container {
   margin: auto;
+  > * {
+    width: 100%;
+  }
   @media screen and (orientation: landscape) {
     width: 50%;
   }
@@ -118,6 +104,7 @@ html {
 }
 
 #name-container {
+  width: auto;
   margin: auto;
   display: table;
 
@@ -155,6 +142,23 @@ html {
     text-shadow: 1px 1px 4px rgba(0,0,0,1);
     z-index: -1;
   }
+}
+
+#post {
+  display: inline-block;
+  padding: 1em 2em;
+  @include box-sizing(border-box);
+
+  img {
+    width: 100%;
+    margin: auto;
+    background-color: white;
+  }
+}
+
+#post img, .blur, figure {
+  @include border-radius(4px);
+  @include box-shadow(4px, 4px, 8px, 0px, rgba(0,0,0,0.25));
 }
 
 iframe {
