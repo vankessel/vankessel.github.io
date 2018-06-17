@@ -10,11 +10,11 @@
           border-radius: $radius;
 }
 
-@mixin box-shadow($h_off, $v_off, $blur, $spread, $color) {
-  -webkit-box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.25);
-     -moz-box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.25);
-      -ms-box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.25);
-          box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.25);
+@mixin box-shadow($h_off: 4px, $v_off: 4px, $blur: 8px, $spread: 0px, $color: rgba(0,0,0,0.25)) {
+  -webkit-box-shadow: $h_off $v_off $blur $spread $color;
+     -moz-box-shadow: $h_off $v_off $blur $spread $color;
+      -ms-box-shadow: $h_off $v_off $blur $spread $color;
+          box-shadow: $h_off $v_off $blur $spread $color;
 }
 
 @mixin box-sizing($sizing) {
@@ -89,7 +89,6 @@ html {
 
 #post {
   display: inline-block;
-  width: 100%;
   padding: 1em 2em;
   @include box-sizing(border-box);
 
@@ -105,20 +104,20 @@ html {
   @include box-shadow(4px, 4px, 8px, 0px, rgba(0,0,0,0.25));
 }
 
-/*width is dynamically set by vankessel.ca.js*/
 #center-container {
   margin: auto;
-  /*TODO: Use media directive*/
-  width: 50%;
+  @media (orientation: landscape) {
+    width: 50%;
+  }
+  @media not (orientation: landscape) {
+    width: 90%;
+  }
 }
 
 .section {
-  width: 100%;
-  margin: auto;
 }
 
 #name-container {
-  width: auto;
   margin: auto;
   display: table;
 
@@ -133,12 +132,12 @@ html {
     color: black;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 1px;
-    background-image: url('../images/heic1509a.jpg');
-    //background-attachment: fixed;
-    background-repeat: repeat;
-    background-size: 1280px 1024px;
-    @include background-clip(text);
-    @include drift(32s, 512s);
+    @media (orientation: landscape) {
+      background-image: url('../images/heic1509a.jpg');
+      background-size: 1280px 1024px;
+      @include background-clip(text);
+      @include drift(32s, 512s);
+    }
   }
 
   #name:before {
@@ -191,6 +190,6 @@ figure {
 
 figcaption {
   line-height: 1.5em;
-  font-size: 15px;
+  font-size: 1em;
   text-align: center;
 }

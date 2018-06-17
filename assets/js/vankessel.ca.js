@@ -3,7 +3,7 @@ $(document).ready(function() {
 });
 
 MathJax.Hub.Register.StartupHook("End", function() {
-  resetVisuals();
+  main();
 });
 
 function main() {
@@ -30,7 +30,6 @@ function main() {
 }
 
 function resetVisuals() {
-  setCenterContainerWidth();
   generateBackground();
   applyBlur();
 }
@@ -42,21 +41,6 @@ function applyBlur() {
     radius: 16,
     overlay: 'rgba(255,255,255,0.20)'
   });
-}
-
-function setCenterContainerWidth() {
-
-  var w = $(window).width();
-  var h = $(window).height();
-
-  //If landscape
-  if(w > h) {
-    $('#center-container').css('width', '40em'); //Magic beauty-constant
-  }
-  //If portrait
-  else {
-    $('#center-container').css('width', '90%');
-  }
 }
 
 function generateBackground(seed) {
