@@ -89,6 +89,7 @@ html {
 
 #center-container {
   margin: auto;
+  text-align: center;
   > * {
     width: 100%;
     margin: auto;
@@ -176,6 +177,7 @@ p {
 }
 
 ul {
+  text-align: left;
   margin: 1em auto;
 }
 
