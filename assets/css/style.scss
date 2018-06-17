@@ -106,10 +106,10 @@ html {
 
 #center-container {
   margin: auto;
-  @media (orientation: landscape) {
+  @media screen and (orientation: landscape) {
     width: 50%;
   }
-  @media not (orientation: landscape) {
+  @media not screen and (orientation: landscape) {
     width: 90%;
   }
 }
@@ -132,7 +132,7 @@ html {
     color: black;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 1px;
-    @media (orientation: landscape) {
+    @media screen and (orientation: landscape) {
       background-image: url('../images/heic1509a.jpg');
       background-size: 1280px 1024px;
       @include background-clip(text);
