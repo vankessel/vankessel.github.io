@@ -2,11 +2,11 @@
 layout: default
 ---
 
-<div id="post" class="section blur">
+<div id="post" class="blur">
   {{ content }}
 </div>
 
-<div id="related" class="section">
+<div id="related">
   <h3>Related Posts</h3>
   <ul class="posts">
     {% for post in site.related_posts limit:3 %}

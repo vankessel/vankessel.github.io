@@ -3,44 +3,12 @@
 
 /* HELPERS */
 
-@mixin border-radius($radius) {
-  -webkit-border-radius: $radius;
-     -moz-border-radius: $radius;
-      -ms-border-radius: $radius;
-          border-radius: $radius;
-}
-
-@mixin box-shadow($h_off: 4px, $v_off: 4px, $blur: 8px, $spread: 0px, $color: rgba(0,0,0,0.25)) {
-  -webkit-box-shadow: $h_off $v_off $blur $spread $color;
-     -moz-box-shadow: $h_off $v_off $blur $spread $color;
-      -ms-box-shadow: $h_off $v_off $blur $spread $color;
-          box-shadow: $h_off $v_off $blur $spread $color;
-}
-
-@mixin box-sizing($sizing) {
-  -webkit-box-sizing: $sizing;
-     -moz-box-sizing: $sizing;
-      -ms-box-sizing: $sizing;
-          box-sizing: $sizing;
-}
-
 @mixin background-clip($clip) {
   -webkit-background-clip: $clip;
-     -moz-background-clip: $clip;
-      -ms-background-clip: $clip;
           background-clip: $clip;
 }
 
-@mixin animation($name, $dur, $timing: linear, $iters: infinite, $dir: normal) {
-  -webkit-animation: $name $dur $timing $iters $dir;
-     -moz-animation: $name $dur $timing $iters $dir;
-      -ms-animation: $name $dur $timing $iters $dir;
-          animation: $name $dur $timing $iters $dir;
-}
-
-/* ANIMATIONS */
-
-@mixin translate($axis:x, $start:0%, $end:100%) {
+@mixin translate($axis: x, $start: 0%, $end: 100%) {
   from {
     background-position-#{$axis}: $start;
   }
@@ -49,10 +17,9 @@
   }
 }
 
+/* KEYFRAMES */
+
 @-webkit-keyframes translate-x {
-  @include translate(x, 100%, 0%);
-}
-@-moz-keyframes translate-x {
   @include translate(x, 100%, 0%);
 }
 @keyframes translate-x {
@@ -62,19 +29,14 @@
 @-webkit-keyframes translate-y {
   @include translate(y);
 }
-@-moz-keyframes translate-y {
-  @include translate(y);
-}
 @keyframes translate-y {
   @include translate(y);
 }
 
+/* ANIMATIONS */
+
 @mixin drift($x-period: 16s, $y-period: 16s) {
   -webkit-animation: translate-x $x-period ease-in-out              infinite alternate,
-                     translate-y $y-period ease-in-out $y-period/-2 infinite alternate;
-     -moz-animation: translate-x $x-period ease-in-out              infinite alternate,
-                     translate-y $y-period ease-in-out $y-period/-2 infinite alternate;
-      -ms-animation: translate-x $x-period ease-in-out              infinite alternate,
                      translate-y $y-period ease-in-out $y-period/-2 infinite alternate;
          -animation: translate-x $x-period ease-in-out              infinite alternate,
                      translate-y $y-period ease-in-out $y-period/-2 infinite alternate;
@@ -89,25 +51,20 @@ html {
 
 #center-container {
   margin: auto;
-  > * {
-    width: 100%;
-    margin: auto;
+  text-align: center;
+  & > * {
+    display: inline-block;
+    text-align: left;
   }
   @media screen and (orientation: landscape) {
-    width: 50%;
+    max-width: 50%;
   }
   @media not screen and (orientation: landscape) {
-    width: 90%;
+    max-width: 90%;
   }
-}
-
-.section {
 }
 
 #name-container {
-  width: auto;
-  display: table;
-
   $name: "Kevin\AVan Kessel";
   $size: 5em;
   #name {
@@ -145,10 +102,7 @@ html {
 }
 
 #post {
-  display: inline-block;
   padding: 1em 2em;
-  @include box-sizing(border-box);
-
   img {
     width: 100%;
     margin: auto;
@@ -157,22 +111,8 @@ html {
 }
 
 #post img, .blur, figure {
-  @include border-radius(4px);
-  @include box-shadow(4px, 4px, 8px, 0px, rgba(0,0,0,0.25));
-}
-
-iframe {
-  display: block;
-  margin: auto;
-}
-
-h1, h2 {
-  text-align: center;
-}
-
-p {
-  text-align: left;
-  line-height: 1.5;
+  border-radius: 4px;
+  box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.25);
 }
 
 #related > h3 {
@@ -180,21 +120,25 @@ p {
   margin-bottom: 0;
 }
 
-.date {
-  font-size: 0.75em;
-}
-
 ul {
-  display: table;
   margin: 0 auto;
   padding-left: 1em;
-  div {
+  div.date {
     margin-top: 4px;
+    font-size: 0.75em;
   }
 }
 
 li {
   margin: 1em 0;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+p {
+  line-height: 1.5;
 }
 
 a {
