@@ -1,14 +1,14 @@
 ---
 title: Introduction to Neural Networks
 author: Kevin Van Kessel
-tags: tutorial neural-networks machine-learning  ai series part-1
+tags: tutorial neural-networks machine-learning ai series part-1
 ---
 
 # {{ page.title }}
 
 ## What is a Neural Network?
 
-A neural network is a black box model inspired by the biological information processing of neurons found in the brain. These networks are taught how to produce correct outputs by training them with large datasets. A black box is a function that transforms an input into an output, while the exact process behind the function is unknown. Neural networks are effectively black boxes as their internal process once fully trained is hard to reverse engineer. This may not be the case in the future as [work is being done](https://youtu.be/zjaz2mC1KhM) to glean insight into these fascinating and powerful models.
+A neural network is a black box model inspired by the biological information processing of neurons. These networks are taught how to produce correct outputs by training them with large datasets. A black box is a function that transforms an input into an output, while the exact process behind the function is unknown. Neural networks are effectively black boxes as their internal process once fully trained is hard to reverse engineer. This may not be the case in the future as [work is being done](https://youtu.be/zjaz2mC1KhM) to glean insight into these fascinating and powerful models.
 
 {% include image.html url="/assets/images/nn_layers.png" desc="The basic structure of a neural network." %}
 
@@ -21,7 +21,7 @@ Training is performed by letting the untrained network try to produce an output 
 
 ## Example networks
 
-Here are some example networks to see the kinds of problems neural networks can solve.
+Here are some example networks to give an idea of the kinds of problems neural networks can solve.
 
 ### [A Neural Algorithm of Artistic Style](https://arxiv.org/abs/1508.06576)
 
@@ -49,7 +49,7 @@ Layers in a neural network are typically fully connected; each neuron in a layer
 
 Sometimes these connections are altered such as in the case of [**residual networks**](https://arxiv.org/abs/1512.03385), where the inputs to a layer can skip some number of layers forward and add its value to the output. This means if the last layer naturally outputs zeros, it will now output its input, acting like an [**identity function**](https://en.wikipedia.org/wiki/Identity_function). The ability for layers to easily form an identity function allows for residual networks to become very deep by reducing the [**vanishing gradient problem**](#vanishing-gradient-problem).
 
-[**Dropout**](https://en.wikipedia.org/wiki/Dropout_(neural_networks)) is another method of connecting layers. This method reduces the problem of [**overfitting**](https://en.wikipedia.org/wiki/Overfitting), which is when the network is plagiarizing the training data instead of generalizing it. This is like learning by memorization as opposed to learning by understanding. Dropout will randomly disconnect a given percentage of connections between two layers during training. Will this not break the network? The answer is no, it actually makes it more robust. The network learns how to arrive at the correct answer even with missing data. Once the network is fully trained and is being applied, dropout is no longer enabled and all the connections are active. There is one obvious issue with this, if the network was trained to give a correct answer with 50% of the connections, the trained network will now use 100% of the connections resulting in about twice the data being fed to the next layer. To equalize this, the trained network will multiply all values passing through the connections by the dropout percentage.
+[**Dropout**](https://en.wikipedia.org/wiki/Dropout_(neural_networks)) is another method of connecting layers. This method reduces the problem of [**overfitting**](https://en.wikipedia.org/wiki/Overfitting), which is when the network is plagiarizing the training data instead of generalizing it. This is like learning by memorization as opposed to learning by understanding. Dropout will randomly disconnect a given percentage of connections between two layers during training. Will this break the network? No, it actually makes it more robust. The network learns how to arrive at the correct answer even with missing data. Once the network is fully trained and is being applied, dropout is no longer enabled and all the connections are active. There is one obvious issue with this, if the network was trained to give a correct answer with 50% of the connections, the trained network will now use 100% of the connections resulting in about twice the data being fed to the next layer. To equalize this, the trained network will multiply all values passing through the connections by the dropout percentage.
 
 ### Loss Function
 
@@ -59,9 +59,9 @@ A common loss function is the [**squared error**](https://en.wikipedia.org/wiki/
 
 ### Optimizer
 
-An optimizer is a method that uses the loss function and dataset to determine how to change the parameters ([**weights**](#weights)) of the network.
+An optimizer is a process that uses the loss function and dataset to determine how to change the parameters ([**weights**](#weights)) of the network.
 
-[**Stochastic gradient descent**](https://en.wikipedia.org/wiki/Stochastic_gradient_descent) (SGD) is the optimization process of running a sample input from the dataset through the network, then using the derivative of the error of a with respect to the parameters of the network (The [**gradient**](https://en.wikipedia.org/wiki/Gradient)) to nudge the parameters in a direction that lowers that error.
+[**Stochastic gradient descent**](https://en.wikipedia.org/wiki/Stochastic_gradient_descent) (SGD) is the optimization process of running a sample input from the dataset through the network, then using the derivative of the loss of a with respect to the parameters of the network (The [**gradient**](https://en.wikipedia.org/wiki/Gradient)) to nudge those parameters in a direction that lowers that loss.
 
 Mini-batch gradient descent is the same process except the gradients from a batch of random samples from the dataset are averaged. This helps ensure the gradient is pointing in a direction that optimizes in a general way for many sample inputs and not just individual inputs.
 
@@ -69,7 +69,7 @@ There are more variants of gradient descent such as ones that involve momentum a
 
 ## Anatomy of a Neuron
 
-The most essential part of any network is a neuron. A neuron consists of inputs, weights, a bias, and an activation function.
+Artificial neurons act in a similar manner to biological neurons by propagating signals between each other. A typical artificial neuron consists of inputs, weights, a bias, and an activation function.
 
 {% include image.html url="/assets/images/nn_model.png" desc="A diagram of a standard neuron. I will be using a slightly different notation consistent with <a href='http://neuralnetworksanddeeplearning.com/chap2.html'>this tutorial</a>." %}
 
