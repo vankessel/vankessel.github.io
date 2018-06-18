@@ -55,6 +55,9 @@ html {
   & > * {
     display: inline-block;
     text-align: left;
+    &:after {
+      content: "\A"
+    }
   }
   @media screen and (orientation: landscape) {
     max-width: 50%;
