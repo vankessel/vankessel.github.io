@@ -51,13 +51,9 @@ html {
 
 #center-container {
   margin: auto;
-  text-align: center;
   & > * {
-    display: inline-block;
-    text-align: left;
-    &:after {
-      content: "\A"
-    }
+    display: table;
+    margin: auto;
   }
   @media screen and (orientation: landscape) {
     max-width: 50%;
