@@ -89,11 +89,11 @@ $$
 
 ### Inputs
 
-The input layer's inputs come from the dataset. Subsequent layer's inputs are the activations ($$a$$) of the previous layer.
+The input layer's inputs come from the dataset. Subsequent layers are fed weighted inputs ($$\sum wa+b$$) from the previous layer.
 
 ### Weights
 
-The weights ($$w$$) multiply each input and are the parameters of the network that are learned.
+Each weight ($$w$$) multiplies its respective activation from the previous layer. They are parameters of the network that are learned.
 
 ### Bias
 
