@@ -1,5 +1,5 @@
 ---
-title: Ticket #9555603
+title: Ticket 9555603
 layout: post
 ---
 
