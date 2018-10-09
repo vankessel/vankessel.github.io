@@ -191,7 +191,7 @@ I'm not even going to attempt to explain this nonsense.
 
 ### Exponential
 
-{% include image.html url="/assets/images/visualizing-complex-functions/exp(z)).png" desc="Euler's number to the power of z." %}
+{% include image.html url="/assets/images/visualizing-complex-functions/exp(z).png" desc="Euler's number to the power of z." %}
 
 #### Video Here
 
@@ -199,7 +199,7 @@ Poles pull in from right to left, flattening the contours into a clean horizonta
 
 ### Logarithm
 
-{% include image.html url="/assets/images/visualizing-complex-functions/ln(z)).png" desc="Natural logarithm of z." %}
+{% include image.html url="/assets/images/visualizing-complex-functions/ln(z).png" desc="Natural logarithm of z." %}
 
 #### Video Here
 
@@ -216,7 +216,7 @@ The sigmoid is a function often used in neural networks because it restricts the
 
 ### Expoid
 
-{% include image.html url="/assets/images/visualizing-complex-functions/e^(-e^-z).png.png" desc="Expoid of z." %}
+{% include image.html url="/assets/images/visualizing-complex-functions/e^(-e^-z).png" desc="Expoid of z." %}
 
 #### Video Here
 
