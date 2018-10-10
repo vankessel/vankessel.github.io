@@ -71,9 +71,9 @@ Each pixel to be graphed represents a point on the complex plane ($$z$$). This c
 
 ## Visualizations
 
-### Identity
-
 So, what does this look like? Here is the most basic example, the identity function. $$f(z) = z$$.
+
+### Identity
 
 {% include image.html url="/assets/images/visualizing-complex-functions/z.png" desc="The identity function." %}
 
@@ -123,7 +123,7 @@ This one is a little strange. Similar to the previous ones except no poles are v
 
 #### Video here
 
-This one is similar to the last except that two poles are removed from the original at symmetric angles. This sheds some light on the previous. I hypothesize that the previous interpolation also had moving poles, but they were hidden by the branch cut.
+This one is similar to the last except that two poles are removed from the original at symmetric angles. This sheds some light on the previous function. I hypothesize that the previous interpolation also had moving poles, but they were hidden by the branch cut.
 
 ### Power of i
 
@@ -131,7 +131,7 @@ This one is similar to the last except that two poles are removed from the origi
 
 #### Video Here
 
-Now things are beginning to get funky. Taking the plane to the power of $$i$$ seems to invert it in a different sense. The values now halve with angle, and are rotated counter-clockwise with magnitude. The interpolation shows two poles being removed in a non-symmetric spiral fashion.
+Now things are beginning to get funky. Taking the plane to the power of $$i$$ seems to invert it in a different sense. The values now halve with angle, and are rotated counter-clockwise with magnitude. The interpolation shows two poles being removed in an asymmetric spiral fashion.
 
 ### Power of -i
 
@@ -139,7 +139,7 @@ Now things are beginning to get funky. Taking the plane to the power of $$i$$ se
 
 #### Video Here
 
-Similar to the last one but values are now doubled with angle, and are rotated clockwise with magnitude. This is fascinating. It appears that both the number of poles added or removed, and direction they are moved have something to do with the interpolation of each of these functions.
+Similar to the last one but values are now doubled with angle, and are rotated clockwise with magnitude. It appears that both the number of poles added or removed, and direction they are moved have something to do with the interpolation of each of these functions.
 
 ### Sine
 
@@ -149,6 +149,14 @@ Similar to the last one but values are now doubled with angle, and are rotated c
 
 This is beautiful and one of my favourites. Poles merge from the top and bottom, only to immediately split again forming a colourful symmetric wave. Cosine is similar but shifted horizontally.
 
+### Hyperbolic Sine
+
+{% include image.html url="/assets/images/visualizing-complex-functions/sinh(z).png" desc="Hyperbolic sine of z." %}
+
+#### Video Here
+
+I have never really understood the relationship between the hyperbolic trigonometric functions and the regular ones, but this makes it more clear. It is similar to sine except for being periodic along the imaginary axis instead of the real axis. And the hues emerging from each pole bend to be horizontal instead of vertical.
+
 ### Arcsine
 
 {% include image.html url="/assets/images/visualizing-complex-functions/asin(z).png" desc="Arcsine of z." %}
@@ -156,14 +164,6 @@ This is beautiful and one of my favourites. Poles merge from the top and bottom,
 #### Video Here
 
 Not all that interesting, but I'm curious to see what is going on beyond the branch cut.
-
-### Hyperbolic Sine
-
-{% include image.html url="/assets/images/visualizing-complex-functions/sinh(z).png" desc="Hyperbolic sine of z." %}
-
-#### Video Here
-
-I have personally never really understood the relationship between the hyperbolic trigonometric functions and the regular ones, but this makes it more clear. It is the same as sine except it is periodic along the imaginary axis instead of the real axis. And the hues emerging from each pole bend to be horizontal instead of vertical.
 
 ### Tangent
 
@@ -195,7 +195,7 @@ I'm not even going to attempt to explain this nonsense.
 
 #### Video Here
 
-Poles pull in from right to left, flattening the contours into a clean horizontal sequence. The real component determine magnitude and imaginary component determines the angle.
+Poles pull in from right to left, flattening the contours into a clean horizontal sequence. The real component determines the magnitude and imaginary component determines the angle.
 
 ### Logarithm
 
@@ -212,7 +212,23 @@ https://en.wikipedia.org/wiki/Complex_logarithm#/media/File:Riemann_surface_log.
 
 #### Video Here
 
-The sigmoid is a function often used in neural networks because it restricts the output of reals between $$-1$$ and $$1$$. Here, opposing poles appear out of thin air in the middle and pull back, leaving a sequence of contours along the horizontal on the negative real side of the function. Similarly to $$e^z$$.
+The sigmoid is a function often used in neural networks because it restricts the output of reals between $$-1$$ and $$1$$. Similarly to $$e^z$$, opposing poles appear out of thin air in the middle and pull back, leaving a sequence of contours along the horizontal on the negative real side of the function.
+
+### Softplus
+
+{% include image.html url="/assets/images/visualizing-complex-functions/ln(e^z + 1).png" desc="Softplus of z." %}
+
+#### Video Here
+
+Softplus is also found as an activation function of neural networks. Two poles seem to pull out from under the main branch cut to the right of the origin, which barely changes at all.
+
+### Gamma
+
+{% include image.html url="/assets/images/visualizing-complex-functions/gamma(z).png" desc="Gamma function of z." %}
+
+#### Video Here
+
+The gamma function is a continuous version of the factorial. More specifically, $$\Gamma(n) = (n - 1)!$$ where $$n$$ is a positive integer. This function looks really nice
 
 ### Expoid
 
@@ -220,6 +236,10 @@ The sigmoid is a function often used in neural networks because it restricts the
 
 #### Video Here
 
-This is a function I made up while playing around and ended up being really cool. I dub thee the expoid function. The black areas are where the calculations exceed the limits of floating point arithmetic on my computer, that area would be otherwise filled in with ever more compact fluctuations. We can use the boundary shape of the missing values as another contour of equal magnitude.
+This is a function I made up while playing around and ended up being really interesting. I dub thee the expoid function. The black areas are where the calculations exceed the limits of floating point arithmetic on my computer, that area would be otherwise filled in with ever more compact fluctuations.
 
-This is truly an interesting function. It seems as though pillars of stability and instability form as one travels in the negative real direction. Each pillar appears to approach a width of $$\pi$$. This phenomena forms because on the reals the outer exponential of $$e^{-e^{-z}}$$ can only ever take in a negative input, thus restraining the output between $$0$$ and $$1$$. If you stray too far into the imaginary numbers the sign of the inner exponential flips. This causes the inner exponential to become positive, which removes the restraint and allows the nested exponential to explode.
+It seems as though up until the very last frame pillars of stability and instability form as one travels in the negative real direction. Each pillar appears to approach a width of $$\pi$$. This phenomena forms because on the reals the outer exponential of $$e^{-e^{-z}}$$ can only ever take in a negative input, thus restraining the output between $$0$$ and $$1$$. If you stray too far into the imaginary numbers the sign of the inner exponential flips. This causes the inner exponential to become positive, which removes the restraint and allows the nested exponential to explode.
+
+## Conclusion
+
+Math can be beautiful and visualizations can help the unintuitive become a little more intuitive. I hope this sparks someone's interest in learning more about complex number systems. Check out [Riemann surfaces](https://en.wikipedia.org/wiki/Riemann_surface) for another powerful visualization tool that can also show what is happening beyond the branch cut.
