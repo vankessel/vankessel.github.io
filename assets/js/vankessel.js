@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  //main();
+  generateBackground();
 });
 
 MathJax.Hub.Register.StartupHook("End", function() {
@@ -31,7 +31,9 @@ function main() {
 
 function resetVisuals() {
   generateBackground();
-  applyBlur();
+  setTimeout(function() {
+    applyBlur();
+  }, 1000);
 }
 
 function applyBlur() {

@@ -38,7 +38,7 @@
 @mixin drift($x-period: 16s, $y-period: 16s) {
   -webkit-animation: translate-x $x-period ease-in-out              infinite alternate,
                      translate-y $y-period ease-in-out $y-period/-2 infinite alternate;
-         -animation: translate-x $x-period ease-in-out              infinite alternate,
+          animation: translate-x $x-period ease-in-out              infinite alternate,
                      translate-y $y-period ease-in-out $y-period/-2 infinite alternate;
 }
 
@@ -56,7 +56,7 @@ html {
     margin: auto;
   }
   @media screen and (orientation: landscape) {
-    max-width: 50%;
+    max-width: 60%;
   }
   @media not screen and (orientation: landscape) {
     max-width: 90%;
@@ -107,11 +107,31 @@ html {
     margin: auto;
     background-color: white;
   }
+  video {
+    width: 100%;
+  }
+  iframe {
+    display: block;
+    margin: auto;
+  }
 }
 
-#post img, .blur, figure {
+.blur, figure, figure img, figure video, figure iframe {
   border-radius: 4px;
-  box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.25);
+  box-shadow: 4px 4px 16px 0px rgba(0,0,0,0.25);
+}
+
+figure {
+  padding: 1em;
+  margin: 1em;
+  background-color: rgba(255,255,255,0.4);
+}
+
+figcaption {
+  margin: 0.5em 1em -0.5em 1em;
+  line-height: 1em;
+  font-size: 1em;
+  text-align: center;
 }
 
 #related > h3 {
@@ -146,15 +166,4 @@ a {
 
 pre, code {
   font-family: 'Ubuntu Mono', monospace;
-}
-
-figure {
-  margin: 1em;
-  background-color: rgba(255,255,255,0.4);
-}
-
-figcaption {
-  line-height: 1.5em;
-  font-size: 1em;
-  text-align: center;
 }
