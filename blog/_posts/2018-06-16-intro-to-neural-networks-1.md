@@ -8,15 +8,15 @@ tags: tutorial neural-networks machine-learning ai series part-1
 
 ## What is a Neural Network?
 
-A neural network is a black box model inspired by the biological information processing of neurons. These networks are taught how to produce correct outputs by training them with large datasets. A black box is a function that transforms an input into an output, while the exact process behind the function is unknown. Neural networks are effectively black boxes as their internal process once fully trained is hard to reverse engineer. This may not be the case in the future as [work is being done](https://youtu.be/zjaz2mC1KhM) to glean insight into these fascinating and powerful models.
+A neural network is a black box statistical model inspired by the biological information processing of neurons. These networks are taught how to produce correct outputs by training them with large datasets. A black box is a function in which the inner workings behind the function is unknown. Neural networks are effectively black boxes as they hard to reverse engineer once fully trained. This may not be the case in the future as [work is being done](https://youtu.be/zjaz2mC1KhM) to glean insight into these fascinating and powerful models.
 
 {% include image.html url="/assets/images/nn_layers.png" desc="The basic structure of a neural network." %}
 
-So, how does one make a neural network? Trivially, you need a problem to solve, but it really begins by deciding the architecture. The architecture is the structure of the network, including the size and number of layers, the types and number of neurons in those layers, the types of connections between layers, and anything else that could be unique to the network. The architecture of a network is analogous to the shape, composition, and connections between neurons of the brain, but not the signals flowing between those neurons.
+So, how does one make a neural network? It begins by deciding the architecture. The architecture is the structure of the network, including the number of layers, the types and number of neurons in those layers, the types of connections between layers, and anything else that could be unique to the network. You can think of the architecture of a network being like the specific [connectome](https://en.wikipedia.org/wiki/Connectome) of a brain.
 
 Once you have an architecture, you will need a dataset to train on. A dataset should consist of pairs of inputs and outputs for the network. This is what the network will train against to learn how to correlate an input to an output. There are [some cases](https://arxiv.org/abs/1711.00043) where pairs are not even necessary, only the distribution of the data is needed.
 
-Training is performed by letting the untrained network try to produce an output from an input of the the dataset. This output will almost certainly be random garbage for an untrained network. This garbage output is compared to the intended output, and an error is obtained. This error is propagated back through the network to nudge its parameters in a direction that decreases this error. This is repeated many times until the error is reduced to a minimal amount.
+Training is performed by passing an input into untrained network. The output will almost certainly be random garbage because it is not yet trained. This garbage output is compared to the expected output, and an error is obtained. This error is propagated back through the network to nudge its parameters in a direction that decreases this error. This is repeated many times until the error is reduced to a minimal amount.
 
 
 ## Example networks
@@ -41,15 +41,21 @@ Here are some example networks to give an idea of the kinds of problems neural n
 
 ## Structure of a Neural Network
 
-A neural network is built out of layers of interconnected neurons. The depth of a layer is correlated to how abstract the information processing at that layer is. The number of neurons in a layer is correlated to the processing power of that layer. The first layer is called the input layer and takes data from the dataset as input, the middle layers are called the hidden layers and take the previous layer's output as input. The last layer is called the output layer and outputs the final result of the network. The fact that each layer passes its output to the next makes this a description of a [feedforward](https://en.wikipedia.org/wiki/Feed_forward_(control)#Feed-forward_systems_in_computing) neural network. Every network also needs a [loss function](#loss-function), which measures the difference between an output and the expected output, and an [optimizer](#optimizer) that uses the loss to determine how to shift the network's weights.
+A neural network is built out of layers of interconnected neurons. The first layer is called the input layer and receives samples directly from dataset as input, the middle layers are called the hidden layers and take the previous layer's output as input. The last layer is called the output layer and outputs the final result of the network.
+
+The fact that each layer passes its output to the next makes this a description of a [feedforward](https://en.wikipedia.org/wiki/Feed_forward_(control)#Feed-forward_systems_in_computing) neural network. Since each layer transforms data from the previous layer, the deeper the layer the more abstract the information at that layer becomes. This is powerful because it allows the network to learn high level features, such as if someone is smiling or frowning in a photograph.
+
+Every network also needs a [loss function](#loss-function), which measures the difference between an output and the expected output, and an [optimizer](#optimizer) that uses the loss to determine how to shift the network's weights.
 
 ### Layer Connections
 
-Layers in a neural network are typically fully connected; each neuron in a layer gets its inputs from every neuron in the previous layer.
+Layers in a neural network are typically fully connected; each neuron in a layer gets its inputs from every neuron in the previous layer. Sometimes these connections are altered such as in the case of [residual networks](https://arxiv.org/abs/1512.03385), where the inputs can be fed to multiple layers.
 
-Sometimes these connections are altered such as in the case of [residual networks](https://arxiv.org/abs/1512.03385), where the inputs to a layer can skip some number of layers forward and add its value to the output. This means if the last layer naturally outputs zeros, it will now output its input, acting like an [identity function](https://en.wikipedia.org/wiki/Identity_function). The ability for layers to easily form an identity function allows for residual networks to become very deep by reducing the [vanishing gradient problem](#vanishing-gradient-problem).
+#### Dropout
 
-[Dropout](https://en.wikipedia.org/wiki/Dropout_(neural_networks)) is another method of connecting layers. This method reduces the problem of [overfitting](https://en.wikipedia.org/wiki/Overfitting), which is when the network is plagiarizing the training data instead of generalizing it. This is like learning by memorization as opposed to learning by understanding. Dropout will randomly disconnect a given percentage of connections between two layers during training. Will this break the network? No, it actually makes it more robust. The network learns how to arrive at the correct answer even with missing data. Once the network is fully trained and is being applied, dropout is no longer enabled and all the connections are active. There is one obvious issue with this, if the network was trained to give a correct answer with 50% of the connections, the trained network will now use 100% of the connections resulting in about twice the data being fed to the next layer. To equalize this, the trained network will multiply all values passing through the connections by the dropout percentage.
+[Dropout](https://en.wikipedia.org/wiki/Dropout_(neural_networks)) is another method of connecting layers. Dropout will randomly disconnect a given percentage of connections between two layers during training. This may sound like it would break the network, but it actually makes it more robust. The network learns how to arrive at the correct answer even with missing data. Once the network is fully trained and is being applied, dropout is no longer enabled and all the connections are active. The connections are scaled to account for the extra active connections.
+
+Dropout reduces the problem of [overfitting](https://en.wikipedia.org/wiki/Overfitting), which is when the network is plagiarizing the training data instead of generalizing it. This is like learning by memorization as opposed to learning by understanding.
 
 ### Loss Function
 
@@ -61,11 +67,11 @@ A common loss function is the [squared error](https://en.wikipedia.org/wiki/Mean
 
 An optimizer is a process that uses the loss function and dataset to determine how to change the parameters ([weights](#weights)) of the network.
 
-[Stochastic gradient descent](https://en.wikipedia.org/wiki/Stochastic_gradient_descent) (SGD) is the optimization process of running a sample input from the dataset through the network, then using the derivative of the loss of a with respect to the parameters of the network (The [gradient](https://en.wikipedia.org/wiki/Gradient)) to nudge those parameters in a direction that lowers that loss.
+[Stochastic gradient descent](https://en.wikipedia.org/wiki/Stochastic_gradient_descent) (SGD) is the optimization process of running a sample input from the dataset through the network, then using the derivative of the loss with respect to the parameters of the network to nudge those parameters in a direction that lowers that loss. This derivative is called the [gradient](https://en.wikipedia.org/wiki/Gradient).
 
 Mini-batch gradient descent is the same process except the gradients from a batch of random samples from the dataset are averaged. This helps ensure the gradient is pointing in a direction that optimizes in a general way for many sample inputs and not just individual inputs.
 
-There are more variants of gradient descent such as ones that involve momentum and adaptive learning rates which you can read more about [here](https://arxiv.org/abs/1609.04747).
+There are variants of gradient descent such as ones that involve momentum and adaptive learning rates which you can read more about [here](https://arxiv.org/abs/1609.04747).
 
 ## Anatomy of a Neuron
 
@@ -89,31 +95,31 @@ $$
 
 ### Inputs
 
-The input layer's inputs come from the dataset. Subsequent layers are fed weighted inputs ($$\sum wa+b$$) from the previous layer.
+The input layer's inputs come from the dataset. Subsequent layers are fed the sum of weighted activations plus bias ($$\sum wa+b$$) from the previous layer.
 
 ### Weights
 
-Each weight ($$w$$) multiplies its respective activation from the previous layer. They are parameters of the network that are learned.
+Each weight ($$w$$) scales the respective activation from the previous layer. They are parameters of the network that are learned.
 
 ### Bias
 
-The bias ($$b$$) is a parameter added to the sum of weighted activations ($$\sum wa$$). The bias offsets this sum. For example, if the sum of weighted activations for some neuron is often about 100 for any given input taken from the dataset, the bias may learn to be around -100 which would centre the distribution around 0.
+The bias ($$b$$) is a parameter simply added to the sum of weighted activations ($$\sum wa$$).
 
-So how does one incorporate a learnable bias into the neural network model? Turns out the functionality of the weights can be reused to create a bias, which will prevent the model from becoming more complex than it needs to be. To simulate the bias, an extra input is fed into every neuron. This special input is set to a constant value of 1. That means the corresponding weight for each of these inputs will always only contribute exactly one multiple of itself. This weight is equivalent to the bias.
+It turns out the bias is conceptually the same as a weight where the corresponding activation is always $$1$$. We can exploit this to prevent the model from becoming more complex than it needs to be. To simulate the bias, an extra input is fed into every neuron. This input is set to a constant value of $$1$$.
 
 ### Activation Function
 
-The [activation function](https://en.wikipedia.org/wiki/Activation_function) is a function that defines the output of a neuron. Activation functions are typically chosen to bound the output between a range of values. Popular activation functions are the sigmoid, tanh, RELU, ELU, and softmax functions. The tanh function is nice as it balances the output between -1 and 1.
+The [activation function](https://en.wikipedia.org/wiki/Activation_function) is a function that defines the output of a neuron. Activation functions are typically chosen to bound the output between a range of values. Popular activation functions are the sigmoid, tanh, RELU, ELU, and softmax functions. The tanh function is nice as it balances the output between $$-1$$ and $$1$$.
 
 {% include image.html url="/assets/images/nn_tanh.svg" desc="The hyperbolic tangent function." %}
 
-This is like a continuous form of a binary choice: A large negative value becomes -1, and a large positive value becomes 1, with smaller numbers somewhere in-between. -1 and 1 can be thought of as analogous to false and true.
+This is like a continuous form of a binary choice: A large negative value becomes $$-1$$, and a large positive value becomes $$1$$, with smaller numbers somewhere in-between.
 
 The non-linearity of this function is what makes the whole network non-[linear](https://en.wikipedia.org/wiki/Linear_function). This non-linearity is what allows neural networks to approximate any function.
 
 #### Vanishing Gradient problem
 
-The [vanishing gradient problem](https://en.wikipedia.org/wiki/Vanishing_gradient_problem) is an issue where a neural network's training slows down the farther back in the network the gradient is propagated. In the case of the tanh function, its derivative will always be between 0 and 1. This means that for every layer the gradient is propagated through, the gradient is multiplied by some value between 0 and 1. Do this enough times and the gradient becomes smaller and smaller until it "vanishes". The effect this has is that the farther from the end of the network a layer is, the less it will be updated by the gradient.
+The [vanishing gradient problem](https://en.wikipedia.org/wiki/Vanishing_gradient_problem) is an issue where a neural network's training slows down the farther back in the network the gradient is propagated. In the case of the tanh function, its derivative will always be between $$0$$ and $$1$$. This means that for every layer the gradient is propagated through, the gradient is multiplied by some value between $$0$$ and $$1$$. Do this enough times and the gradient becomes smaller and smaller until it "vanishes". The effect this has is that the farther from the end of the network a layer is, the less it will be updated by the gradient.
 
 Attempts at a solution to the vanishing gradient problem include the [residual networks](https://en.wikipedia.org/wiki/Vanishing_gradient_problem#Residual_networks) mentioned previously, and recurrent [LSTM networks](https://en.wikipedia.org/wiki/Vanishing_gradient_problem#Long_short-term_memory).
 
@@ -121,11 +127,15 @@ Attempts at a solution to the vanishing gradient problem include the [residual n
 
 ### Backpropagation
 
-Backpropagation is the meat of a neural network's training algorithm. It relies on using the gradient, the derivative of the loss with respect to the parameters of the network. With this gradient one can know how to update the parameters of the network to reduce the loss, which will make the network perform better.
+Backpropagation is the meat of a neural network's training algorithm. It relies on using the gradient, the derivative of the loss with respect to the parameters of the network. With this gradient one can update the parameters of the network to reduce the loss, which will make the network perform better.
 
-Before one can use backpropagation, the gradient must be found. An input from the dataset is fed into the network. Then the output of the network is compared to the corresponding expected output using a loss function like the squared error. Once the loss is computed we can find the derivative of the loss with respect to the weights of the last layer of neurons. Using the notation from earlier, this is $$\frac{\partial C}{\partial w^{L}}$$ where $$C$$ is the loss of the function, and L is the total number of the layers in the network.
+Before one can use backpropagation, the gradient must be found. An input from the dataset is fed into the network. Then the output of the network is compared to the corresponding expected output using a loss function like the squared error.
 
-This is where backpropagation comes in. Remember the [chain rule](https://en.wikipedia.org/wiki/Chain_rule) from calculus? A brief reminder: If you multiply two derivatives such that terms cancel out, you get another valid derivative. For example, $$\frac{\ \partial b}{\partial a} \cdot \frac{\partial c}{\partial b} = \frac{\partial c}{\partial a}$$. This can be applied to the neural network too. If you can find $$\frac{\partial w^{L}}{\partial w^{L-1}}$$, you can use the chain rule to easily find $$\frac{\partial C}{\partial w^{L-1}}$$. You repeat this process for each layer until it has gone through the whole network. Then you have the gradient for the entire network, which describes how the loss changes for any particular weight. The weights can then be updated by subtracting a small multiple of the gradient from the weights. This small multiple is the gradient multiplied by the [learning rate](https://developers.google.com/machine-learning/crash-course/reducing-loss/learning-rate), which is often set to decrease over training time to allow the network to settle into a [local optimum](https://en.wikipedia.org/wiki/Local_optimum).
+Once the loss is computed we can find the derivative of the loss with respect to the weights of the last layer of neurons. Using the notation from earlier, this is $$\frac{\partial C}{\partial w^{L}}$$ where $$C$$ is the loss of the function, and L is the total number of the layers in the network.
+
+This is where backpropagation begins. Remember the [chain rule](https://en.wikipedia.org/wiki/Chain_rule) from calculus? A brief reminder: If you multiply two derivatives such that terms cancel out, you get another valid derivative. For example, $$\frac{\ \partial b}{\partial a} \cdot \frac{\partial c}{\partial b} = \frac{\partial c}{\partial a}$$. This can be applied to the neural network too. If you can find $$\frac{\partial w^{L}}{\partial w^{L-1}}$$, you can use the chain rule to easily also find $$\frac{\partial C}{\partial w^{L-1}} = \frac{\partial C}{\partial w^{L}} \cdot \frac{\partial w^{L}}{\partial w^{L-1}}$$.
+
+You repeat this process for each layer until it has gone through the whole network. Then you have the gradient for the entire network, which describes how the loss changes for any particular weight. The weights can then be updated by subtracting a small multiple of the gradient from the weights. This small multiple is the gradient multiplied by the [learning rate](https://developers.google.com/machine-learning/crash-course/reducing-loss/learning-rate), which is often set to decrease over training time to allow the network to settle into a [local optimum](https://en.wikipedia.org/wiki/Local_optimum).
 
 ## Next
 
