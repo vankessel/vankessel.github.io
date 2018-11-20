@@ -47,19 +47,21 @@ function applyBlur() {
 
 function generateBackground(seed) {
 
-  var w = $(document).width();
-  var h = $(document).height();
-  var seed = seed == null ? "" : seed;
+  let w = $(window).width();
+  let h = $(document).height();
 
-  var svg = Trianglify({
+  let pattern = Trianglify({
     width: w,
     height: h,
     cell_size: 192,
     variance: 0.75,
     stroke_width: 1.4,
-    seed: (new Date).toDateString() + document.title + seed //"Tue Mar 22 2016"
-  }).svg();
+    seed: seed || (new Date).toDateString() + document.title
+  });
 
+  // document.body.appendChild(pattern.canvas());
+
+  let svg = pattern.svg();
   svg.setAttribute("xmlns", "http://www.w3.org/2000/svg");
   svg.setAttribute("version", "1.1");
 
