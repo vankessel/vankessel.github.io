@@ -102,6 +102,19 @@ html {
 
 #post {
   padding: 1em 2em;
+  border-radius: 4px;
+  box-shadow: 4px 4px 16px 0px rgba(0,0,0,0.25);
+  figure {
+    padding: 1em;
+    margin: 1em;
+    background-color: rgba(255,255,255,0.4);
+  }
+  figcaption {
+    margin: 0.5em 1em -0.5em 1em;
+    line-height: 1em;
+    font-size: 1em;
+    text-align: center;
+  }
   img {
     width: 100%;
     margin: auto;
@@ -114,24 +127,15 @@ html {
     display: block;
     margin: auto;
   }
+  figure, img, video, iframe {
+    border-radius: 4px;
+    box-shadow: 4px 4px 16px 0px rgba(0,0,0,0.25);
+  }
 }
 
-.blur, figure, figure img, figure video, figure iframe {
-  border-radius: 4px;
-  box-shadow: 4px 4px 16px 0px rgba(0,0,0,0.25);
-}
-
-figure {
-  padding: 1em;
-  margin: 1em;
-  background-color: rgba(255,255,255,0.4);
-}
-
-figcaption {
-  margin: 0.5em 1em -0.5em 1em;
-  line-height: 1em;
-  font-size: 1em;
-  text-align: center;
+.glass {
+  background-color: rgba(255,255,255,0.25);
+  backdrop-filter: blur(16px);
 }
 
 #related > h3 {
