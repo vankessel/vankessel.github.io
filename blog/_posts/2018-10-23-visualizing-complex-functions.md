@@ -6,7 +6,7 @@ tags: math visualization
 
 # {{ page.title }}
 
-{% include video.html url="https://my.mixtape.moe/fsokdb.webm" attrs="controls loop autoplay" %}
+{% include video.html url="/assets/videos/visualizing-complex-functions/z^unitcircle.webm" attrs="controls loop autoplay" %}
 
 I don't want an explanation, [skip to the pretty pictures](#visualizations)!
 
