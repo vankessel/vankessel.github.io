@@ -6,13 +6,11 @@ tags: math visualization
 
 # {{ page.title }}
 
-{% include video.html url="/assets/videos/visualizing-complex-functions/z^unitcircle.webm" attrs="controls loop autoplay" %}
-
-I don't want an explanation, [skip to the pretty pictures](#visualizations)!
+{% include video.html url="/assets/videos/visualizing-complex-functions/z^unitcircle.webm" attrs="controls loop" %}
 
 ## Complex Numbers
 
-Don't let the name scare you, complex numbers are easier to understand than they sound. A complex number is actually comprised of two numbers: A real number and an imaginary number. The real number is the one everyone is used to, from negative infinity to infinity and everything in-between. The imaginary number is a bit less intuitive. You may have briefly encountered the concept in a math class. An imaginary number is a real number multiplied by $$i$$. This is a special symbol that is defined to be $$i^2 = -1$$. The reason this is important is because normally there is no solution to the square root of a negative number. With the imaginary numbers we can now find such a solution. And like all explanations of the imaginary numbers I am obliged to point out that they have been named poorly. They exist and are as useful as negative numbers, but you will find neither in the physical world.
+Don't let the name scare you, complex numbers are easier to understand than they sound. A complex number is actually comprised of two numbers: A real number and an imaginary number added together. A real number is the one everyone is used to, every value between negative infinity and infinity. An imaginary number is a little less intuitive. It is a real number multiplied by the square root of negative one, or $$i$$. $$i$$ is a special constant that is defined to be $$i^2 = -1$$. The reason this constant is important is because normally there is no solution to the square root or logarithm of a negative number. In fact, most functions have a natural extension to the complex domain, like $$\sin()$$. I am compelled to point out that they have been named poorly. Gauss' "_lateral number_" is a much better name. They exist and are as useful as negative numbers, but you will find neither in the physical world.
 
 ### Cartesian Coordinates
 
@@ -83,7 +81,7 @@ So, what does this look like? Here is the most basic example, the identity funct
 
 {% include image.html url="/assets/images/visualizing-complex-functions/z^2.png" desc="Square of z." %}
 
-{% include video.html url="https://my.mixtape.moe/ygvnaj.webm" %}
+{% include video.html url="/assets/videos/visualizing-complex-functions/z^2.webm" %}
 
 In the image, each hue is repeated twice and the density of the contours has doubled. The video is an interpolation between $$z$$ and $$f(z) = z^2$$. The points where the contours seem to converge I will refer to as poles. In this interpolation you can see a pole appear along the negative axis and merge into the original pole.
 
@@ -91,7 +89,7 @@ In the image, each hue is repeated twice and the density of the contours has dou
 
 {% include image.html url="/assets/images/visualizing-complex-functions/z^3.png" desc="Cube of z." %}
 
-{% include video.html url="https://my.mixtape.moe/ddggyf.webm" %}
+{% include video.html url="/assets/videos/visualizing-complex-functions/z^3.webm" %}
 
 Similarly to the square, this function triples the number of hues around the pole and triples the density of the contours. In the interpolation two additional poles are merged into the original for a total of three poles. Now what happens if we take negative powers?
 
@@ -99,15 +97,15 @@ Similarly to the square, this function triples the number of hues around the pol
 
 {% include image.html url="/assets/images/visualizing-complex-functions/z^-1.png" desc="Inverse of z." %}
 
-{% include video.html url="https://my.mixtape.moe/yxupca.webm" %}
+{% include video.html url="/assets/videos/visualizing-complex-functions/z^-1.webm" %}
 
-Here you can see what the inverse of the complex plane looks like. The hues are flipped along the horizontal axis and each circle is now halving instead of doubling because it's going from light to dark instead of dark to light. In the interpolation one can see two poles being ripped out of the original pole. Which follows the same pattern as the previous two.
+Here you can see what the inverse of the complex plane looks like. The hues are flipped along the horizontal axis and each circle is now halving instead of doubling because the lightness transition is reversed. In the interpolation one can see two poles being ripped out of the original pole. Which follows the same pattern as the previous two.
 
 ### Inverse Square
 
 {% include image.html url="/assets/images/visualizing-complex-functions/z^-2.png" desc="Inverted square of z" %}
 
-{% include video.html url="https://my.mixtape.moe/xsncug.webm" %}
+{% include video.html url="/assets/videos/visualizing-complex-functions/z^-2.webm" %}
 
 Again following the pattern, three poles are removed from the original. This forms an inverse with two of each hue and double the density of contours
 
@@ -115,15 +113,15 @@ Again following the pattern, three poles are removed from the original. This for
 
 {% include image.html url="/assets/images/visualizing-complex-functions/z^0.5.png" desc="Square root of z." %}
 
-{% include video.html url="https://my.mixtape.moe/qjejmn.webm" %}
+{% include video.html url="/assets/videos/visualizing-complex-functions/z^0.5.webm" %}
 
-This one is a little strange. Similar to the previous ones except no poles are visibly moving and there is a discontinuity along the negative x-axis called a branch cut. A branch cut means that the function surface gets too complicated to represent in two dimensions, so it is truncated along the negative x-axis for simplicity. But I assure you if you could see four dimensions this function would appear continuous.
+This one is a little strange. Similar to the previous ones except no poles are visibly moving and there is a discontinuity along the negative x-axis called a branch cut. A branch cut means that the function surface gets too complicated to represent in two dimensions, so it is truncated along the negative x-axis for simplicity. I assure you that if you could see four dimensions this function would appear continuous.
 
 ### Inverse Square Root
 
 {% include image.html url="/assets/images/visualizing-complex-functions/z^-0.5.png" desc="Inverted square root of z." %}
 
-{% include video.html url="https://my.mixtape.moe/qxvkax.webm" %}
+{% include video.html url="/assets/videos/visualizing-complex-functions/z^-0.5.webm" %}
 
 This one is similar to the last except that two poles are removed from the original at symmetric angles. This sheds some light on the previous function. I hypothesize that the previous interpolation also had moving poles, but they were hidden by the branch cut.
 
@@ -131,15 +129,15 @@ This one is similar to the last except that two poles are removed from the origi
 
 {% include image.html url="/assets/images/visualizing-complex-functions/z^i.png" desc="z to the power of i." %}
 
-{% include video.html url="https://my.mixtape.moe/nknloj.webm" %}
+{% include video.html url="/assets/videos/visualizing-complex-functions/z^i.webm" %}
 
-Now things are beginning to get funky. Taking the plane to the power of $$i$$ seems to invert it in a different sense. The values now halve with angle, and are rotated counter-clockwise with magnitude. The interpolation shows two poles being removed in an asymmetric spiral fashion. I have slightly adjusted the contours to show powers of $$e^{\frac{2\pi}{6}}\approx 2.85$$ instead of $$2$$, this causes the contours in the transformation to cleanly split the plane into $$6$$ segments.
+Now things are beginning to get funky. Taking the plane to the power of $$i$$ seems to invert it in a different sense. The values now halve with angle, and are rotated counter-clockwise with magnitude. The interpolation shows two poles being removed in an asymmetric spiral fashion. I have slightly adjusted the contours to show powers of $$\mathrm{e}^{\frac{2\pi}{6}}\approx 2.85$$ instead of $$2$$, this causes the contours in the transformation to cleanly split the plane into $$6$$ segments.
 
 ### Power of -i
 
 {% include image.html url="/assets/images/visualizing-complex-functions/z^-i.png" desc="z to the power of -i." %}
 
-{% include video.html url="https://my.mixtape.moe/iffeur.webm" %}
+{% include video.html url="/assets/videos/visualizing-complex-functions/z^-i.webm" %}
 
 Similar to the last one but values are now doubled with angle, and are rotated clockwise with magnitude. It is interesting that all the power interpolations involving merging or splitting poles in varying directions. I wonder what the relationship is.
 
@@ -147,7 +145,7 @@ Similar to the last one but values are now doubled with angle, and are rotated c
 
 {% include image.html url="/assets/images/visualizing-complex-functions/sin(z).png" desc="Sine of z." %}
 
-{% include video.html url="https://my.mixtape.moe/cgivxg.webm" %}
+{% include video.html url="/assets/videos/visualizing-complex-functions/sin(z).webm" %}
 
 This is beautiful and one of my favourites. Poles merge from the top and bottom, only to immediately split again forming a colourful symmetric wave. Cosine is similar but shifted horizontally.
 
@@ -155,15 +153,15 @@ This is beautiful and one of my favourites. Poles merge from the top and bottom,
 
 {% include image.html url="/assets/images/visualizing-complex-functions/sinh(z).png" desc="Hyperbolic sine of z." %}
 
-{% include video.html url="https://my.mixtape.moe/hcljmx.webm" %}
+{% include video.html url="/assets/videos/visualizing-complex-functions/sinh(z).webm" %}
 
-I have never really understood the relationship between the hyperbolic trigonometric functions and the regular ones, but this makes it more clear. It is similar to sine except for being periodic along the imaginary axis instead of the real axis. And the hues emerging from each pole bend to be horizontal instead of vertical.
+Sine's relationship to its hyperbolic counterpart is clear in these last two plots.
 
 ### Arcsine
 
 {% include image.html url="/assets/images/visualizing-complex-functions/asin(z).png" desc="Arcsine of z." %}
 
-{% include video.html url="https://my.mixtape.moe/zscfua.webm" %}
+{% include video.html url="/assets/videos/visualizing-complex-functions/asin(z).webm" %}
 
 Doesn't seem very interesting, but I'm curious to see what is going on beyond the branch cut.
 
@@ -171,7 +169,7 @@ Doesn't seem very interesting, but I'm curious to see what is going on beyond th
 
 {% include image.html url="/assets/images/visualizing-complex-functions/tan(z).png" desc="Tangent of z." %}
 
-{% include video.html url="https://my.mixtape.moe/focvxr.webm" %}
+{% include video.html url="/assets/videos/visualizing-complex-functions/tan(z).webm" %}
 
 A sequence of alternating regular and inverse poles appear along the horizontal. These are analogous to the zeros and asymptotes of the real tangent function.
 
@@ -179,7 +177,7 @@ A sequence of alternating regular and inverse poles appear along the horizontal.
 
 {% include image.html url="/assets/images/visualizing-complex-functions/sin(z^-1).png" desc="Sine of the inverse of z." %}
 
-{% include video.html url="https://my.mixtape.moe/tjlvoy.webm" %}
+{% include video.html url="/assets/videos/visualizing-complex-functions/sin(z^-1).webm" %}
 
 Recall how the limit of $$\sin(\frac{1}{x})$$ is undefined as $$x$$ approaches $$0$$? That is because sine begins oscillating wildly, not settling on any value. Now extend that concept to the complex values and you get this trippy singularity.
 
@@ -187,7 +185,7 @@ Recall how the limit of $$\sin(\frac{1}{x})$$ is undefined as $$x$$ approaches $
 
 {% include image.html url="/assets/images/visualizing-complex-functions/tan(z^-1).png" desc="Tangent of the inverse of z." %}
 
-{% include video.html url="https://my.mixtape.moe/cwkfej.webm" %}
+{% include video.html url="/assets/videos/visualizing-complex-functions/tan(z^-1).webm" %}
 
 I'm not even going to attempt to explain this nonsense.
 
@@ -195,32 +193,32 @@ I'm not even going to attempt to explain this nonsense.
 
 {% include image.html url="/assets/images/visualizing-complex-functions/exp(z).png" desc="Euler's number to the power of z." %}
 
-{% include video.html url="https://my.mixtape.moe/scrtsz.webm" %}
+{% include video.html url="/assets/videos/visualizing-complex-functions/exp(z).webm" %}
 
-Poles pull in from right to left, flattening the contours into a clean horizontal sequence. The real component determines the magnitude and imaginary component determines the angle.
+Poles pull in from right to left, flattening the contours into a clean horizontal sequence. The new magnitude is the exponential of the real component and the new angle is the imaginary component in radians.
 
 ### Logarithm
 
 {% include image.html url="/assets/images/visualizing-complex-functions/ln(z).png" desc="Natural logarithm of z." %}
 
-{% include video.html url="https://my.mixtape.moe/xzkcnm.webm" %}
+{% include video.html url="/assets/videos/visualizing-complex-functions/ln(z).webm" %}
 
 Hard to see what's going on here but this interpolation is unfolding into an [infinite spiral](
-https://en.wikipedia.org/wiki/Complex_logarithm#/media/File:Riemann_surface_log.svg) beyond the branch cut.
+https://en.wikipedia.org/wiki/Complex_logarithm#/media/File:Riemann_surface_log.svg) beyond the branch cut. This means there are infinite solutions to any logarithm in the complex domain. The value that is returned is decided by where the branch cut is placed. The branch cut is usually placed such that the logarithm returns values greater than $$-\pi$$ and less than or equal to $$\pi$$.
 
 ### Sigmoid
 
 {% include image.html url="/assets/images/visualizing-complex-functions/(1+e^-z)^-1.png" desc="Sigmoid of z." %}
 
-{% include video.html url="https://my.mixtape.moe/wopaml.webm" %}
+{% include video.html url="/assets/videos/visualizing-complex-functions/(1+e^-z)^-1.webm" %}
 
-The sigmoid is a function often used in neural networks because it restricts the output of reals between $$0$$ and $$1$$. Opposing poles appear out of thin air along the imaginary axis and pull back, leaving a sequence of vertical contours on the negative real side of the function in similar manner to $$e^z$$.
+The sigmoid is a function often used in neural networks because it restricts the output of reals between $$0$$ and $$1$$. Opposing poles appear out of thin air along the imaginary axis and pull back, leaving a sequence of vertical contours on the negative real side of the function in similar manner to $$\mathrm{e}^z$$.
 
 ### Softplus
 
-{% include image.html url="/assets/images/visualizing-complex-functions/ln(e^z + 1).png" desc="Softplus of z." %}
+{% include image.html url="/assets/images/visualizing-complex-functions/ln(e^z+1).png" desc="Softplus of z." %}
 
-{% include video.html url="https://my.mixtape.moe/pxvevq.webm" %}
+{% include video.html url="/assets/videos/visualizing-complex-functions/ln(e^z+1).webm" %}
 
 Softplus is also found as an activation function of neural networks. Two poles seem to pull out from under the main branch cut to the right of the origin, which barely changes at all.
 
@@ -228,23 +226,37 @@ Softplus is also found as an activation function of neural networks. Two poles s
 
 {% include image.html url="/assets/images/visualizing-complex-functions/gamma(z).png" desc="Gamma function of z." %}
 
-{% include video.html url="https://my.mixtape.moe/bowgpm.webm" %}
+{% include video.html url="/assets/videos/visualizing-complex-functions/gamma(z).webm" %}
 
-The gamma function is a continuous version of the factorial. More specifically, $$\Gamma(n) = (n - 1)!$$ where $$n$$ is a positive integer. This function is another favourite of mine, it looks quite alien.
+The [gamma function](https://en.wikipedia.org/wiki/Gamma_function) is a continuous version of the factorial. More specifically, $$\Gamma(n) = (n - 1)!$$. This function is another favourite of mine, it looks quite exotic.
 
 ### Expoid
 
 {% include image.html url="/assets/images/visualizing-complex-functions/e^(-e^-z).png" desc="Expoid of z." %}
 
-{% include video.html url="https://my.mixtape.moe/tlhjvd.webm" %}
+{% include video.html url="/assets/videos/visualizing-complex-functions/e^(-e^-z).webm" %}
 
-This is a function I made up while playing around and ended up being really interesting. I dub thee the expoid function. The black areas are where the calculations exceed the limits of floating point arithmetic on my computer, that area would be otherwise filled in with ever more compact fluctuations.
+This is a function I made up while playing around and ended up being interesting. I dub thee the expoid function. The black areas are where the calculations exceed the limits of floating point arithmetic on my computer, that area would be otherwise filled in with ever more compact fluctuations.
 
-It seems as though up until the very last frame pillars of stability and instability form as one travels in the negative real direction. Each pillar appears to approach a width of $$\pi$$. This phenomena forms because on the reals the outer exponential of $$e^{-e^{-z}}$$ will only ever take in a negative input, thus restraining the output between $$0$$ and $$1$$. If you stray too far into the imaginary axis the sign of the inner exponential flips. This causes the inner exponential to become positive, which removes the restraint and allows the nested exponential to explode. The sign flips again every $$\pi$$ units in the imaginary direction, causing the periodic pillars.
+It seems as though up until the very last frame pillars of stability and instability form on the negative real side of the plot. Each pillar appears to approach a width of $$\pi$$. This phenomena forms because for any real $$z$$ the outer exponential of $$\mathrm{e}^{-\mathrm{e}^{-z}}$$ will take in a negative input, thus restraining the output between $$0$$ and $$1$$. If you stray too far into the imaginary axis the sign of the inner exponential flips. When the inner exponential becomes positive the whole thing explodes because a nested exponential grows very fast. The sign flips again every $$\pi$$ units in the imaginary direction, causing the periodic pillars.
+
+### Soft Exponential
+
+{% include video.html url="/assets/videos/visualizing-complex-functions/soft-exp.webm" %}
+
+The [soft exponential](https://arxiv.org/abs/1602.01321) is a rather rare activation function found in machine learning. It is a parameterized function $$f(a, z)$$ where $$a$$ is a parameter that interpolates the function between acting as the natural logarithm or the natural exponential. The important values of $$a$$ are:
+
+$$
+\begin{split}
+f(-1, z) &= ln(z) \\
+f(0, z) &= z \\
+f(1, z) &= \mathrm{e}^z \\
+\end{split}
+$$
 
 ## Conclusion
 
-Math is beautiful and visualizations can help the unintuitive become a little more intuitive. I hope this sparks someone's interest in learning more about complex number systems. There are technically [infinitely many](https://en.wikipedia.org/wiki/Cayley%E2%80%93Dickson_construction), but they quickly become complicated (no pun intended) so only the first few are often discussed.
+Math is beautiful and visualizations can help foreign concepts become a little more intuitive. I hope this sparks someone's interest in learning more about complex number systems. There are technically [infinitely many](https://en.wikipedia.org/wiki/Cayley%E2%80%93Dickson_construction), but they quickly become complicated (no pun intended) so only the first few are often discussed.
 
 What's really interesting about them is you lose something each time you go to a higher algebra.
 * [Complex numbers](https://en.wikipedia.org/wiki/Complex_number) lose [ordering](https://en.wikipedia.org/wiki/Ordered_field).
