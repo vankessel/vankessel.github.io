@@ -6,21 +6,21 @@ tags: math visualization
 
 # {{ page.title }}
 
-{% include video.html url="/assets/videos/visualizing-complex-functions/z^unitcircle.webm" attrs="controls loop" %}
+{% include video.html url="/assets/videos/visualizing-complex-functions/z^unitcircle.webm" %}
 
 ## Complex Numbers
 
-Don't let the name scare you, complex numbers are easier to understand than they sound. A complex number is actually comprised of two numbers: A real number and an imaginary number added together. A real number is the one everyone is used to, every value between negative infinity and infinity. An imaginary number is a little less intuitive. It is a real number multiplied by the square root of negative one, or $$i$$. $$i$$ is a special constant that is defined to be $$i^2 = -1$$. The reason this constant is important is because normally there is no solution to the square root or logarithm of a negative number. In fact, most functions have a natural extension to the complex domain, like $$\sin()$$. I am compelled to point out that they have been named poorly. Gauss' "_lateral number_" is a much better name. They exist and are as useful as negative numbers, but you will find neither in the physical world.
+Don't let the name scare you, complex numbers are easier to understand than they sound. A complex number is actually comprised of two numbers: A real number and an imaginary number. A real number is the one everyone is used to, every value between negative infinity and infinity. An imaginary number is a little less intuitive. It is a real number multiplied by the square root of negative one, or $$i$$. $$i$$ is a special constant that is defined to be $$i^2 = -1$$. The reason this constant is important is because normally there is no solution to the square root or logarithm of a negative number. In fact, most functions have a natural extension to the complex domain, like $$\sin()$$. I am compelled to point out that they have been named poorly. Gauss' _lateral number_ is a much better name. They exist and are as useful as negative numbers, but you will find neither in the physical world.
 
 ### Cartesian Coordinates
 
-You can add the real and imaginary numbers together to get what is called a complex number. This is a bit unusual for the concept of a number, because now you have two dimensions of information instead of just one. Like how one imagines the real numbers as a point on a number line, one has to imagine a complex number as a point on a number plane. The x-axis of the number plane represents the real component, and the y-axis represents the imaginary component. This is the [Cartesian coordinate system](https://en.wikipedia.org/wiki/Cartesian_coordinate_system) you are used to.
+You add the real and imaginary numbers together to get what is called a complex number. This is a bit unusual for the concept of a number, because now you have two dimensions of information instead of just one. Like how one imagines the real numbers as a point on a number line, one has to imagine a complex number as a point on a number plane. The x-axis of the number plane represents the real component, and the y-axis represents the imaginary component. This is a [Cartesian coordinate system](https://en.wikipedia.org/wiki/Cartesian_coordinate_system).
 
 $$z = x + yi$$
 
 ### Polar Coordinates
 
-While the axes directly correspond to each component, it is actually often times easier to think of a complex number as a magnitude ($$r$$) and angle ($$\theta$$) from the origin. This way of representing a point on the plane is called the [polar coordinate system](https://en.wikipedia.org/wiki/Polar_coordinate_system). The reason it is easier is because when you multiply two complex numbers, the result's magnitude is the product of the two original magnitudes, and the result's angle is the sum of the the two original angles. $$i$$ has a magnitude of $$1$$ and an angle of $$\frac{\pi}{2}$$ [radians](https://en.wikipedia.org/wiki/Radian) (or $$90$$ degrees), so multiplying by $$i$$ can be though of as rotating a point on the plane by $$\frac{\pi}{2}$$ radians counter-clockwise.
+While the axes directly correspond to each component, it is actually often times easier to think of a complex number as a magnitude ($$r$$) and angle ($$\theta$$) from the origin. This way of representing a point on the plane is called the [polar coordinate system](https://en.wikipedia.org/wiki/Polar_coordinate_system). The reason it is easier is because when you multiply two complex numbers, the result's magnitude is the product of the two original magnitudes, and the result's angle is the sum of the the two original angles. $$i$$ has a magnitude of $$1$$ and an angle of $$\frac{\pi}{2}$$ [radians](https://en.wikipedia.org/wiki/Radian) (or $$90$$ degrees) counterclockwise from the positive x-axis, so multiplying by $$i$$ can be thought of as rotating a point on the plane by $$\frac{\pi}{2}$$ radians counterclockwise.
 
 $$z = r\mathrm{e}^{\theta i}$$
 
@@ -28,7 +28,7 @@ The reason why this equation works is outside the scope of this explanation, but
 
 ## Complex functions
 
-A complex function is a function that acts on complex numbers. The function $$f(x) = x^2$$ takes a real number, and returns another real number. Similarly, $$f(z) = z^2$$ takes a complex number, and returns a complex number. There is no special reason $$z$$ is used as the variable, it is just the typical one chosen for representing a complex number like how $$x$$ is the standard for representing a real number. Let's see how squaring a complex number affects its real and imaginary components.
+A complex function is a function that acts on complex numbers. The function $$f(z) = z^2$$ can be extended to the complex domain to take in a complex number and return a complex number. The variable $z$ is commonly used to represent a complex number, like how $x$ is commonly used to represent a real number. Let's see how squaring a complex number affects its real and imaginary components.
 
 In Cartesian coordinates:
 
@@ -61,13 +61,13 @@ Graphing a complex function is surprisingly difficult. A real function takes one
 
 One way could be to plot a [vector field](https://en.wikipedia.org/wiki/Vector_field). A vector field is a plot of a bunch of little arrows. Each arrow represents how the point they are on top of gets transformed by the function. This may work but it isn't very nice as each arrow requires space to draw, which is space that could have been used to draw smaller arrows.
 
-Luckily we have a trick up our sleeve. We can solve this problem by using the polar coordinates from before. How does this help? There are still a total for four dimensions to plot. The important distinction about polar coordinates versus Cartesian coordinates is the angle. Angles are different from distance in an important way. They are periodic. A full rotation is the same as no rotation at all. Colour is also periodic. You can cycle through all the hues: red, yellow, green, cyan, blue, magenta, and back to red.
+Luckily we have a trick up our sleeve. We can solve this problem by using the polar coordinates from before. How does this help? There are still a total for four dimensions to plot. The important distinction about polar coordinates versus Cartesian coordinates is the angle. Angles are different from magnitudes because they are periodic. A full rotation is the same as no rotation at all. Colour is also periodic. You can cycle through all the hues: red, yellow, green, cyan, blue, magenta, and back to red.
 
-We have a way to represent the angle, what about the magnitude? For that we can use darkness and lightness. The less the magnitude the darker it is, the greater the magnitude the lighter it is. There is a glaring problem with this though. Magnitude can be from zero to infinity, and lightness can go from 0% to 100%. To account for this we can break this magnitude up into groups that are each coloured from dark to light, and double them in size each time. For example, one group will be from magnitudes 1 to 2. With 1 being dark, transitioning to 2 being light. Then the next group is from 2 to 4, then 4 to 8, then 8 to 16, and so on. This is not a perfect solution, but it is a good one because doubling is one of the fastest ways to approach infinity.
+We have a way to represent the angle, what about the magnitude? For that we can use lightness. The less the magnitude the darker it is, the greater the magnitude the lighter it is. There is a glaring problem with this though. Magnitude can be from zero to infinity, and lightness can go from 0% to 100%. To account for this we can break this magnitude up into groups that are each coloured from dark to light, and double them in size each time. For example, one gradient from dark to light will be from magnitudes $$1$$ to $$2$$. Then the next gradient is from 2 to 4, then 4 to 8, and so on. This is not a perfect solution, but it is a good one because doubling is one of the fastest ways to approach infinity.
 
 ### Summary
 
-Each pixel to be graphed represents a point on the complex plane ($$z$$). This complex number is fed through a function that transforms it into an output ($$f(z) = w$$). This output is represented in polar coordinates ($$w = r\mathrm{e}^{\theta i}$$). The pixel's hue is mapped to the angle ($$\theta$$), and the pixel's lightness is mapped to the magnitude ($$r$$).
+Each pixel to be plotted represents a point on the complex plane ($$z$$). This complex number is fed through a function that transforms it ($$f(z) = w$$). This output is represented in polar coordinates ($$w = r\mathrm{e}^{\theta i}$$). The pixel's hue is mapped to the new angle ($$\theta$$), and the pixel's lightness is mapped to the new magnitude ($$r$$).
 
 ## Visualizations
 
@@ -83,7 +83,7 @@ So, what does this look like? Here is the most basic example, the identity funct
 
 {% include video.html url="/assets/videos/visualizing-complex-functions/z^2.webm" %}
 
-In the image, each hue is repeated twice and the density of the contours has doubled. The video is an interpolation between $$z$$ and $$f(z) = z^2$$. The points where the contours seem to converge I will refer to as poles. In this interpolation you can see a pole appear along the negative axis and merge into the original pole.
+In the image, each hue is repeated twice and the density of the contours has doubled. The video is an interpolation between $$z$$ and $$f(z) = z^2$$. The points where the contours seem to converge I will refer to as poles. Poles are where the function goes to $$0$$ or $$\pm\infty$$. In this interpolation you can see a pole appear along the negative axis and merge into the original pole.
 
 ### Cube
 
@@ -99,7 +99,7 @@ Similarly to the square, this function triples the number of hues around the pol
 
 {% include video.html url="/assets/videos/visualizing-complex-functions/z^-1.webm" %}
 
-Here you can see what the inverse of the complex plane looks like. The hues are flipped along the horizontal axis and each circle is now halving instead of doubling because the lightness transition is reversed. In the interpolation one can see two poles being ripped out of the original pole. Which follows the same pattern as the previous two.
+Here you can see what the inverse of the complex plane looks like. The hues are flipped along the horizontal axis and each contour is now halving instead of doubling because the lightness gradient is reversed. In the interpolation one can see two poles being ripped out of the original pole. Which follows the same pattern as the previous two.
 
 ### Inverse Square
 
@@ -115,7 +115,7 @@ Again following the pattern, three poles are removed from the original. This for
 
 {% include video.html url="/assets/videos/visualizing-complex-functions/z^0.5.webm" %}
 
-This one is a little strange. Similar to the previous ones except no poles are visibly moving and there is a discontinuity along the negative x-axis called a branch cut. A branch cut means that the function surface gets too complicated to represent in two dimensions, so it is truncated along the negative x-axis for simplicity. I assure you that if you could see four dimensions this function would appear continuous.
+This one is a little strange. Similar to the previous ones except no poles are visibly moving and there is a discontinuity along the negative x-axis called a [branch cut](https://en.wikipedia.org/wiki/Branch_point#Branch_cuts). A branch cut means that the function surface gets too complicated to represent in two dimensions, so it is truncated along the negative x-axis for simplicity. I assure you that if you could see four dimensions this function would appear continuous.
 
 ### Inverse Square Root
 
@@ -123,7 +123,7 @@ This one is a little strange. Similar to the previous ones except no poles are v
 
 {% include video.html url="/assets/videos/visualizing-complex-functions/z^-0.5.webm" %}
 
-This one is similar to the last except that two poles are removed from the original at symmetric angles. This sheds some light on the previous function. I hypothesize that the previous interpolation also had moving poles, but they were hidden by the branch cut.
+This one is similar to the last except that two poles are removed from the original at symmetric angles. This sheds some light on the previous function. I would guess that the previous interpolation also had moving poles, but they were hidden behind the branch cut.
 
 ### Power of i
 
@@ -139,7 +139,7 @@ Now things are beginning to get funky. Taking the plane to the power of $$i$$ se
 
 {% include video.html url="/assets/videos/visualizing-complex-functions/z^-i.webm" %}
 
-Similar to the last one but values are now doubled with angle, and are rotated clockwise with magnitude. It is interesting that all the power interpolations involving merging or splitting poles in varying directions. I wonder what the relationship is.
+Similar to the last one but values are now doubled with angle, and are rotated clockwise with magnitude. I find it interesting that all the power interpolations involving merging or splitting poles in varying directions.
 
 ### Sine
 
@@ -155,7 +155,7 @@ This is beautiful and one of my favourites. Poles merge from the top and bottom,
 
 {% include video.html url="/assets/videos/visualizing-complex-functions/sinh(z).webm" %}
 
-Sine's relationship to its hyperbolic counterpart is clear in these last two plots.
+Sine's relationship to its hyperbolic counterpart becomes clear with these last two plots.
 
 ### Arcsine
 
@@ -204,7 +204,7 @@ Poles pull in from right to left, flattening the contours into a clean horizonta
 {% include video.html url="/assets/videos/visualizing-complex-functions/ln(z).webm" %}
 
 Hard to see what's going on here but this interpolation is unfolding into an [infinite spiral](
-https://en.wikipedia.org/wiki/Complex_logarithm#/media/File:Riemann_surface_log.svg) beyond the branch cut. This means there are infinite solutions to any logarithm in the complex domain. The value that is returned is decided by where the branch cut is placed. The branch cut is usually placed such that the logarithm returns values greater than $$-\pi$$ and less than or equal to $$\pi$$.
+https://en.wikipedia.org/wiki/Complex_logarithm#/media/File:Riemann_surface_log.svg) beyond the branch cut. This means there are infinite solutions to any logarithm in the complex domain. The value that is returned is decided by where the branch cut is placed. The branch cut is usually placed such that the logarithm returns values with an angle greater than $$-\pi$$ and less than or equal to $$\pi$$.
 
 ### Sigmoid
 
@@ -256,7 +256,7 @@ $$
 
 ## Conclusion
 
-Math is beautiful and visualizations can help foreign concepts become a little more intuitive. I hope this sparks someone's interest in learning more about complex number systems. There are technically [infinitely many](https://en.wikipedia.org/wiki/Cayley%E2%80%93Dickson_construction), but they quickly become complicated (no pun intended) so only the first few are often discussed.
+Math is beautiful and visualizations can help foreign concepts become a little more intuitive. I hope this sparks someone's interest in learning more about complex number systems. There are [infinitely many](https://en.wikipedia.org/wiki/Cayley%E2%80%93Dickson_construction), but they quickly become complicated so only the first few are often discussed.
 
 What's really interesting about them is you lose something each time you go to a higher algebra.
 * [Complex numbers](https://en.wikipedia.org/wiki/Complex_number) lose [ordering](https://en.wikipedia.org/wiki/Ordered_field).
