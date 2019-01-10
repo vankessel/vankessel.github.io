@@ -14,13 +14,13 @@ Don't let the name scare you, complex numbers are easier to understand than they
 
 ### Cartesian Coordinates
 
-You add the real and imaginary numbers together to get what is called a complex number. This is a bit unusual for the concept of a number, because now you have two dimensions of information instead of just one. Like how one imagines the real numbers as a point on a number line, one has to imagine a complex number as a point on a number plane. The x-axis of the number plane represents the real component, and the y-axis represents the imaginary component. This is a [Cartesian coordinate system](https://en.wikipedia.org/wiki/Cartesian_coordinate_system).
+You add the real and imaginary numbers together to get a complex number. This is a bit unusual for the concept of a number, because now you have two dimensions of information instead of just one. Like how one imagines the real numbers as a point on a number line, one has to imagine a complex number as a point on a number plane. The x-axis of the number plane represents the real component, and the y-axis represents the imaginary component. This is a [Cartesian coordinate system](https://en.wikipedia.org/wiki/Cartesian_coordinate_system).
 
 $$z = x + yi$$
 
 ### Polar Coordinates
 
-While the axes directly correspond to each component, it is actually often times easier to think of a complex number as a magnitude ($$r$$) and angle ($$\theta$$) from the origin. This way of representing a point on the plane is called the [polar coordinate system](https://en.wikipedia.org/wiki/Polar_coordinate_system). The reason it is easier is because when you multiply two complex numbers, the result's magnitude is the product of the two original magnitudes, and the result's angle is the sum of the the two original angles. $$i$$ has a magnitude of $$1$$ and an angle of $$\frac{\pi}{2}$$ [radians](https://en.wikipedia.org/wiki/Radian) (or $$90$$ degrees) counterclockwise from the positive x-axis, so multiplying by $$i$$ can be thought of as rotating a point on the plane by $$\frac{\pi}{2}$$ radians counterclockwise.
+While the axes directly correspond to each component, it is actually often times easier to think of a complex number as a magnitude ($$r$$) and angle ($$\theta$$) from the origin. This way of representing a point on the plane is called a [polar coordinate system](https://en.wikipedia.org/wiki/Polar_coordinate_system). The reason it is easier is because when you multiply two complex numbers, the result's magnitude is the product of the two original magnitudes, and the result's angle is the sum of the the two original angles. $$i$$ has a magnitude of $$1$$ and an angle of $$\frac{\pi}{2}$$ [radians](https://en.wikipedia.org/wiki/Radian) (or $$90$$ degrees) counterclockwise from the positive x-axis, so multiplying by $$i$$ can be thought of as rotating a point on the plane by $$\frac{\pi}{2}$$ radians counterclockwise.
 
 $$z = r\mathrm{e}^{\theta i}$$
 
@@ -28,7 +28,7 @@ The reason why this equation works is outside the scope of this explanation, but
 
 ## Complex functions
 
-A complex function is a function that acts on complex numbers. The function $$f(z) = z^2$$ can be extended to the complex domain to take in a complex number and return a complex number. The variable $z$ is commonly used to represent a complex number, like how $x$ is commonly used to represent a real number. Let's see how squaring a complex number affects its real and imaginary components.
+A complex function is a function that acts on complex numbers. The function $$f(z) = z^2$$ can be extended to the complex domain to take in a complex number and return a complex number. The variable $$z$$ is commonly used to represent a complex number, like how $$x$$ is commonly used to represent a real number. Let's see how squaring a complex number affects its real and imaginary components.
 
 In Cartesian coordinates:
 
