@@ -18,14 +18,19 @@ function main() {
   });
 }
 
-function generateBackground(seed = null) {33554432
+function generateBackground(seed = null) {
+  if (!window.matchMedia("(orientation: landscape)").matches) {
+    $("html").css("background", "darkslategray");
+    return;
+  }
+
   let w = $(document).width();
   let h = $(document).height();
   let cell_size = Math.min(Math.max(192, w*h*0.000005722), 384);
 
   console.log("Generating background: " + w + 'x' + h);
   console.log("Cell size: " + cell_size);
-  
+
   let pattern = Trianglify({
     width: w,
     height: h,
@@ -39,5 +44,5 @@ function generateBackground(seed = null) {33554432
   svg.setAttribute("xmlns", "http://www.w3.org/2000/svg");
   svg.setAttribute("version", "1.1");
 
-  $("html").css( "background", "url('data:image/svg+xml;base64," + window.btoa(svg.outerHTML) + "')" );
+  $("html").css("background", "url('data:image/svg+xml;base64," + window.btoa(svg.outerHTML) + "')" );
 }

@@ -46,7 +46,7 @@
 
 html {
   font-family: 'Ubuntu', sans-serif;
-  background-color: gray;
+  background-color: darkslategray;
 }
 
 #center-container {
@@ -55,10 +55,10 @@ html {
     display: table;
     margin: auto;
   }
-  @media screen and (orientation: landscape) {
+  @media (orientation: landscape) {
     max-width: 60%;
   }
-  @media not screen and (orientation: landscape) {
+  @media (orientation: portrait) {
     max-width: 90%;
   }
 }
