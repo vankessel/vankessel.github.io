@@ -63,7 +63,7 @@ One way could be to plot a [vector field](https://en.wikipedia.org/wiki/Vector_f
 
 Luckily we have a trick up our sleeve. We can solve this problem by using the polar coordinates from before. How does this help? There are still a total for four dimensions to plot. The important distinction about polar coordinates versus Cartesian coordinates is the angle. Angles are different from magnitudes because they are periodic. A full rotation is the same as no rotation at all. Colour is also periodic. You can cycle through all the hues: red, yellow, green, cyan, blue, magenta, and back to red.
 
-We have a way to represent the angle, what about the magnitude? For that we can use lightness. The less the magnitude the darker it is, the greater the magnitude the lighter it is. There is a glaring problem with this though. Magnitude can be from zero to infinity, and lightness can go from 0% to 100%. To account for this we can break this magnitude up into groups that are each coloured from dark to light, and double them in size each time. For example, one gradient from dark to light will be from magnitudes $$1$$ to $$2$$. Then the next gradient is from 2 to 4, then 4 to 8, and so on. This is not a perfect solution, but it is a good one because doubling is one of the fastest ways to approach infinity.
+We have a way to represent the angle, what about the magnitude? For that we can use lightness. The less the magnitude the darker it is, the greater the magnitude the lighter it is. There is a glaring problem with this though. Magnitude can be from zero to infinity, and lightness can go from 0% to 100%. To account for this we can break this magnitude up into groups that are each coloured from dark to light, and double them in size each time. For example, one gradient from dark to light will be from magnitudes 1 to 2. Then the next gradient is from 2 to 4, then 4 to 8, and so on. This is not a perfect solution, but it is a good one because doubling is one of the fastest ways to approach infinity.
 
 ### Summary
 
@@ -248,7 +248,7 @@ The [soft exponential](https://arxiv.org/abs/1602.01321) is a rather rare activa
 
 $$
 \begin{split}
-f(-1, z) &= ln(z) \\
+f(-1, z) &= \ln(z) \\
 f(0, z) &= z \\
 f(1, z) &= \mathrm{e}^z \\
 \end{split}
