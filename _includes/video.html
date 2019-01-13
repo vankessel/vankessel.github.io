@@ -1,1 +1,1 @@
-<figure class="image"><video src="{{ include.url }}" type="{{ include.type | default: 'video/webm' }}" alt="{{ include.desc }}" {{ include.attrs | default: 'controls loop'}}></video><figcaption>{{ include.desc }}</figcaption></figure>
+<figure class="image"><video src="{{ include.url }}" type="{{ include.type | default: 'video/webm' }}" alt="{{ include.desc }}" preload="{{ include.preload | default: 'none' }}" poster="{{ include.poster }}" {{ include.attrs | default: 'controls loop'}}></video><figcaption>{{ include.desc }}</figcaption></figure>

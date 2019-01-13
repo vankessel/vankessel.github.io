@@ -10,7 +10,14 @@ function main() {
 
   // Set lightboxes for images in #post
   $("#post img").each(function() {
-    $(this).attr("data-featherlight", $(this).attr("src"));
+    if($(this).attr("data-featherlight") !== '') {
+      return;
+    }
+    // Default to a scheme where if featherlight is not explicitly set
+    // use .png at same path for the high quality version of the image
+    let lq = $(this).attr("src");
+    let hq = lq.substr(0, lq.lastIndexOf(".")) + ".png"
+    $(this).attr("data-featherlight", hq);
   });
 
   $(window).resize(function() {
