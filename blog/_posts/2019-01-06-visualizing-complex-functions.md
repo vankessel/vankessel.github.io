@@ -6,7 +6,7 @@ tags: math visualization
 
 # {{ page.title }}
 
-{% include video.html url="/assets/videos/visualizing-complex-functions/z^unitcircle.webm" attrs="controls loop autoplay" %}
+{% include video.html url="/assets/videos/visualizing-complex-functions/z^unitcircle.webm" attrs="controls loop autoplay" poster="/assets/images/visualizing-complex-functions/z.jpg" %}
 
 ## Complex Numbers
 
