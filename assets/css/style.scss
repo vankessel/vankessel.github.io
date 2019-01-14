@@ -139,8 +139,18 @@ html {
 
 #comments {
   margin-top: 1em;
-  padding: 0em 2em 2em 2em;
+  padding: 2em;
   width: 100%;
+  h2 {
+    margin: 0;
+  }
+  h4 {
+    margin-top: 0;
+  }
+  h6 {
+    margin-bottom: 0;
+    text-align: center;
+  }
 }
 
 .thing {

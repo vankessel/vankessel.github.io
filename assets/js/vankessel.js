@@ -40,7 +40,7 @@ function insertComments(data) {
   if($('.rembeddit-content > div').is(':empty')) {
     comments.empty();
     comments.append(
-      $('<div style="padding-top: 2em"><h4>Comment on this post at <a href="https://www.reddit.com/' + reddit + '">reddit.com/' + reddit + '</a></h4></div>')
+      $('<h2>Comment on this post at <a href="https://www.reddit.com/' + reddit + '">reddit.com/' + reddit + '</a></h2>')
     );
   }
 
