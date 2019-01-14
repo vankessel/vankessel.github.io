@@ -9,7 +9,7 @@ layout: default
 {% if page.reddit %}
 <div id="comments" class="glass shape" data-reddit="{{ page.reddit }}">
   <div style="padding-top: 2em">
-    <h2>Could not load comments.</h2>
+    <h2>Could not load comments from <a href="https://www.reddit.com/{{ page.reddit }}">reddit.com/{{ page.reddit }}</a></h2>
     <h6 style="text-align: center">Disconnect, uMatrix, and NoScript are common extensions that can cause this issue.</h6>
   </div>
 </div>

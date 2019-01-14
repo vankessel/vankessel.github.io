@@ -26,19 +26,19 @@ Here are some example networks to give an idea of the kinds of problems neural n
 
 ### [A Neural Algorithm of Artistic Style](https://arxiv.org/abs/1508.06576)
 
-<figure><iframe src="https://player.vimeo.com/video/139123754" width="560" height="315" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><figcaption>An example of neural networks applying artistic style to other images.</figcaption></figure>
+<figure style="position:relative;padding-top:56.25%;"><iframe src="https://player.vimeo.com/video/139123754" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><figcaption>An example of neural networks applying artistic style to other images.</figcaption></figure>
 
 ### [Progressive Growing of GANs for Improved Quality, Stability, and Variation](http://research.nvidia.com/publication/2017-10_Progressive-Growing-of)
 
-<figure><iframe width="560" height="315" src="https://www.youtube.com/embed/36lE9tV9vm0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe><figcaption>This network has learned how human faces look, and the video is an interpolation of the network's representation.</figcaption></figure>
+<figure style="position:relative;padding-top:56.25%;"><iframe src="https://www.youtube.com/embed/36lE9tV9vm0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe><figcaption>This network has learned how human faces look, and the video is an interpolation of the network's representation.</figcaption></figure>
 
 ### [Unsupervised Image-to-Image Translation Networks](https://arxiv.org/abs/1703.00848)
 
-<figure><iframe width="560" height="315" src="https://www.youtube.com/embed/nlyXoX2aIek" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe><figcaption>Images can be transformed into similar images using this network.</figcaption></figure>
+<figure style="position:relative;padding-top:56.25%;"><iframe src="https://www.youtube.com/embed/nlyXoX2aIek" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe><figcaption>Images can be transformed into similar images using this network.</figcaption></figure>
 
 ### [Phase-Functioned Neural Networks for Character Control](http://theorangeduck.com/media/uploads/other_stuff/phasefunction.pdf)
 
-<figure><iframe width="560" height="315" src="https://www.youtube.com/embed/Ul0Gilv5wvY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe><figcaption>This network is able to animate a player model based on the current movement and terrain.</figcaption></figure>
+<figure style="position:relative;padding-top:56.25%;"><iframe src="https://www.youtube.com/embed/Ul0Gilv5wvY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe><figcaption>This network is able to animate a player model based on the current movement and terrain.</figcaption></figure>
 
 ## Structure of a Neural Network
 

@@ -55,6 +55,7 @@ html {
     display: table;
     margin: auto;
     box-sizing: border-box;
+    width: 100%;
   }
   @media (orientation: landscape) {
     max-width: 60%;
@@ -67,6 +68,7 @@ html {
 #name-container {
   $name: "Kevin\AVan Kessel";
   $size: 5em;
+  width: auto;
   #name {
     position: relative;
     text-align: left;
@@ -123,8 +125,13 @@ html {
     width: 100%;
   }
   iframe {
+    position: absolute;
     display: block;
     margin: auto;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
   }
   figure, img, video, iframe {
     @extend .shape;
@@ -134,7 +141,6 @@ html {
 #comments {
   margin-top: 1em;
   padding: 0em 2em 2em 2em;
-  width: 100%;
 }
 
 .thing {
