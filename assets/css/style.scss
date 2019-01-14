@@ -52,10 +52,8 @@ html {
 #center-container {
   margin: auto;
   & > * {
-    display: table;
     margin: auto;
     box-sizing: border-box;
-    width: 100%;
   }
   @media (orientation: landscape) {
     max-width: 60%;
@@ -68,7 +66,7 @@ html {
 #name-container {
   $name: "Kevin\AVan Kessel";
   $size: 5em;
-  width: auto;
+  display: table;
   #name {
     position: relative;
     text-align: left;
@@ -105,6 +103,7 @@ html {
 
 #post {
   padding: 1em 2em;
+  width: 100%;
   figure {
     padding: 1em;
     margin: 1em;
@@ -141,6 +140,7 @@ html {
 #comments {
   margin-top: 1em;
   padding: 0em 2em 2em 2em;
+  width: 100%;
 }
 
 .thing {
@@ -163,9 +163,16 @@ html {
   backdrop-filter: blur(16px);
 }
 
-#related > h3 {
-  text-align: center;
-  margin-bottom: 0;
+.MathJax_SVG_Display {
+  overflow-x: scroll;
+}
+
+#related {
+  display: table;
+  h3 {
+    text-align: center;
+    margin-bottom: 0;
+  }
 }
 
 ul {
