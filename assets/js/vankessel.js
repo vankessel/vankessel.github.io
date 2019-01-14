@@ -48,8 +48,7 @@ function insertComments(data) {
 }
 
 function loadComments() {
-  var url = "https://www.reddit.com/" + $('#comments').attr('data-reddit') + ".embed?callback=insertComments";
-  console.log(url);
+  var url = "https://www.reddit.com/" + $('#comments').attr('data-reddit') + ".embed";
   $.ajax(url, {
     dataType: 'jsonp',
     jsonpCallback: 'insertComments'
