@@ -8,6 +8,8 @@ MathJax.Hub.Register.StartupHook("End", function() {
 
 function main() {
 
+  loadComments();
+
   // Set lightboxes for images in #post
   $("#post img").each(function() {
     if($(this).attr("data-featherlight") !== '') {
@@ -22,6 +24,35 @@ function main() {
 
   $(window).resize(function() {
     generateBackground();
+  });
+}
+
+function insertComments(data) {
+  let comments = $('#comments');
+  let reddit = comments.attr('data-reddit');
+  comments.empty().append(data);
+  $('*', comments).removeAttr('style');
+  $('a:has(img)', comments).remove();
+  $('.reddit-title a', comments)
+    .text('reddit.com/' + reddit)
+    .attr('href', "https://www.reddit.com/" + reddit);
+
+  if($('.rembeddit-content > div').is(':empty')) {
+    comments.empty();
+    comments.append(
+      $('<div style="padding-top: 2em"><h4>Comment on this post at <a href="https://www.reddit.com/' + reddit + '">reddit.com/' + reddit + '</a></h4></div>')
+    );
+  }
+
+  generateBackground();
+}
+
+function loadComments() {
+  var url = "https://www.reddit.com/" + $('#comments').attr('data-reddit') + ".embed?callback=insertComments";
+  console.log(url);
+  $.ajax(url, {
+    dataType: 'jsonp',
+    jsonpCallback: 'insertComments'
   });
 }
 

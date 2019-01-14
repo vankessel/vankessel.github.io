@@ -54,6 +54,7 @@ html {
   & > * {
     display: table;
     margin: auto;
+    box-sizing: border-box;
   }
   @media (orientation: landscape) {
     max-width: 60%;
@@ -102,12 +103,10 @@ html {
 
 #post {
   padding: 1em 2em;
-  border-radius: 4px;
-  box-shadow: 4px 4px 16px 0px rgba(0,0,0,0.25);
   figure {
     padding: 1em;
     margin: 1em;
-    background-color: rgba(255,255,255,0.4);
+    background-color: rgba(255,255,255,0.25);
   }
   figcaption {
     margin: 0.5em 1em -0.5em 1em;
@@ -128,9 +127,29 @@ html {
     margin: auto;
   }
   figure, img, video, iframe {
-    border-radius: 4px;
-    box-shadow: 4px 4px 16px 0px rgba(0,0,0,0.25);
+    @extend .shape;
   }
+}
+
+#comments {
+  margin-top: 1em;
+  padding: 0em 2em 2em 2em;
+  width: 100%;
+}
+
+.thing {
+  @extend .shape;
+  background-color: rgba(255,255,255,0.25);
+  padding: 0.5em;
+  small {
+    display: inline-block;
+    margin-bottom: 0.5em;
+  }
+}
+
+.shape {
+  border-radius: 4px;
+  box-shadow: 4px 4px 16px 0px rgba(0,0,0,0.25);
 }
 
 .glass {

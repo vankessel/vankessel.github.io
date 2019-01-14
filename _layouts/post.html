@@ -2,9 +2,17 @@
 layout: default
 ---
 
-<div id="post" class="glass">
+<div id="post" class="glass shape">
   {{ content }}
 </div>
+
+{% if page.reddit %}
+<div id="comments" class="glass shape" data-reddit="{{ page.reddit }}">
+  <div style="padding-top: 2em">
+    <h2>Could not load comments.</h2>
+  </div>
+</div>
+{% endif %}
 
 <div id="related">
   <h3>Related Posts</h3>
