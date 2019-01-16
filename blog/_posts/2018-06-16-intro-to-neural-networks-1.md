@@ -17,7 +17,7 @@ So, how does one make a neural network? It begins by deciding the architecture. 
 
 Once you have an architecture, you will need a dataset to train on. A dataset should consist of pairs of inputs and outputs for the network. This is what the network will train against to learn how to correlate an input to an output. There are [some cases](https://arxiv.org/abs/1711.00043) where pairs are not even necessary, only the distribution of the data is needed.
 
-Training is performed by passing an input into untrained network. The output will almost certainly be random garbage because it is not yet trained. This garbage output is compared to the expected output, and an error is obtained. This error is propagated back through the network to nudge its parameters in a direction that decreases this error. This is repeated many times until the error is reduced to a minimal amount.
+Training is performed by passing an input into untrained network. The output will almost certainly be random garbage because it is not yet trained. This garbage output is compared to the expected output, and an error is obtained. This error is propagated back through the network and the result is used to nudge its parameters in a direction that decreases this error. This is repeated many times until the error is reduced to a minimal amount.
 
 
 ## Example networks
@@ -138,6 +138,6 @@ This is where backpropagation begins. Remember the [chain rule](https://en.wikip
 
 You repeat this process for each layer until it has gone through the whole network. Then you have the gradient for the entire network, which describes how the loss changes for any particular weight. The weights can then be updated by subtracting a small multiple of the gradient from the weights. This small multiple is the gradient multiplied by the [learning rate](https://developers.google.com/machine-learning/crash-course/reducing-loss/learning-rate), which is often set to decrease over training time to allow the network to settle into a [local optimum](https://en.wikipedia.org/wiki/Local_optimum).
 
-## Next
+## Conclusion
 
-This covers the foundation of what one needs to know about neural networks. I will continue this series with posts about [backpropagation](https://en.wikipedia.org/wiki/Backpropagation) in detail, [convolutional networks](https://en.wikipedia.org/wiki/Convolutional_neural_network), [recurrent networks](https://en.wikipedia.org/wiki/Recurrent_neural_network), [autoencoders](https://en.wikipedia.org/wiki/Autoencoder), and [general adversarial networks](https://en.wikipedia.org/wiki/Generative_adversarial_network).
+This covers the basics of what one should know about neural networks. There is much more to learn than this but I hope this explanation has given you an idea of how they work. Let me know in the comments if there is anything in this introduction that could be improved upon.
