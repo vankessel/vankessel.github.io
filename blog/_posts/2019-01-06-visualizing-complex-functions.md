@@ -2,7 +2,7 @@
 title: Visualizing Complex Functions
 author: Kevin Van Kessel
 tags: math visualization
-reddit: r/vankessel/afppoh
+reddit: r/vankessel/comments/afppoh
 ---
 
 # {{ page.title }}
