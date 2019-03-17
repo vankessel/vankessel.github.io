@@ -56,17 +56,17 @@ function loadComments() {
 }
 
 function generateBackground(seed = null) {
-  if (!window.matchMedia("(orientation: landscape)").matches) {
-    $("html").css("background", "darkslategray");
-    return;
-  }
+  // if (!window.matchMedia("(orientation: landscape)").matches) {
+  //   $("html").css("background", "darkslategray");
+  //   return;
+  // }
 
   let w = $(document).width();
   let h = $(document).height();
   let cell_size = Math.min(Math.max(192, w*h*0.000005722), 384);
 
-  console.log("Generating background: " + w + 'x' + h);
-  console.log("Cell size: " + cell_size);
+  // console.log("Generating background: " + w + 'x' + h);
+  // console.log("Cell size: " + cell_size);
 
   let pattern = Trianglify({
     width: w,

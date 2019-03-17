@@ -158,6 +158,15 @@ html {
   }
 }
 
+#related {
+  margin-top: 1em;
+  padding: 1em 2em;
+  display: table;
+  h3 {
+    text-align: center;
+  }
+}
+
 .thing {
   @extend .shape;
   background-color: rgba(255,255,255,0.25);
@@ -178,17 +187,9 @@ html {
   backdrop-filter: blur(16px);
 }
 
-.MathJax_SVG_Display {
-  overflow-x: scroll;
-}
-
-#related {
-  display: table;
-  h3 {
-    text-align: center;
-    margin-bottom: 0;
-  }
-}
+// .MathJax_SVG_Display {
+//   overflow-x: scroll;
+// }
 
 ul {
   margin: 0 auto;
