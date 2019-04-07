@@ -11,7 +11,7 @@ reddit: r/vankessel/comments/afppoh
 
 ## Complex Numbers
 
-Don't let the name scare you, complex numbers are easier to understand than they sound. A complex number is actually comprised of two numbers: A real number and an imaginary number. A real number is the one everyone is used to, every value between negative infinity and infinity. An imaginary number is a little less intuitive. It is a real number multiplied by the square root of negative one, or $$i$$. $$i$$ is a special constant that is defined to be $$i^2 = -1$$. The reason this constant is important is because normally there is no solution to the square root or logarithm of a negative number. In fact, most functions have a natural extension to the complex domain, like $$\sin()$$. I am compelled to point out that they have been named poorly. Gauss' lateral number is a much better name. They exist and are as useful as negative numbers, but you will find neither in the physical world.
+Don't let the name scare you, complex numbers are easier to understand than they sound. A complex number is actually comprised of two numbers: A real number and an imaginary number. A real number is the one everyone is used to, every value between negative infinity and infinity. An imaginary number is a little less intuitive. It is a real number multiplied by the square root of negative one, or $$i$$. $$i$$ is a special constant that is defined to be $$i^2 = -1$$. The reason this constant is important is because with it the idea of taking the square root or logarithm of a negative number can make sense. In fact, most functions have a natural extension to the complex domain, like $$\sin()$$. I am compelled to point out that they have been named poorly. Gauss' lateral number is a much better name. They exist and are as useful as negative numbers, but you will find neither in the physical world.
 
 ### Cartesian Coordinates
 
@@ -21,7 +21,7 @@ $$z = x + yi$$
 
 ### Polar Coordinates
 
-While the axes directly correspond to each component, it is actually often times easier to think of a complex number as a magnitude ($$r$$) and angle ($$\theta$$) from the origin. This way of representing a point on the plane is called a [polar coordinate system](https://en.wikipedia.org/wiki/Polar_coordinate_system). The reason it is easier is because when you multiply two complex numbers, the result's magnitude is the product of the two original magnitudes, and the result's angle is the sum of the the two original angles. $$i$$ has a magnitude of $$1$$ and an angle of $$\frac{\pi}{2}$$ [radians](https://en.wikipedia.org/wiki/Radian) (or $$90$$ degrees) counterclockwise from the positive x-axis, so multiplying by $$i$$ can be thought of as rotating a point on the plane by $$\frac{\pi}{2}$$ radians counterclockwise.
+While the axes directly correspond to each component, it is actually often times easier to think of a complex number as a magnitude ($$r$$) and angle ($$\theta$$) from the origin. This way of representing a point on the plane is called a [polar coordinate system](https://en.wikipedia.org/wiki/Polar_coordinate_system). The reason it is easier is because when you multiply two complex numbers, the result's magnitude is the product of the two original magnitudes, and the result's angle is the sum of the the two original angles. $$i$$ has a magnitude of $$1$$ and an angle of $$\frac{\pi}{2}$$ [radians](https://en.wikipedia.org/wiki/Radian) ($$90$$ degrees) counterclockwise from the positive x-axis, so multiplying by $$i$$ can be thought of as rotating a point on the plane by $$\frac{\pi}{2}$$ radians counterclockwise.
 
 $$z = r\mathrm{e}^{\theta i}$$
 
@@ -64,7 +64,7 @@ One way could be to plot a [vector field](https://en.wikipedia.org/wiki/Vector_f
 
 Luckily we have a trick up our sleeve. We can solve this problem by using the polar coordinates from before. How does this help? There are still a total for four dimensions to plot. The important distinction about polar coordinates versus Cartesian coordinates is the angle. Angles are different from magnitudes because they are periodic. A full rotation is the same as no rotation at all. Colour is also periodic. You can cycle through all the hues: red, yellow, green, cyan, blue, magenta, and back to red.
 
-We have a way to represent the angle, what about the magnitude? For that we can use lightness. The less the magnitude the darker it is, the greater the magnitude the lighter it is. There is a glaring problem with this though. Magnitude can be from zero to infinity, and lightness can go from 0% to 100%. To account for this we can break this magnitude up into groups that are each coloured from dark to light, and double them in size each time. For example, one gradient from dark to light will be from magnitudes 1 to 2. Then the next gradient is from 2 to 4, then 4 to 8, and so on. This is not a perfect solution, but it is a good one because doubling is one of the fastest ways to approach infinity.
+We have a way to represent the angle, what about the magnitude? For that we can use lightness. The less the magnitude the darker it is, the greater the magnitude the lighter it is. There is a glaring problem with this though. Magnitude can be from zero to infinity, and lightness can go from 0% to 100%. To account for this we can break this magnitude up into groups that are each shaded from dark to light, and double them in size each time. For example, one gradient from dark to light will be from magnitudes 1 to 2. Then the next gradient is from 2 to 4, then 4 to 8, and so on. This is not a perfect solution, but it is a good one because doubling is one of the fastest ways to approach infinity.
 
 ### Summary
 
@@ -172,7 +172,7 @@ Doesn't seem very interesting, but I'm curious to see what is going on beyond th
 
 {% include video.html url="/assets/videos/visualizing-complex-functions/tan(z).webm" poster="/assets/images/visualizing-complex-functions/tan(z).jpg" %}
 
-A sequence of alternating regular and inverse poles appear along the horizontal. These are analogous to the zeros and asymptotes of the real tangent function.
+A sequence of alternating regular and inverse poles appear along the horizontal.
 
 ### Sine of the Inverse
 
