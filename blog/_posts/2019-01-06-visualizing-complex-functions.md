@@ -27,7 +27,7 @@ $$z = r\mathrm{e}^{\theta i}$$
 
 The reason why this equation works is outside the scope of this explanation, but it has to do with [Euler's formula](https://en.wikipedia.org/wiki/Euler%27s_formula).
 
-## Complex functions
+## Complex Functions
 
 A complex function is a function that acts on complex numbers. The function $$f(z) = z^2$$ can be extended to the complex domain to take in a complex number and return a complex number. The variable $$z$$ is commonly used to represent a complex number, like how $$x$$ is commonly used to represent a real number. Let's see how squaring a complex number affects its real and imaginary components.
 
@@ -56,7 +56,7 @@ $$
 
 See how much easier it is to square in polar coordinates? Not only is it simpler, but the result is easy to interpret. The magnitude is squared, and the angle is doubled.
 
-## Graphing Complex functions
+## Graphing Complex Functions
 
 Graphing a complex function is surprisingly difficult. A real function takes one dimension of information and outputs one dimension of information. This adds up to a convenient two dimensions, which is easy to display on a computer screen or paper. Complex functions on the other hand take two dimensions of information and output two dimensions, leaving us with a total of four dimensions to squeeze into our graph. This almost sounds impossible, how on earth could we come up with a way to visualize four dimensions?
 

@@ -20,7 +20,7 @@ Once you have an architecture, you will need a dataset to train on. A dataset sh
 Training is performed by passing an input into untrained network. The output will almost certainly be random garbage because it is not yet trained. This garbage output is compared to the expected output, and an error is obtained. This error is propagated back through the network and the result is used to nudge its parameters in a direction that decreases this error. This is repeated many times until the error is reduced to a minimal amount.
 
 
-## Example networks
+## Example Networks
 
 Here are some example networks to give an idea of the kinds of problems neural networks can solve.
 
@@ -118,7 +118,7 @@ This is like a continuous form of a binary choice: A large negative value become
 
 The non-linearity of this function is what makes the whole network non-[linear](https://en.wikipedia.org/wiki/Linear_function). This non-linearity is what allows neural networks to approximate any function.
 
-#### Vanishing Gradient problem
+#### Vanishing Gradient Problem
 
 The [vanishing gradient problem](https://en.wikipedia.org/wiki/Vanishing_gradient_problem) is an issue where a neural network's training slows down the farther back in the network the gradient is propagated. In the case of the tanh function, its derivative will always be between $$0$$ and $$1$$. This means that for every layer the gradient is propagated through, the gradient is multiplied by some value between $$0$$ and $$1$$. Do this enough times and the gradient becomes smaller and smaller until it "vanishes". The effect this has is that the farther from the end of the network a layer is, the less it will be updated by the gradient.
 
