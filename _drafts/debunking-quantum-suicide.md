@@ -3,6 +3,7 @@ title: How to Disprove Quantum Suicide (Without Risking Your Life)
 author: Kevin Van Kessel
 tags: quantum physics philosophy experiment interactive
 reddit:
+
 a1: Consciousness experiences the reality in which it lives the longest.
 a2: The sooner you receive information that would extend your lifespan, the more effective it will be.
 a3: There exists a message in the encoding, that if one acted on it, would extend one's life.
@@ -15,7 +16,7 @@ a5: The API provides true quantum random numbers.
 
 ## What is Quantum Suicide?
 
-[Quantum suicide](https://en.wikipedia.org/wiki/Quantum_suicide_and_immortality) is the famous thought experiment, similar to the [Schrödinger's cat](https://en.wikipedia.org/wiki/Schr%C3%B6dinger%27s_cat) thought experiment, but from the perspective of the cat. The purpose of it is to speculate on what would happen to the (un)lucky observer under different interpretations of quantum mechanics.
+[Quantum suicide](https://en.wikipedia.org/wiki/Quantum_suicide_and_immortality) is the famous thought experiment, similar to the [Schrödinger's cat](https://en.wikipedia.org/wiki/Schr%C3%B6dinger%27s_cat) thought experiment, but from the perspective of the cat. The purpose of it is to speculate on what would happen to the (un)lucky subject under different interpretations of quantum mechanics.
 
 The general idea is that there a subject with a gun pointed to their head. The gun is rigged to fire depending on the result of a quantum event. If the [many-worlds interpretation](https://en.wikipedia.org/wiki/Many-worlds_interpretation) is true, then there must exist a version of the observer that survived the event. Ergo, the observer should always experience the branch of reality in which they survive as that is the only reality that they can experience. Now we run into the first and largest assumption that everything hinges on:
 
@@ -25,7 +26,7 @@ The general idea is that there a subject with a gun pointed to their head. The g
 
 Otherwise put, quantum suicide is true if and only if this assumption is correct.
 
-## The Nature of this Proof
+## The Nature of This Proof
 
 Normally, a proof should inform the reader enough such that they can come to the same conclusion. In this case only the subject of the experiment, myself, can only be sure of the results. Outside observers, such as anyone reading this, would almost certainly observer my failure regardless of if the thought experiment is correct or not. Since this proof is personal to the one conducting it, I will provide a test on this page. Anyone can run it and confirm the argument for themselves.
 
