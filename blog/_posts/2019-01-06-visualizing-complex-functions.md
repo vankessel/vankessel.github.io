@@ -11,11 +11,15 @@ reddit: r/vankessel/comments/afppoh
 
 ## Complex Numbers
 
-Don't let the name scare you, complex numbers are easier to understand than they sound. A complex number is actually comprised of two numbers: A real number and an imaginary number. A real number is the one everyone is used to, every value between negative infinity and infinity. An imaginary number is a little less intuitive. It is a real number multiplied by the square root of negative one, or $$i$$. $$i$$ is a special constant that is defined to be $$i^2 = -1$$. The reason this constant is important is because with it the idea of taking the square root or logarithm of a negative number can make sense. In fact, most functions have a natural extension to the complex domain, like $$\sin()$$. I am compelled to point out that they have been named poorly. Gauss' lateral number is a much better name. They exist and are as useful as negative numbers, but you will find neither in the physical world.
+Don't let the name scare you, complex numbers are easier to understand than they sound. A complex number is actually comprised of two numbers: A real number and an imaginary number. A real number is the one everyone is used to, every value between negative infinity and infinity. An imaginary number is a little less intuitive. It is a real number multiplied by the square root of negative one, or $$i$$. $$i$$ is a special constant that is defined to be $$i^2 = -1$$.
+
+The reason this constant is important is because with it the idea of taking the square root or logarithm of a negative number can make sense. In fact, most functions have a natural extension to the complex domain, like $$\sin()$$. They also provide way of defining multiplication and division of 2D vectors, alongside the usual addition and subtraction.
+
+I am compelled to point out that they have been named poorly. Gauss' lateral number is a much better name. They exist and are as useful as negative numbers, but you will find neither in the natural world.
 
 ### Cartesian Coordinates
 
-You add the real and imaginary numbers together to get a complex number. This is a bit unusual for the concept of a number, because now you have two dimensions of information instead of just one. Like how one imagines the real numbers as a point on a number line, one has to imagine a complex number as a point on a number plane. The x-axis of the number plane represents the real component, and the y-axis represents the imaginary component. This is a [Cartesian coordinate system](https://en.wikipedia.org/wiki/Cartesian_coordinate_system).
+You add the real and imaginary numbers together to get a complex number. This is a bit unusual for the concept of a number, because now you have two dimensions of information instead of just one. Like how one imagines the real numbers as a point on a number line, one can imagine a complex number as a point on a number plane. The x-axis of the number plane represents the real component, and the y-axis represents the imaginary component. This is a [Cartesian coordinate system](https://en.wikipedia.org/wiki/Cartesian_coordinate_system).
 
 $$z = x + yi$$
 
@@ -237,9 +241,9 @@ The [gamma function](https://en.wikipedia.org/wiki/Gamma_function) is a continuo
 
 {% include video.html url="/assets/videos/visualizing-complex-functions/e^(-e^-z).webm" poster="/assets/images/visualizing-complex-functions/e^(-e^-z).jpg" %}
 
-This is a function I made up while playing around and ended up being interesting. I dub thee the expoid function. The black areas are where the calculations exceed the limits of floating point arithmetic on my computer, that area would be otherwise filled in with ever more compact fluctuations.
+This is a function I made up while playing around and ended up being interesting. I dub thee the expoid function. The black areas are where the calculations exceed the limits of [floating point arithmetic](https://en.wikipedia.org/wiki/Floating-point_arithmetic) on my computer, that area would be otherwise filled in with ever more compact fluctuations.
 
-It seems as though up until the very last frame pillars of stability and instability form on the negative real side of the plot. Each pillar appears to approach a width of $$\pi$$. This phenomena forms because for any real $$z$$ the outer exponential of $$\mathrm{e}^{-\mathrm{e}^{-z}}$$ will take in a negative input, thus restraining the output between $$0$$ and $$1$$. If you stray too far into the imaginary axis the sign of the inner exponential flips. When the inner exponential becomes positive the whole thing explodes because a nested exponential grows very fast. The sign flips again every $$\pi$$ units in the imaginary direction, causing the periodic pillars.
+It seems as though up until the very last frame pillars of stability and instability form on the negative real side of the plot. Each pillar appears to approach a width of $$\pi$$. This phenomena forms because when the imaginary component is a multiple of pi, the sign of the inner exponential becomes positive or negative. This causes the outer exponential to explode or vanish, both causing the same black artifact due to the how [floating point numbers]](https://en.wikipedia.org/wiki/IEEE_754) are stored. When the imaginary component is right between those multiples, the inner exponential becomes a pure imaginary number. The outer exponential then only rotates instead of changing magnitude, which is why those areas render properly.
 
 ### Soft Exponential
 
