@@ -66,13 +66,11 @@ html {
 #name-container {
   $name: "Kevin\AVan Kessel";
   $size: 5em;
+  $mobileSize: 3em;
   display: table;
   #name {
     position: relative;
     text-align: left;
-    font-size: $size;
-    margin-top: $size/16;
-    margin-bottom: $size/16;
     color: black;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 1px;
@@ -81,6 +79,16 @@ html {
       background-size: 1280px 1024px;
       @include background-clip(text);
       @include drift(32s, 512s);
+    }
+    @media all and (orientation: landscape) {
+      font-size: $size;
+      margin-top: $size/16;
+      margin-bottom: $size/16;
+    }
+    @media all and (orientation: portrait) {
+      font-size: $mobileSize;
+      margin-top: $mobileSize/16;
+      margin-bottom: $mobileSize/16;
     }
   }
 
