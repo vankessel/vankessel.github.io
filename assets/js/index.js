@@ -1,3 +1,7 @@
+// I shouldn't be using globals but hey this is JS
+let lastBackgroundWidth = null;
+let lastBackgroundHeight = null;
+
 $(document).ready(function() {
   main();
 });
@@ -14,6 +18,7 @@ MathJax.Hub.Register.StartupHook('End', function() {
 
 function main() {
 
+  // Load comments if the element exists
   if($('#comments').length !== 0) {
     loadComments();
   }
@@ -36,6 +41,7 @@ function main() {
 }
 
 function loadComments() {
+  // Load comments from reddit using jsonp
   var url = 'https://www.reddit.com/' + $('#comments').data('reddit') + '.embed';
   $.ajax(url, {
     dataType: 'jsonp',
@@ -87,6 +93,11 @@ function generateBackground(seed = null) {
 
   let w = $(document).width();
   let h = $(document).height();
+
+  if(w === lastBackgroundWidth && h === lastBackgroundHeight) {
+    return;
+  }
+
   let cell_size = Math.min(Math.max(192, w*h*0.000005722), 384);
 
   let pattern = Trianglify({
@@ -103,4 +114,7 @@ function generateBackground(seed = null) {
   svg.setAttribute('version', '1.1');
 
   $('html').css('background', 'url(\'data:image/svg+xml;base64,' + window.btoa(svg.outerHTML) + '\')' );
+
+  lastBackgroundWidth = w;
+  lastBackgroundHeight = h;
 }
