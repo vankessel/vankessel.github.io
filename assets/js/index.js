@@ -3,6 +3,12 @@ $(document).ready(function() {
 });
 
 MathJax.Hub.Register.StartupHook('End', function() {
+  // Sometimes MathJax overflows if the svg is too long.
+  // Fix this by setting the max-width to 100% for both the svg and its container.
+  // Remove fixed height attribute so scaled image maintains aspect ratio.
+  let svgContainer = $('.MathJax_SVG_Display > span').css('max-width', '100%');
+  $('> svg', svgContainer).removeAttr('height').css('max-width', '100%')
+
   generateBackground();
 });
 

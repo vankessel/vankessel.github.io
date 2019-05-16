@@ -154,6 +154,12 @@ html {
   margin-top: 1em;
   padding: 2em;
   width: 100%;
+
+  // Reddit link is too long on mobile and needs to break on non-whitespace
+  .reddit-title > a {
+    word-break: break-all;
+  }
+
   h2 {
     margin: 0;
   }
