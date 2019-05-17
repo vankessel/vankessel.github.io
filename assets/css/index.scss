@@ -210,6 +210,14 @@ ul {
   }
 }
 
+ol {
+  margin: 2em auto;
+  font-weight: bold;
+  & > li > span {
+    font-weight: normal;
+  }
+}
+
 li {
   margin: 1em 0;
 }

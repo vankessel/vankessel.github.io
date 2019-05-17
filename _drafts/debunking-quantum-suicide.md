@@ -18,10 +18,10 @@ a5: The API provides true quantum random numbers.
 
 [Quantum suicide](https://en.wikipedia.org/wiki/Quantum_suicide_and_immortality) is the famous thought experiment, similar to the [Schrödinger's cat](https://en.wikipedia.org/wiki/Schr%C3%B6dinger%27s_cat) thought experiment, but from the perspective of the cat. The purpose of it is to speculate on what would happen to the (un)lucky subject under different interpretations of quantum mechanics.
 
-The general idea is that there a subject with a gun pointed to their head. The gun is rigged to fire depending on the result of a quantum event. If the [many-worlds interpretation](https://en.wikipedia.org/wiki/Many-worlds_interpretation) is true, then there must exist a version of the observer that survived the event. Ergo, the observer should always experience the branch of reality in which they survive as that is the only reality that they can experience. Now we run into the first and largest assumption that everything hinges on:
+Imagine you have a gun pointed at your head. The gun is rigged to fire depending on the result of a quantum event. If the [many-worlds interpretation](https://en.wikipedia.org/wiki/Many-worlds_interpretation) is true, then there must exist a version of you that survived the event. Since you can't possibly experience the timeline in which you are dead, you must experience the one where you survive. We also need to consider that death isn't instant. It takes time for the bullet to exit the chamber and do its work. So the result of the quantum event mustn't be constricted by time. Every quantum event will be chosen as such to funnel you down the branch of reality in which you live the longest. This will be our first assumption.
 
 <ol start="1">
-  <li>{{ page.a1 }}</li>
+  <li><span>{{ page.a1 }}</span></li>
 </ol>
 
 Otherwise put, quantum suicide is true if and only if this assumption is correct.
@@ -37,7 +37,7 @@ To disprove quantum suicide (or at least one of the assumptions), I will transfo
 Under our first assumption we can change the circumstances from a punishment to a reward, as long as one of the timelines leads to a drastically different length of longevity. Instead of a gun that kills you, instead imagine a doctor has information about your health. If he tells you about it and you act on the information, you will certainly live a longer life. The doctor is instructed to only tell you about the information based the result of a 50/50 quantum event. If quantum suicide and the current assumptions are true, then you should always experience the reality in which the doctor tells you about your unknown ailment. Now there is the chance that the experiment will fail today because it will succeed tomorrow and be similarly effective. We need another assumption to be sure that our experiment isn't failing just because it may succeed in the future.
 
 <ol start="2">
-  <li>{{ page.a2 }}</li>
+  <li><span>{{ page.a2 }}</span></li>
 </ol>
 
 Unfortunately it would be highly unethical to perform such an experiment as it would involve asking a doctor to allow someone to come to harm through inaction. Not to mention you would need the information of multiple ailments to repeat the test and confirm the low chance of consecutive successes.
@@ -45,8 +45,8 @@ Unfortunately it would be highly unethical to perform such an experiment as it w
 But there is still a way to perform the experiment with a little alteration. Instead of this hypothetical doctor, we will conduct a series of 50/50 quantum events, with the outcomes of 0 and 1. These random bits will be then interpreted as a series of ASCII characters (or alternatively any other encoding). This brings us to our next assumptions:
 
 <ol start="3">
-  <li>{{ page.a3 }}</li>
-  <li>{{ page.a4 }}</li>
+  <li><span>{{ page.a3 }}</span></li>
+  <li><span>{{ page.a4 }}</span></li>
 </ol>
 
 It is important to note here, that if one were to receive a message, it would not be a message from the universe of some sort. The message would have appeared simply because it has a meaning to the reader that upon interpretation would extend the reader's life.
@@ -56,10 +56,10 @@ It is important to note here, that if one were to receive a message, it would no
 So, how does one generate quantum random bits? Luckily for us the folks down under at the [ANU](http://qrng.anu.edu.au/index.php) provide an API for generating these numbers. But since I can't confirm for myself that these numbers are truly quantum random numbers, it must go on the list of assumptions.
 
 <ol start="5">
-  <li>{{ page.a5 }}</li>
+  <li><span>{{ page.a5 }}</span></li>
 </ol>
 
-To not hit the API too hard I've set the default parameters to generate 140 characters. Click below to generate a tweet from the void.
+Click below to generate a tweet from the void.
 
 <div style="display: flex; flex-direction: column; align-items: center; text-align: center">
   <span>
@@ -105,11 +105,13 @@ I didn't receive a message and I presume you won't either. (If you do, please do
 
 This must mean one or more of the following assumptions are false:
 
-1. {{ page.a1 }}
-2. {{ page.a2 }}
-3. {{ page.a3 }}
-4. {{ page.a4 }}
-5. {{ page.a5 }}
+<ol>
+  <li><span>{{ page.a1 }}</span></li>
+  <li><span>{{ page.a2 }}</span></li>
+  <li><span>{{ page.a3 }}</span></li>
+  <li><span>{{ page.a4 }}</span></li>
+  <li><span>{{ page.a5 }}</span></li>
+</ol>
 
 Let's discuss the likelihood of each assumption.
 
@@ -117,8 +119,8 @@ The first assumption is equivalent to what we are trying to prove, so we can't s
 
 The second assumption is weak. Learning about information that will extend your life a second later than planned does not necessarily mean you will live a shorter life than you would have otherwise. Perhaps that additional second will cause a [butterfly effect](https://en.wikipedia.org/wiki/Butterfly_effect) in which you utilize the information more effectively. Otherwise, this assumption can be strengthened by performing the experiment a second time after a large time period. Certainly a ten year interval should be long enough such that any possible second message would be less effective.
 
-The third assumption seems safe. Certainly out of all the possible sentences you could read, there must be one that can extend your lifespan. In fact, there is likely a string of characters that could increase the lifespan of any human.
+The third assumption seems safe. Certainly out of all the possible sentences you could read, there must be one that can extend your lifespan. In fact, there is likely a string of characters that could increase the lifespan of any human in general.
 
-The fourth assumption is also rather safe. It is in anyone's best interest to follow advice that will extend their lifespan. Although we do see people routinely engaging in dangerous behaviours. On the other hand this assumption could be taken care of by a similar mechanism to the last. There most probably exists a sentence that both extends one's life and will be acted upon be the subject.
+The fourth assumption is also rather safe. It is in anyone's best interest to follow advice that will extend their lifespan. Regardless, this assumption could be taken care of by a similar mechanism to the last. There most probably exists a sentence that both extends your life and that you will act upon.
 
-The fifth assumption is here for comprehensiveness. I am sure the API is doing what it claim's to be doing.
+The fifth assumption is here for comprehensiveness. I am sure the API is doing what it claims to be doing.
