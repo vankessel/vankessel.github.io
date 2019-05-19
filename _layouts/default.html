@@ -35,10 +35,11 @@
 
     <meta name="author" content="{{ page.author }}" />
 
-    {% if page.twitter_card %}
-    <meta name="twitter:card" content="{{ page.twitter_card }}" />
+    {% if page.video %}
+    <meta name="twitter:card" content="player" />
+    <meta name="twitter:player" content="{{ page.video | absolute_url }}" />
     {% else %}
-    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:card" content="summary_large_image" />
     {% endif %}
     <meta name="twitter:site" content="@kevin_vankessel" />
     <meta name="twitter:creator" content="@kevin_vankessel" />
