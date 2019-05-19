@@ -1,7 +1,7 @@
 ---
 title: Introduction to Neural Networks
 author: Kevin Van Kessel
-tags: tutorial neural-networks machine-learning ai series part-1
+tags: tutorial neural-networks machine-learning ai
 reddit: r/vankessel/comments/afpiey
 ---
 
@@ -11,7 +11,7 @@ reddit: r/vankessel/comments/afpiey
 
 A neural network is a black box statistical model inspired by the biological information processing of neurons. These networks are taught how to produce correct outputs by training them with large datasets. A black box is a function in which the inner workings behind the function is unknown. Neural networks are effectively black boxes as they hard to reverse engineer once fully trained. This may not be the case in the future as [work is being done](https://youtu.be/zjaz2mC1KhM) to glean insight into these fascinating and powerful models.
 
-{% include image.html url="/assets/images/nn_layers.png" desc="The basic structure of a neural network." %}
+{% include image.html url="/assets/images/intro-to-neural-networks/nn_layers.png" desc="The basic structure of a neural network." %}
 
 So, how does one make a neural network? It begins by deciding the architecture. The architecture is the structure of the network, including the number of layers, the types and number of neurons in those layers, the types of connections between layers, and anything else that could be unique to the network. You can think of the architecture of a network being like the specific [connectome](https://en.wikipedia.org/wiki/Connectome) of a brain.
 
@@ -78,7 +78,7 @@ There are variants of gradient descent such as ones that involve momentum and ad
 
 Artificial neurons act in a similar manner to biological neurons by propagating signals between each other. A typical artificial neuron consists of inputs, weights, a bias, and an activation function.
 
-{% include image.html url="/assets/images/nn_model.png" desc="A diagram of a standard neuron. I will be using a slightly different notation consistent with <a href='http://neuralnetworksanddeeplearning.com/chap2.html'>this tutorial</a>." %}
+{% include image.html url="/assets/images/intro-to-neural-networks/nn_model.png" desc="A diagram of a standard neuron. I will be using a slightly different notation consistent with <a href='http://neuralnetworksanddeeplearning.com/chap2.html'>this tutorial</a>." %}
 
 $$
 \begin{split}
@@ -112,7 +112,7 @@ It turns out the bias is conceptually the same as a weight where the correspondi
 
 The [activation function](https://en.wikipedia.org/wiki/Activation_function) is a function that defines the output of a neuron. Activation functions are typically chosen to bound the output between a range of values. Popular activation functions are the sigmoid, tanh, RELU, ELU, and softmax functions. The tanh function is nice as it balances the output between $$-1$$ and $$1$$.
 
-{% include image.html url="/assets/images/nn_tanh.svg" desc="The hyperbolic tangent function." %}
+{% include image.html url="/assets/images/intro-to-neural-networks/nn_tanh.svg" desc="The hyperbolic tangent function." %}
 
 This is like a continuous form of a binary choice: A large negative value becomes $$-1$$, and a large positive value becomes $$1$$, with smaller numbers somewhere in-between.
 
