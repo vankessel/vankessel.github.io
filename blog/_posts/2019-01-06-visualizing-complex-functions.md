@@ -4,6 +4,7 @@ author: Kevin Van Kessel
 tags: math visualization
 reddit: r/vankessel/comments/afppoh
 image: /assets/images/visualizing-complex-functions/z.jpg
+twitter_card: summary_large_image
 ---
 
 # {{ page.title }}
