@@ -13,7 +13,7 @@ reddit: r/vankessel/comments/afppoh
 
 Don't let the name scare you, complex numbers are easier to understand than they sound. A complex number is actually comprised of two numbers: A real number and an imaginary number. A real number is the one everyone is used to, every value between negative infinity and infinity. An imaginary number is a little less intuitive. It is a real number multiplied by the square root of negative one, or $$i$$. $$i$$ is a special constant that is defined to be $$i^2 = -1$$.
 
-The reason this constant is important is because with it the idea of taking the square root or logarithm of a negative number can make sense. In fact, most functions have a natural extension to the complex domain, like $$\sin()$$. They also provide way of defining multiplication and division of 2D vectors, alongside the usual addition and subtraction.
+The reason this constant is important is because with it the idea of taking the square root or logarithm of a negative number can make sense. In fact, most functions have a natural extension to the complex domain, like $$\sin()$$. They also provide way of defining the multiplication and division of 2D vectors, alongside the usual addition and subtraction.
 
 I am compelled to point out that they have been named poorly. Gauss' lateral number is a much better name. They exist and are as useful as negative numbers, but you will find neither in the natural world.
 
