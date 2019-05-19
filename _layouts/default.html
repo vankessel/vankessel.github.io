@@ -11,14 +11,31 @@
 
     {% if page.title == "Index" %}
     <title>{{ page.author }}</title>
+    <meta property="og:title" content="{{ page.author }}" />
     {% else %}
     <title>{{ page.title }} | {{ page.author }}</title>
+    <meta property="og:title" content="{{ page.title }} | {{ page.author }}" />
     {% endif %}
 
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:url" content="{{ page.url | absolute_url }}" />
+    <meta property="og:type" content="website" />
+
+    {% if page.image %}
+    <meta property="og:image" content="{{ page.image | absolute_url }}" />
+    {% endif %}
+
+    {% if page.description %}
+    <meta property="og:description" content="{{ page.description }}" />
+    <meta name="description" content="{{ page.description }}" />
+    {% else %}
+    <meta property="og:description" content="{{ site.description }}" />
+    <meta name="description" content="{{ site.description }}" />
+    {% endif %}
+
     <meta name="author" content="{{ page.author }}" />
-    <meta name="description" content="A blog about programming, math, and machine learning." />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
     <!--Stylesheets and scripts-->
     <link href="/assets/css/index.css" rel="stylesheet" type="text/css" />
