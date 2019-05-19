@@ -19,7 +19,7 @@
 
     <meta property="og:url" content="{{ page.url | absolute_url }}" />
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="TEST SITE NAME" />
+    <meta property="og:site_name" content="Kevin Van Kessel" />
 
     {% if page.image %}
     <meta property="og:image" content="{{ page.image | absolute_url }}" />
@@ -35,8 +35,13 @@
 
     <meta name="author" content="{{ page.author }}" />
 
+    {% if page.twitter_card %}
+    <meta name="twitter:card" content="{{ page.twitter_card }}" />
+    {% else %}
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:creator" content="@kayveeque" />
+    {% endif %}
+    <meta name="twitter:site" content="@kevin_vankessel" />
+    <meta name="twitter:creator" content="@kevin_vankessel" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />

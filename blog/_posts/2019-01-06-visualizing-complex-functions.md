@@ -3,6 +3,7 @@ title: Visualizing Complex Functions
 author: Kevin Van Kessel
 tags: math visualization
 reddit: r/vankessel/comments/afppoh
+image: /assets/images/visualizing-complex-functions/z.jpg
 ---
 
 # {{ page.title }}
