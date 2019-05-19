@@ -9,6 +9,18 @@
     })(window,document,'script','dataLayer','GTM-NFNDQSN');</script>
     <!-- End Google Tag Manager -->
 
+    {% if page.video %}
+    <meta name="twitter:card" content="player" />
+    <meta name="twitter:player" content="{{ page.video | absolute_url | url_decode }}" />
+    <meta name="twitter:player:width" content="{{ page.width }}" />
+    <meta name="twitter:player:height" content="{{ page.height }}" />
+    <meta property="og:video" content="{{ page.video | absolute_url | url_decode }}" />
+    {% else %}
+    <meta name="twitter:card" content="summary_large_image" />
+    {% endif %}
+    <meta name="twitter:site" content="@kevin_vankessel" />
+    <meta name="twitter:creator" content="@kevin_vankessel" />
+
     {% if page.title == "Index" %}
     <title>{{ page.author }}</title>
     <meta property="og:title" content="{{ page.author }}" />
@@ -34,17 +46,6 @@
     {% endif %}
 
     <meta name="author" content="{{ page.author }}" />
-
-    {% if page.video %}
-    <meta name="twitter:card" content="player" />
-    <meta name="twitter:player" content="{{ page.video | absolute_url | url_decode }}" />
-    <meta name="twitter:player:width" content="{{ page.width }}" />
-    <meta name="twitter:player:height" content="{{ page.height }}" />
-    {% else %}
-    <meta name="twitter:card" content="summary_large_image" />
-    {% endif %}
-    <meta name="twitter:site" content="@kevin_vankessel" />
-    <meta name="twitter:creator" content="@kevin_vankessel" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
