@@ -21,12 +21,12 @@
     <meta name="twitter:site" content="@kevin_vankessel" />
     <meta name="twitter:creator" content="@kevin_vankessel" />
 
-    {% if page.title == "Index" %}
-    <title>{{ page.author }}</title>
-    <meta property="og:title" content="{{ page.author }}" />
-    {% else %}
+    {% if page.title %}
     <title>{{ page.title }} | {{ page.author }}</title>
     <meta property="og:title" content="{{ page.title }} | {{ page.author }}" />
+    {% else %}
+    <title>{{ page.author }}</title>
+    <meta property="og:title" content="{{ page.author }}" />
     {% endif %}
 
     <meta property="og:url" content="{{ page.url | absolute_url }}" />
