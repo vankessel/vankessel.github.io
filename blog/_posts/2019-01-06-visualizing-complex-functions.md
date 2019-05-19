@@ -4,7 +4,7 @@ author: Kevin Van Kessel
 tags: math visualization
 reddit: r/vankessel/comments/afppoh
 image: /assets/images/visualizing-complex-functions/z.jpg
-video: /assets/videos/visualizing-complex-functions/z^unitcircle.webm
+video: /assets/videos/visualizing-complex-functions/z^unitcircle.webm?autoplay=1&loop=1
 width: 1280
 height: 960
 ---
