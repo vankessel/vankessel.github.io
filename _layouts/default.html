@@ -37,7 +37,7 @@
 
     {% if page.video %}
     <meta name="twitter:card" content="player" />
-    <meta name="twitter:player" content="{{ page.video | absolute_url }}" />
+    <meta name="twitter:player" content="{{ page.video | absolute_url | url_decode }}" />
     <meta name="twitter:player:width" content="{{ page.width }}" />
     <meta name="twitter:player:height" content="{{ page.height }}" />
     {% else %}
