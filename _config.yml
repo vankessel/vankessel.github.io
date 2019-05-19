@@ -13,4 +13,5 @@ defaults:
       layout: "post"
       permalink: :categories/:year/:month/:day/:title
 
+url: https://vankessel.io
 description: "A blog about programming, math, and machine learning."
