@@ -1,11 +1,16 @@
 ---
 ---
 
-<div id="tableOfContents" class="glass shape">
-  <ul>
-      <!--<li><a href="{{ site.url }}/github">GitHub Summary</a></li><br>-->
-    {% for post in site.posts %}
-      <li><a href="{{ post.url }}">{{ post.title }}</a><div class="date">{{ post.date | date_to_string }}</div></li>
-    {% endfor %}
-  </ul>
+<div style="display: table" class="shape">
+  <div id="navTabs" class="glass">
+    <button class="tab" type="button">Blog</button>
+  </div>
+
+  <div id="contentContainer" class="glass">
+    <ul>
+      {% for post in site.posts %}
+        <li><a href="{{ post.url }}">{{ post.title }}</a><div class="date">{{ post.date | date_to_string }}</div></li>
+      {% endfor %}
+    </ul>
+  </div>
 </div>
