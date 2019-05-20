@@ -13,6 +13,8 @@ layout: default
 </div>
 {% endif %}
 
+{% if page.hide_related %}
+{% else %}
 <div id="related" class="glass shape">
   <h3>Related Posts</h3>
   <ul>
@@ -21,3 +23,4 @@ layout: default
     {% endfor %}
   </ul>
 </div>
+{% endif %}
