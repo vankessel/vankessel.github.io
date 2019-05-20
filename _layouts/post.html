@@ -2,6 +2,8 @@
 layout: default
 ---
 
+<script src="/assets/js/post.js" type="text/javascript"></script>
+
 <div id="post" class="glass shape">
   {{ content }}
 </div>
@@ -17,7 +19,7 @@ layout: default
 {% else %}
 <div id="related" class="glass shape">
   <h3>Related Posts</h3>
-  <ul>
+  <ul class="post-list">
     {% for post in site.related_posts limit:3 %}
       <li><a href="{{ post.url }}">{{ post.title }}</a><div class="date">{{ post.date | date_to_string }}</div></li>
     {% endfor %}
