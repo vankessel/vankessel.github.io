@@ -25,11 +25,11 @@ layout: none
         {% if post.description %}
           <description>{{ post.description | xml_escape }}</description>
         {% endif %}
-        {% if post.video %}
-          <enclosure url="{{ post.video | absolute_url | xml_escape }}" length="1" type="video/webm" />
-        {% endif %}
         {% if post.image %}
           <enclosure url="{{ post.image | absolute_url | xml_escape }}" length="1" type="{{ post.mimetype | default: 'image/jpeg' }}" />
+        {% endif %}
+        {% if post.video %}
+          <enclosure url="{{ post.video | absolute_url | xml_escape }}" length="1" type="video/webm" />
         {% endif %}
         <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
         <link>{{ post.url | absolute_url }}</link>
