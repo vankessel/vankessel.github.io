@@ -13,23 +13,26 @@ layout: none
     <sy:updatePeriod>{{ site.feed_update_period | default: "daily" | xml_escape }}</sy:updatePeriod>
     <sy:updateFrequency>{{ site.feed_update_frequency | default: 1 | xml_escape }}</sy:updateFrequency>
     <link>{{ site.url }}</link>
-    <atom:link href="{{ site.url }}/{{ page.path }}" rel="self" type="application/rss+xml" />
+    <atom:link href="{{ page.url | absolute_url }}" rel="self" type="application/rss+xml" />
     <lastBuildDate>{% for post in site.posts limit:1 %}{{ post.date | date_to_rfc822 }}{% endfor %}</lastBuildDate>
     {% assign feed_items = site.feed_items | default: 10 %}
     {% for post in site.posts limit:feed_items %}
       <item>
         <title>{{ post.title | xml_escape }}</title>
-        {% if post.author.name %}
-          <dc:creator>{{ post.author.name | xml_escape }}</dc:creator>
+        {% if post.author %}
+          <dc:creator>{{ post.author | xml_escape }}</dc:creator>
         {% endif %}
-        {% if post.excerpt %}
-          <description>{{ post.excerpt | xml_escape }}</description>
-        {% else %}
-          <description>{{ post.content | xml_escape }}</description>
+        {% if post.description %}
+          <description>{{ post.description | xml_escape }}</description>
+        {% endif %}
+        {% if post.video %}
+          <enclosure url="{{ post.video | absolute_url | xml_escape }}" length="1" type="video/webm" />
+        {% elsif post.image %}
+          <enclosure url="{{ post.image | absolute_url | xml_escape }}" length="1" type="{{ post.mimetype | default: 'image/jpeg' }}" />
         {% endif %}
         <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-        <link>{{ site.url }}{{ post.url }}</link>
-        <guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
+        <link>{{ post.url | absolute_url }}</link>
+        <guid isPermaLink="true">{{ post.url | absolute_url }}</guid>
       </item>
     {% endfor %}
   </channel>

@@ -2,6 +2,8 @@
 title: Introduction to Neural Networks
 tags: tutorial neural-networks machine-learning ai
 reddit: r/vankessel/comments/afpiey
+image: /assets/images/intro-to-neural-networks/nn_layers.png
+mimetype: image/png
 ---
 
 # {{ page.title }}
@@ -10,7 +12,7 @@ reddit: r/vankessel/comments/afpiey
 
 A neural network is a black box statistical model inspired by the biological information processing of neurons. These networks are taught how to produce correct outputs by training them with large datasets. A black box is a function in which the inner workings behind the function is unknown. Neural networks are effectively black boxes as they hard to reverse engineer once fully trained. This may not be the case in the future as [work is being done](https://youtu.be/zjaz2mC1KhM) to glean insight into these fascinating and powerful models.
 
-{% include image.html url="/assets/images/intro-to-neural-networks/nn_layers.png" desc="The basic structure of a neural network." %}
+{% include image.html url=page.image desc="The basic structure of a neural network." %}
 
 So, how does one make a neural network? It begins by deciding the architecture. The architecture is the structure of the network, including the number of layers, the types and number of neurons in those layers, the types of connections between layers, and anything else that could be unique to the network. You can think of the architecture of a network being like the specific [connectome](https://en.wikipedia.org/wiki/Connectome) of a brain.
 
