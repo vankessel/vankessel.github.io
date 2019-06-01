@@ -20,16 +20,13 @@ layout: none
       <item>
         <title>{{ post.title | xml_escape }}</title>
         {% if post.author %}
-          <dc:creator>{{ post.author | xml_escape }}</dc:creator>
+        <dc:creator>{{ post.author | xml_escape }}</dc:creator>
         {% endif %}
         {% if post.description %}
-          <description>{{ post.description | xml_escape }}</description>
+        <description>{{ post.description | xml_escape }}</description>
         {% endif %}
-        <!-- {% if post.image %}
-          <enclosure url="{{ post.image | absolute_url | xml_escape }}" length="1" type="{{ post.mimetype | default: 'image/jpeg' }}" />
-        {% endif %} -->
-        {% if post.video %}
-          <enclosure url="{{ post.video | absolute_url | xml_escape }}" length="1" type="video/webm" />
+        {% if post.image %}
+        <enclosure url="{{ post.image | absolute_url | xml_escape }}" length="1" type="{{ post.mimetype | default: 'image/jpeg' }}" />
         {% endif %}
         <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
         <link>{{ post.url | absolute_url }}</link>
