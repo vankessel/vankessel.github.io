@@ -4,20 +4,60 @@
 <div id="content-container" class="glass shape">
 
   <nav id="nav">
-    <span data-tab="0" class="tab active" type="button"><strong>Blog</strong></span>
-    <span data-tab="1" class="tab" type="button"><strong>About</strong></span>
+    <span data-tab-index="0" class="tab active"><strong>Blog</strong></span>
+    <span data-tab-index="1" class="tab"><strong>About</strong></span>
+    <span data-tab-index="2" class="tab"><i class="fas fa-cog"></i></span>
   </nav>
 
-  <div data-tab="0" class="tab-content active">
+  <div data-tab-index="0" class="tab-content active">
     <ul class="post-list">
       {% for post in site.posts %}
         <li><a href="{{ post.url }}">{{ post.title }}</a><div class="date">{{ post.date | date_to_string }}</div></li>
       {% endfor %}
     </ul>
-  <div>
+  </div>
 
-  <div data-tab="1" class="tab-content">
-    I am a programmer and mathematician with a passion for machine learning.
+  <div data-tab-index="1" class="tab-content">
+    <div id="profile">
+      <img src="/assets/images/profile.jpg">
+    </div>
+    <p>
+      My name is Kevin Van Kessel. I am a programmer and mathematician with a passion for machine learning. I plan to use this space to write about anything I find interesting. I hope you find my writings interesting as well. Thanks for reading.
+    </p>
+    <p>
+      If you want to get in touch, contact me at \(\mathrm{k e v i n @ {{ site.domain }} }\)
+    </p>
+  </div>
+
+  <div data-tab-index="2" class="tab-content">
+    <input id="effects" name="effects" type="checkbox">
+    <label for="effects">Turn off effects</label>
   </div>
 
 </div>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    // Initialize effects checkbox and set click event
+    let simpleMode = localStorage.getItem('mode', 'normal') === 'simple';
+    let effectsCheckbox = $('#effects');
+    effectsCheckbox.prop('checked', simpleMode);
+
+    effectsCheckbox.click(function() {
+      console.log($(this).prop('checked'));
+      localStorage.setItem('mode', $(this).prop('checked') ? 'simple' : 'normal');
+      location.reload();
+    });
+
+    // Set tab click events
+    let tabs = $('.tab');
+    let tabContents = $('.tab-content');
+
+    tabs.click(function() {
+      let idx = $(this).data('tab-index');
+      // Can only search by data attributes when hardcoded
+      $('#content-container [data-tab-index=' + idx + ']').addClass('active');
+      $('#content-container [data-tab-index!=' + idx + ']').removeClass('active');
+    });
+  });
+</script>

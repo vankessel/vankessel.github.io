@@ -13,5 +13,12 @@ defaults:
       layout: "post"
       permalink: :categories/:year/:month/:day/:title
 
+author: "Kevin Van Kessel"
+name: "Kevin Van Kessel"
 url: https://vankessel.io
+domain: vankessel.io
 description: "A blog about programming, math, and machine learning."
+
+feed_items: 10
+feed_update_period: weekly
+feed_update_frequency: 1

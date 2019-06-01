@@ -1,7 +1,6 @@
 ---
 title: The ACM Programming competition
-author: Kevin Van Kessel
-tags: blog
+tags: programming
 image: /assets/images/acm-competition/index.jpg
 ---
 

@@ -46,7 +46,18 @@
 
 html {
   font-family: 'Ubuntu', sans-serif;
-  background-color: darkslategray;
+  background-color: lightgray;
+}
+
+#profile {
+  img {
+    display: table;
+    margin-left: 0.5em;
+    max-width: 33.3%;
+    border-radius: 12.5%;
+    border: 1em solid rgba(255,255,255,0.25);
+    float: right;
+  }
 }
 
 #center-container {
@@ -119,7 +130,6 @@ html {
     flex-basis: 0;
     padding: 0.5em 1.5em;
     text-align: center;
-    transition: 0.3s;
     cursor: pointer;
     border-radius: 4px;
     background-color: rgba(255,255,255,0.25);
@@ -135,6 +145,8 @@ html {
   padding: 0em 2em 1em 2em;
   .tab-content {
     display: none;
+    margin-top: 2em;
+    margin-bottom: 1em;
     &.active {
       display: block;
     }
@@ -204,16 +216,6 @@ html {
   display: table;
   h3 {
     text-align: center;
-  }
-}
-
-.thing {
-  @extend .shape;
-  background-color: rgba(255,255,255,0.25);
-  padding: 0.5em;
-  small {
-    display: inline-block;
-    margin-bottom: 0.5em;
   }
 }
 

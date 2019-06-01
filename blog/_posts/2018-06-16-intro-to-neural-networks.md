@@ -1,6 +1,5 @@
 ---
 title: Introduction to Neural Networks
-author: Kevin Van Kessel
 tags: tutorial neural-networks machine-learning ai
 reddit: r/vankessel/comments/afpiey
 ---
