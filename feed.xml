@@ -25,9 +25,9 @@ layout: none
         {% if post.description %}
           <description>{{ post.description | xml_escape }}</description>
         {% endif %}
-        {% if post.image %}
+        <!-- {% if post.image %}
           <enclosure url="{{ post.image | absolute_url | xml_escape }}" length="1" type="{{ post.mimetype | default: 'image/jpeg' }}" />
-        {% endif %}
+        {% endif %} -->
         {% if post.video %}
           <enclosure url="{{ post.video | absolute_url | xml_escape }}" length="1" type="video/webm" />
         {% endif %}
