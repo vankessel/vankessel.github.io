@@ -1,5 +1,6 @@
 ---
 title: Visualizing Complex Functions
+redirect_from: /blog/2019/01/06/visualizing-complex-functions
 tags: math visualization
 reddit: r/vankessel/comments/afppoh
 image: /assets/images/visualizing-complex-functions/z.jpg

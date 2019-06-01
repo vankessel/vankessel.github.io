@@ -1,5 +1,6 @@
 ---
 title: The ACM Programming competition
+redirect_from: /blog/2015/11/25/acm-competition
 tags: programming
 image: /assets/images/acm-competition/index.jpg
 ---

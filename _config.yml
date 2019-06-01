@@ -11,10 +11,13 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      permalink: :categories/:year/:month/:day/:title
+      permalink: :title
+
+plugins:
+  - jekyll-redirect-from
 
 author: "Kevin Van Kessel"
-name: "Kevin Van Kessel"
+title: "Kevin Van Kessel"
 url: https://vankessel.io
 domain: vankessel.io
 description: "A blog about programming, math, and machine learning."
