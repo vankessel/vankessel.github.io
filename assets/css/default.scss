@@ -29,6 +29,10 @@
              translate-y $y-period ease-in-out $y-period/-2 infinite alternate;
 }
 
+/* VARIABLES */
+$box-shadow: 4px 4px 16px 0px rgba(0,0,0,0.3);
+$translucent: rgba(255,255,255,0.3);
+
 /* STYLES */
 
 html {
@@ -41,7 +45,7 @@ html {
   margin: auto auto 1em 0.5em;
   max-width: 33.3%;
   border-radius: 12.5%;
-  border: 1em solid rgba(255,255,255,0.25);
+  border: 1em solid $translucent;
   float: right;
 }
 
@@ -119,7 +123,6 @@ html {
     padding: 0.5em 1.5em;
     text-align: center;
     cursor: pointer;
-    background-color: rgba(255,255,255,0.25);
     &:first-child {
       border-radius: 4px 0 0 4px;
     }
@@ -127,8 +130,8 @@ html {
       border-radius: 0 4px 4px 0;
     }
     &.active {
-      box-shadow: 4px 4px 16px 0px rgba(0,0,0,0.25);
-      background-color: rgba(255,255,255,0.5);
+      box-shadow: $box-shadow;
+      background-color: rgba(255,255,255,0.6);
     }
   }
 }
@@ -154,7 +157,7 @@ html {
   figure {
     padding: 1em;
     margin: 1em;
-    background-color: rgba(255,255,255,0.25);
+    background-color: $translucent;
   }
   figcaption {
     margin: 0.5em 1em -0.5em 1em;
@@ -217,11 +220,11 @@ html {
 
 .shape {
   border-radius: 4px;
-  box-shadow: 4px 4px 16px 0px rgba(0,0,0,0.25);
+  box-shadow: $box-shadow;
 }
 
 .glass {
-  background-color: rgba(255,255,255,0.25);
+  background-color: $translucent;
   backdrop-filter: blur(16px);
 }
 
