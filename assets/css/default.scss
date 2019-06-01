@@ -50,14 +50,12 @@ html {
 }
 
 #profile {
-  img {
-    display: table;
-    margin-left: 0.5em;
-    max-width: 33.3%;
-    border-radius: 12.5%;
-    border: 1em solid rgba(255,255,255,0.25);
-    float: right;
-  }
+  display: table;
+  margin: auto auto 1em 0.5em;
+  max-width: 33.3%;
+  border-radius: 12.5%;
+  border: 1em solid rgba(255,255,255,0.25);
+  float: right;
 }
 
 #center-container {
