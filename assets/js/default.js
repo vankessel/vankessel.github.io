@@ -38,18 +38,24 @@ let lastBackgroundWidth = null;
 let lastBackgroundHeight = null;
 function generateBackground(seed = null) {
 
+  console.log('Mode: ' + localStorage.getItem('mode', 'normal'))
   if(localStorage.getItem('mode', 'normal') === 'simple') {
     return;
   }
 
   let w = $(document).width();
   let h = $(document).height();
+  console.log('width: ' + w);
+  console.log('height: ' + h);
+  console.log('lWidth: ' + lastBackgroundWidth);
+  console.log('lHeight: ' + lastBackgroundHeight);
 
   if(w === lastBackgroundWidth && h === lastBackgroundHeight) {
     return;
   }
 
   let cell_size = Math.min(Math.max(192, w*h*0.000005722), 384);
+  console.log('cell_size: ' + cell_size);
 
   let pattern = Trianglify({
     width: w,
@@ -60,12 +66,15 @@ function generateBackground(seed = null) {
     seed: seed || (new Date).toDateString() + document.title
   });
 
+  console.log('Creating SVG');
   let svg = pattern.svg();
   svg.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
   svg.setAttribute('version', '1.1');
 
+  console.log('Setting background');
   $('html').css('background', 'url(\'data:image/svg+xml;base64,' + window.btoa(svg.outerHTML) + '\')' );
 
+  console.log('Setting last dimensions');
   lastBackgroundWidth = w;
   lastBackgroundHeight = h;
 }
