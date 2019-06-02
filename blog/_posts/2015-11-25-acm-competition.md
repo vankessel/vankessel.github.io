@@ -9,7 +9,7 @@ image: /assets/images/acm-competition/index.jpg
 
 On the 14th of November this year, I went to the Pacific Northwest regionals of the ACM programming competition.
 
-{% include image.html url=page.image hq_url=page.image %}
+{% include image.html url=page.image %}
 
 That's our team coach, Dr. Bowen Hui, my teammates Emerson and Ashley, and myself. The competition was hosted at the beautiful SFU Surrey campus in Vancouver. Food was provided throughout the event alongside lots and lots of coffee, as to be expected from a room full of programmers. There were a lot a interesting and challenging questions. We ended up solving 6 out of the 11 questions, getting 31st out of the 75 teams in our division.
 

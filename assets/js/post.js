@@ -7,18 +7,6 @@ function initPost() {
   if($('#comments').length !== 0) {
     loadComments();
   }
-
-  // Set lightboxes for images in #post
-  $('#post img').each(function() {
-    if($(this).data('featherlight') !== '') {
-      return;
-    }
-    // Default to a scheme where if featherlight is not explicitly set
-    // use .png at same path for the high quality version of the image
-    let lq = $(this).attr('src');
-    let hq = lq.substr(0, lq.lastIndexOf('.')) + '.png'
-    $(this).data('featherlight', hq);
-  });
 }
 
 function loadComments() {
