@@ -72,6 +72,9 @@ function generateBackground(seed = null) {
   svg.setAttribute('version', '1.1');
 
   console.log('Setting background');
+  console.log('Length: ' + svg.outerHTML.length);
+  console.log('Encoded length: ' + window.btoa(svg.outerHTML).length);
+  console.log('Full length: ' + ('url(\'data:image/svg+xml;base64,' + window.btoa(svg.outerHTML) + '\')').length);
   $('html').css('background', 'url(\'data:image/svg+xml;base64,' + window.btoa(svg.outerHTML) + '\')' );
 
   console.log('Setting last dimensions');
