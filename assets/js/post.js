@@ -30,9 +30,8 @@ function insertComments(data) {
   $('a:has(img)', comments).remove();
 
   // Replace default link with shortened version
-  $('.reddit-title > a', comments)
-    .text('reddit.com/' + reddit)
-    .attr('href', 'https://www.reddit.com/' + reddit);
+  let linkHtml = '<a href="https://www.reddit.com/' + reddit + '">reddit.com/' + reddit + '</a>';
+  $('.reddit-title').html('Comments from ' + linkHtml);
 
   // Fix user links
   $('.reddit-link a:first-child', comments).each(function() {
@@ -49,10 +48,7 @@ function insertComments(data) {
 
   // If there are no comments, fill with placeholder
   if($('.rembeddit-content > div').is(':empty')) {
-    comments.empty();
-    comments.append(
-      $('<h2>Comment on this post at <a href=\'https://www.reddit.com/' + reddit + '\'>reddit.com/' + reddit + '</a></h2>')
-    );
+    comments.html('<h2>Comment on this post at ' + linkHtml + '</h2>');
   }
 
   generateBackground();

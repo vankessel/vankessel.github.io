@@ -32,6 +32,8 @@
 /* VARIABLES */
 $box-shadow: 4px 4px 16px 0px rgba(0,0,0,0.3);
 $translucent: rgba(255,255,255,0.3);
+$link-color: #2525d4;
+$link-visited-color: #8000a8;
 
 /* STYLES */
 
@@ -152,7 +154,10 @@ html {
 #post {
   padding: 1em 2em;
   a {
-    color: blue;
+    color: $link-color;
+    &:visited {
+      color: $link-visited-color;
+    }
   }
   figure {
     padding: 1em;
@@ -192,11 +197,33 @@ html {
   padding: 2em;
   width: 100%;
 
-  // Reddit link is too long on mobile and needs to break on non-whitespace
-  .reddit-title > a {
-    word-break: break-all;
+  .reddit-title {
+    margin-top: -0.5em;
+    margin-bottom: 1.5em;
+    & > a {
+      word-break: break-all;
+    }
   }
 
+  .thing {
+    @extend .shape;
+    padding: 0.5em;
+    background-color: $translucent;
+    & > small {
+      display: inline-block;
+      margin-left: 0.5em;
+    }
+    & > .md {
+      margin-left: 0.5em;
+    }
+  }
+
+  a {
+    color: $link-color;
+    &:visited {
+      color: $link-visited-color;
+    }
+  }
   h2 {
     margin: 0;
   }
