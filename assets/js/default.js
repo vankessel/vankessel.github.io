@@ -36,26 +36,21 @@ Promise.all([jQueryPromise, mathJaxPromise]).then(() => {
 // I shouldn't be using globals but hey this is JS
 let lastBackgroundWidth = null;
 let lastBackgroundHeight = null;
+
 function generateBackground(seed = null) {
 
-  console.log('Mode: ' + localStorage.getItem('mode', 'normal'))
   if(localStorage.getItem('mode', 'normal') === 'simple') {
     return;
   }
 
   let w = $(document).width();
   let h = $(document).height();
-  console.log('width: ' + w);
-  console.log('height: ' + h);
-  console.log('lWidth: ' + lastBackgroundWidth);
-  console.log('lHeight: ' + lastBackgroundHeight);
 
   if(w === lastBackgroundWidth && h === lastBackgroundHeight) {
     return;
   }
 
   let cell_size = Math.min(Math.max(192, w*h*0.000005722), 384);
-  console.log('cell_size: ' + cell_size);
 
   let pattern = Trianglify({
     width: w,
@@ -66,18 +61,34 @@ function generateBackground(seed = null) {
     seed: seed || (new Date).toDateString() + document.title
   });
 
-  console.log('Creating SVG');
   let svg = pattern.svg();
   svg.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
-  svg.setAttribute('version', '1.1');
 
-  console.log('Setting background');
-  console.log('Length: ' + svg.outerHTML.length);
-  console.log('Encoded length: ' + window.btoa(svg.outerHTML).length);
-  console.log('Full length: ' + ('url(\'data:image/svg+xml;base64,' + window.btoa(svg.outerHTML) + '\')').length);
-  $('html').css('background', 'url(\'data:image/svg+xml;base64,' + window.btoa(svg.outerHTML) + '\')' );
+  $('html').css('background-image', 'url("data:image/svg+xml,' + minimizeSvg(svg.outerHTML) + '")');
 
-  console.log('Setting last dimensions');
   lastBackgroundWidth = w;
   lastBackgroundHeight = h;
+}
+
+function minimizeSvg(svgString) {
+  // Replace quotes with single quotes for use in element attribute
+  svgString = svgString.replace(/"/g, "'");
+  // Replace rgb to hex to for shortening
+  svgString = svgString.replace(/rgb\(\d{3},\d{3},\d{3}\)/gi, function(snippet) {
+    let r = parseInt(snippet.substr(4,3));
+    let g = parseInt(snippet.substr(8,3));
+    let b = parseInt(snippet.substr(12,3));
+    return "#" + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
+  });
+  // Undo some encoding for shortening
+  svgString = encodeURIComponent(svgString).replace(/%(20|2F|3A|3D)/g, function(match) {
+    switch (match) {
+      case '%20': return ' ';
+      case '%2F': return '/';
+      case '%3A': return ':';
+      case '%3D': return '=';
+      default: throw new Error("Was not expecting " + match);
+    }
+  });
+  return svgString;
 }
