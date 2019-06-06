@@ -41,6 +41,7 @@ $link-visited-color: #8000a8;
 html {
   font-family: 'Ubuntu', sans-serif;
   background-color: lightgray;
+  background-attachment: fixed;
 }
 
 #profile {
@@ -84,6 +85,7 @@ html {
       background-image: url('../images/heic1509a.jpg');
       background-size: 1280px 1024px;
       background-clip: text;
+      -webkit-background-clip: text;
       @include drift(32s, 512s);
     }
     @media all and (orientation: landscape) {

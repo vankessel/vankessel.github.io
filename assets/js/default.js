@@ -29,13 +29,7 @@ Promise.all([jQueryPromise, mathJaxPromise]).then(() => {
   // Remove fixed height attribute so scaled image maintains aspect ratio.
   let svgContainer = $('.MathJax_SVG_Display > span').css('max-width', '100%');
   $('> svg', svgContainer).removeAttr('height').css('max-width', '100%')
-
-  generateBackground();
 });
-
-// I shouldn't be using globals but hey this is JS
-let lastBackgroundWidth = null;
-let lastBackgroundHeight = null;
 
 function generateBackground(seed = null) {
 
@@ -43,12 +37,8 @@ function generateBackground(seed = null) {
     return;
   }
 
-  let w = $(document).width();
-  let h = $(document).height();
-
-  if(w === lastBackgroundWidth && h === lastBackgroundHeight) {
-    return;
-  }
+  let w = $(window).width();
+  let h = $(window).height();
 
   let cell_size = Math.min(Math.max(192, w*h*0.000005722), 384);
 
@@ -65,9 +55,6 @@ function generateBackground(seed = null) {
   svg.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
 
   $('html').css('background-image', 'url("data:image/svg+xml,' + minimizeSvg(svg.outerHTML) + '")');
-
-  lastBackgroundWidth = w;
-  lastBackgroundHeight = h;
 }
 
 function minimizeSvg(svgString) {

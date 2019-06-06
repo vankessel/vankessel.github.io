@@ -43,7 +43,6 @@
     effectsCheckbox.prop('checked', simpleMode);
 
     effectsCheckbox.click(function() {
-      console.log($(this).prop('checked'));
       localStorage.setItem('mode', $(this).prop('checked') ? 'simple' : 'normal');
       location.reload();
     });

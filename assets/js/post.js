@@ -14,7 +14,9 @@ function loadComments() {
   var url = 'https://www.reddit.com/' + $('#comments').data('reddit') + '.embed';
   $.ajax(url, {
     dataType: 'jsonp',
-    jsonpCallback: 'insertComments'
+    success: function(data) {
+      insertComments(data);
+    }
   });
 }
 
@@ -50,6 +52,4 @@ function insertComments(data) {
   if($('.rembeddit-content > div').is(':empty')) {
     comments.html('<h2>Comment on this post at ' + linkHtml + '</h2>');
   }
-
-  generateBackground();
 }
