@@ -38,7 +38,7 @@
 <script type="text/javascript">
   $(document).ready(function() {
     // Initialize effects checkbox and set click event
-    let simpleMode = localStorage.getItem('mode', 'normal') === 'simple';
+    let simpleMode = localStorage.getItem('mode') === 'simple';
     let effectsCheckbox = $('#effects');
     effectsCheckbox.prop('checked', simpleMode);
 

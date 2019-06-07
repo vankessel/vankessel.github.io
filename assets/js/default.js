@@ -7,7 +7,7 @@ let jQueryPromise = new Promise((resolve, reject) => {
       generateBackground();
     });
 
-    if(localStorage.getItem('mode', 'normal') === 'simple') {
+    if(localStorage.getItem('mode') === 'simple') {
       $('#name').css({
         "-webkit-animation": "none",
         "animation": "none",
@@ -33,7 +33,7 @@ Promise.all([jQueryPromise, mathJaxPromise]).then(() => {
 
 function generateBackground(seed = null) {
 
-  if(localStorage.getItem('mode', 'normal') === 'simple') {
+  if(localStorage.getItem('mode') === 'simple') {
     return;
   }
 
