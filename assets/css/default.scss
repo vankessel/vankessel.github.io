@@ -12,6 +12,11 @@
   }
 }
 
+@mixin filter($arg) {
+  -webkit-filter: $arg;
+  filter: $arg;
+}
+
 /* KEYFRAMES */
 
 @keyframes translate-x {
@@ -42,6 +47,15 @@ html {
   font-family: 'Ubuntu', sans-serif;
   background-color: lightgray;
   background-attachment: fixed;
+}
+
+#ribbon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 0;
+  width: 149px;
+  height: 149px;
 }
 
 #profile {
@@ -117,15 +131,14 @@ html {
   }
 }
 
-#nav {
+%tabs-shared {
   display: flex;
   flex-direction: row;
-  margin: 0 -2em;
+  border-radius: 4px 4px 4px 4px;
 
   .tab {
     flex-grow: 1;
     flex-basis: 0;
-    padding: 0.5em 1.5em;
     text-align: center;
     cursor: pointer;
     &:first-child {
@@ -134,9 +147,53 @@ html {
     &:last-child {
       border-radius: 0 4px 4px 0;
     }
-    &.active {
-      box-shadow: $box-shadow;
-      background-color: rgba(255,255,255,0.6);
+  }
+
+  .active {
+    box-shadow: $box-shadow;
+    background-color: rgba(255,255,255,0.6);
+  }
+}
+
+#tabs {
+  @extend %tabs-shared;
+  margin: 0 -2em 2em -2em;
+  .tab {
+    padding: 0.5em 1.5em;
+  }
+}
+
+#tabs-bottom {
+  @extend %tabs-shared;
+  margin: 2em -2em -1em -2em;
+
+  &.active {
+    box-shadow: $box-shadow;
+    background-color: $translucent;
+  }
+
+  .tab {
+    @media all and (orientation: landscape) {
+      padding: 1em 1em;
+    }
+    @media all and (orientation: portrait) {
+      padding: 0.5em 0.5em;
+    }
+  }
+
+  svg {
+    $size: 64px;
+    $color: rgba(32,32,32,0.8);
+    color: $color;
+
+    @media all and (orientation: landscape) {
+      width: $size;
+      height: $size;
+      @include filter(drop-shadow(0 0 1px $color));
+    }
+    @media all and (orientation: portrait) {
+      width: $size/2;
+      height: $size/2;
     }
   }
 }
@@ -144,6 +201,7 @@ html {
 #content-container {
   display: table;
   padding: 0em 2em 1em 2em;
+
   .tab-content {
     display: none;
     margin-top: 2em;
@@ -156,7 +214,7 @@ html {
 
 #post {
   padding: 1em 2em;
-  a {
+  p a {
     color: $link-color;
     &:visited {
       color: $link-visited-color;
@@ -259,7 +317,6 @@ html {
 }
 
 ul.post-list {
-  margin: 2em 0 1em 0;
   padding-left: 1em;
   div.date {
     color: #1a1a1a;
