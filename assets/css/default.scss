@@ -191,15 +191,16 @@ html {
     $size: 64px;
     $color: rgba(255,255,255,0.6);
     color: $color;
-    @include filter(drop-shadow(2px 2px 0px black));
 
     @media all and (orientation: landscape) {
       width: $size;
       height: $size;
+      @include filter(drop-shadow(2px 2px 0px black));
     }
     @media all and (orientation: portrait) {
       width: $size/2;
       height: $size/2;
+      @include filter(drop-shadow(1px 1px 0px black));
     }
   }
 }
