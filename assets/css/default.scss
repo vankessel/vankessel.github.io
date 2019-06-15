@@ -38,6 +38,7 @@
 
 $box-shadow: 4px 4px 16px 0px rgba(0,0,0,0.3);
 $translucent: rgba(255,255,255,0.3);
+$translucent-thick: rgba(255,255,255,0.6);
 $link-color: #2525d4;
 $link-visited-color: #8000a8;
 
@@ -151,7 +152,7 @@ html {
 
   .active {
     box-shadow: $box-shadow;
-    background-color: rgba(255,255,255,0.6);
+    background-color: $translucent-thick;
   }
 }
 
@@ -189,8 +190,7 @@ html {
 
   svg {
     $size: 64px;
-    $color: rgba(255,255,255,0.6);
-    color: $color;
+    color: $translucent-thick;
 
     @media all and (orientation: landscape) {
       width: $size;
