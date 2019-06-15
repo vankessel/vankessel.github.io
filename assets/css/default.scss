@@ -166,30 +166,36 @@ html {
 #tabs-bottom {
   @extend %tabs-shared;
   margin: 2em -2em -1em -2em;
+  box-shadow: $box-shadow;
+  background-color: $translucent;
 
-  &.active {
-    box-shadow: $box-shadow;
-    background-color: $translucent;
-  }
-
-  .tab {
-    @media all and (orientation: landscape) {
-      padding: 1em 1em;
+  $padding: 1em;
+  @media all and (orientation: landscape) {
+    padding-left: $padding;
+    padding-right: $padding;
+    .tab {
+      padding-top: $padding;
+      padding-bottom: $padding;
     }
-    @media all and (orientation: portrait) {
-      padding: 0.5em 0.5em;
+  }
+  @media all and (orientation: portrait) {
+    padding-left: $padding/2;
+    padding-right: $padding/2;
+    .tab {
+      padding-top: $padding/2;
+      padding-bottom: $padding/2;
     }
   }
 
   svg {
     $size: 64px;
-    $color: rgba(32,32,32,0.8);
+    $color: rgba(255,255,255,0.6);
     color: $color;
+    @include filter(drop-shadow(2px 2px 0px black));
 
     @media all and (orientation: landscape) {
       width: $size;
       height: $size;
-      @include filter(drop-shadow(0 0 1px $color));
     }
     @media all and (orientation: portrait) {
       width: $size/2;

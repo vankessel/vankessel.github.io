@@ -7,12 +7,30 @@ layout: default
 <div id="post" class="glass shape">
   {{ content }}
   <nav id="tabs-bottom" class="active">
-    <a href="" class="tab"><i class="fab fa-facebook-square"></i></a>
-    <a href="" class="tab"><i class="fab fa-twitter-square"></i></a>
-    <a href="" class="tab"><i class="fab fa-linkedin"></i></a>
-    <a href="" class="tab"><i class="fab fa-hacker-news-square"></i></a>
-    <a href="" class="tab"><i class="fab fa-reddit-square"></i></a>
-    <a href="" class="tab"><i class="fas fa-envelope-square"></i></a>
+    <a href="https://www.facebook.com/sharer.php?u={{ page.url | absolute_url | url_encode }}"
+      target="_blank" class="tab">
+      <i class="fab fa-facebook-square"></i>
+    </a>
+    <a href="https://twitter.com/intent/tweet?via=kevin_vankessel&url={{ page.url | absolute_url | url_encode }}"
+      target="_blank" class="tab">
+      <i class="fab fa-twitter-square"></i>
+    </a>
+    <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ page.url | absolute_url | url_encode }}"
+      target="_blank" class="tab">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="https://www.reddit.com/submit?url={{ page.url | absolute_url | url_encode }}&title={{ page.title | url_encode }}"
+      target="_blank" class="tab">
+      <i class="fab fa-reddit-square"></i>
+    </a>
+    <a href="https://news.ycombinator.com/submitlink?u={{ page.url | absolute_url | uri_escape }}&t={{ page.title | uri_escape }}"
+      target="_blank" class="tab">
+      <i class="fab fa-hacker-news-square"></i>
+    </a>
+    <a href="mailto:?body={{ page.url | absolute_url | url_encode }}&subject={{ page.title | url_encode }}"
+      target="_blank" class="tab">
+      <i class="fas fa-envelope-square"></i>
+    </a>
   </nav>
 </div>
 
