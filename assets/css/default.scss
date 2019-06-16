@@ -70,10 +70,6 @@ html {
 
 #center-container {
   margin: auto;
-  & > * {
-    margin: auto;
-    box-sizing: border-box;
-  }
   @media (orientation: landscape) {
     max-width: 60%;
   }
@@ -87,6 +83,7 @@ html {
   $size: 5em;
   $mobileSize: 3em;
   display: table;
+  margin: auto;
   a {
     text-decoration: none;
   }
@@ -158,7 +155,9 @@ html {
 
 #tabs {
   @extend %tabs-shared;
-  margin: 0 -2em 2em -2em;
+
+  margin: -1em -2em 2em -2em;
+
   .tab {
     padding: 0.5em 1.5em;
   }
@@ -166,26 +165,17 @@ html {
 
 #tabs-bottom {
   @extend %tabs-shared;
+
   margin: 2em -2em -1em -2em;
   box-shadow: $box-shadow;
   background-color: $translucent;
 
   $padding: 1em;
   @media all and (orientation: landscape) {
-    padding-left: $padding;
-    padding-right: $padding;
-    .tab {
-      padding-top: $padding;
-      padding-bottom: $padding;
-    }
+    padding: $padding;
   }
   @media all and (orientation: portrait) {
-    padding-left: $padding/2;
-    padding-right: $padding/2;
-    .tab {
-      padding-top: $padding/2;
-      padding-bottom: $padding/2;
-    }
+    padding: $padding/2;
   }
 
   svg {
@@ -209,7 +199,6 @@ html {
 
 #content-container {
   display: table;
-  padding: 0em 2em 1em 2em;
 
   .tab-content {
     display: none;
@@ -222,7 +211,6 @@ html {
 }
 
 #post {
-  padding: 1em 2em;
   p a {
     color: $link-color;
     &:visited {
@@ -258,7 +246,7 @@ html {
     left: 0;
   }
   figure, img, video, iframe {
-    @extend .shape;
+    @extend .pane-outer;
   }
 }
 
@@ -276,7 +264,7 @@ html {
   }
 
   .thing {
-    @extend .shape;
+    @extend .pane-outer;
     padding: 0.5em;
     background-color: $translucent;
     & > small {
@@ -308,20 +296,26 @@ html {
 
 #related {
   margin-top: 1em;
-  padding: 1em 2em;
   display: table;
   h3 {
     text-align: center;
   }
 }
 
-.shape {
+.pane {
+  @extend .blur;
+  box-sizing: border-box;
+  margin: auto auto 1em auto;
+  padding: 1em 2em;
+  background-color: $translucent;
+}
+
+.pane-outer {
   border-radius: 4px;
   box-shadow: $box-shadow;
 }
 
-.glass {
-  background-color: $translucent;
+.blur {
   backdrop-filter: blur(16px);
 }
 
