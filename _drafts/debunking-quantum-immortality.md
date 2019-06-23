@@ -218,9 +218,9 @@ Quantum immortality relies on the idea that you can't possibly experience the ti
 
 So, is it possible to stop experiencing?
 
-If you damage your prefrontal cortex with a lobotomy, you change. It you split the two hemispheres of your brain each will act independently, you change. If you take an inactive brain and apply a random electric charge to it, does it experience something? Seems like it should. If it does, does the same apply when the atoms of a cremated brain exchange electrons?
+If you take an inactive brain and apply a random electric charge to it, does it experience something? Seems like it should. If it does, does the same apply when the atoms of a cremated brain exchange electrons?
 
-When you die the matter that made your brain doesn't disappear. Neither does the energy that fired your synapses. The only thing that changes is the structure. Perhaps death is actually an extremely primitive and simple [form](https://en.wikipedia.org/wiki/Hard_problem_of_consciousness) [of](https://en.wikipedia.org/wiki/Panpsychism) [experience](https://en.wikipedia.org/wiki/Integrated_information_theory).
+When you die the matter that made up your brain doesn't disappear. Neither does the energy that fired your synapses. The only thing that changes is the structure. Perhaps death is actually an extremely primitive and simple [form](https://en.wikipedia.org/wiki/Hard_problem_of_consciousness) [of](https://en.wikipedia.org/wiki/Panpsychism) [experience](https://en.wikipedia.org/wiki/Integrated_information_theory).
 
 Paradoxically this would mean quantum immortality would rely on us being mortal.
 
