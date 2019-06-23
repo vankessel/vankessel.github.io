@@ -17,6 +17,7 @@ layout: null
     <lastBuildDate>{% for post in site.posts limit:1 %}{{ post.date | date_to_rfc822 }}{% endfor %}</lastBuildDate>
     {% assign feed_items = site.feed_items | default: 10 %}
     {% for post in site.posts limit:feed_items %}
+      {% unless post.hide %}
       <item>
         <title>{{ post.title | xml_escape }}</title>
         {% if post.author %}
@@ -32,6 +33,7 @@ layout: null
         <link>{{ post.url | absolute_url }}</link>
         <guid isPermaLink="true">{{ post.url | absolute_url }}</guid>
       </item>
+      {% endunless %}
     {% endfor %}
   </channel>
 </rss>

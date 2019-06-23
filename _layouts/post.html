@@ -6,8 +6,7 @@ layout: default
 
 <div id="post" class="pane pane-outer">
   {{ content }}
-  {% if page.hide_social %}
-  {% else %}
+  {% unless page.hide_social %}
   <nav id="tabs-bottom">
     <a href="https://www.facebook.com/sharer.php?u={{ page.url | absolute_url | url_encode }}"
       target="_blank" class="tab">
@@ -33,7 +32,7 @@ layout: default
       <i class="fas fa-envelope-square"></i>
     </a>
   </nav>
-  {% endif %}
+  {% endunless %}
 </div>
 
 <div id="subscribe" class="pane pane-outer">
@@ -47,8 +46,7 @@ layout: default
 </div>
 {% endif %}
 
-{% if page.hide_related %}
-{% else %}
+{% unless page.hide_related %}
 <div id="related" class="pane pane-outer">
   <h3>Related Posts</h3>
   <ul class="post-list">
@@ -57,4 +55,4 @@ layout: default
     {% endfor %}
   </ul>
 </div>
-{% endif %}
+{% endunless %}
