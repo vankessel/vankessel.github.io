@@ -17,7 +17,6 @@ a7: The API provides true quantum random numbers.
 
 # {{ page.title }}
 
-
 ## What is Quantum Suicide and Quantum Immortality?
 
 [Quantum suicide](https://en.wikipedia.org/wiki/Quantum_suicide_and_immortality) is a famous thought experiment. It is similar to the [Schrödinger's cat](https://en.wikipedia.org/wiki/Schr%C3%B6dinger%27s_cat) thought experiment, but from the perspective of the cat. The purpose of it is to speculate on what would happen to the (un)lucky subject under different interpretations of quantum mechanics.
@@ -193,7 +192,7 @@ It would be in anyone's own interest to extend their lifespan. I don't see anyon
   <li><span>{{ page.a4 }}</span></li>
 </ol>
 
-I would take this as a certainty. There are so many possible things you could read and each would take you down a different path. The real question is if it is possible in the 140 characters I have allotted on this page. This should be fine, one of the possibilities is that it could even send a message asking to run the experiment again with more characters.
+I would take this as a certainty. There are so many possible things you could read and each would take you down a different path. The real question is if it is possible in the 140 characters I have allotted in the experiment. This should be fine, one of the possibilities is that it could even send a message asking to run the experiment again with more characters.
 
 <ol start="3">
   <li><span>{{ page.a3 }}</span></li>
