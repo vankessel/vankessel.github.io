@@ -22,11 +22,11 @@ a7: The API provides true quantum random numbers.
 
 [Quantum suicide](https://en.wikipedia.org/wiki/Quantum_suicide_and_immortality) is a famous thought experiment. It is similar to the [Schrödinger's cat](https://en.wikipedia.org/wiki/Schr%C3%B6dinger%27s_cat) thought experiment, but from the perspective of the cat. The purpose of it is to speculate on what would happen to the (un)lucky subject under different interpretations of quantum mechanics.
 
-A gun is pointed at your head. The gun is rigged to fire depending on the result of a quantum event. The quantum event has a equal chance of two outcomes just like a coin flip. If the [many-worlds interpretation](https://en.wikipedia.org/wiki/Many-worlds_interpretation) is true, then there must exist a version of you that survived the event. Since you can't possibly experience the timeline in which you are dead, you must experience the one where you survive. Only you would experience this effect. This consequence is also known as quantum immortality. Outside observers will still see you live or die at the expected probability of the quantum event. This is the basic argument for quantum suicide.
+A gun is pointed at your head. The gun is rigged to fire depending on the result of a quantum event. The quantum event has a equal chance of two outcomes just like a coin flip. If the [many-worlds interpretation](https://en.wikipedia.org/wiki/Many-worlds_interpretation) is true, then there must exist a version of you that survived the event. Since you can't possibly experience the timeline in which you are dead, you must experience the one where you survive. Only you would experience this effect. This consequence is also known as quantum immortality. Outside observers will still see you live or die at the expected probability of the quantum event.
 
 ## The Nature of This Proof
 
-Normally a proof should inform the reader enough such that they can come to the same conclusion. In this case only the subject of the thought experiment can only be sure of the results. Outside observers would almost certainly observer my failure regardless of if the thought experiment is correct or not. Since this proof is personal to the one conducting it, I will provide an experiment on this page. Anyone can run it and confirm the result for themselves.
+Normally a proof should inform the reader enough such that they can come to the same conclusion. In this case only the subject of the thought experiment can only be sure of the results. Because of this I will provide an experiment on this page that anyone can run to confirm the result for themselves.
 
 ## Transforming the Thought Experiment
 
