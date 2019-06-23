@@ -53,22 +53,20 @@ There is a chance that the experiment will fail now because it will be run again
 
 Obviously it would be highly unethical to perform such an experiment as it would involve asking a doctor to allow someone to come to harm through inaction. Not to mention you would need the information of multiple different ailments to repeat the experiment and confirm the low chance of consecutive successes.
 
-Instead of this hypothetical doctor, we will conduct a series of quantum events and interpret the results as bytes. These random bytes will be then interpreted as a series of the 95 printable ASCII characters. This brings us to our next assumptions:
+Instead of this hypothetical doctor, we will conduct a series of quantum events and interpret the results as bytes. These random bytes will then be interpreted as one of the 95 printable [ASCII](https://en.wikipedia.org/wiki/ASCII) characters. This brings us to our next assumptions:
 
 <ol start="4">
   <li><span>{{ page.a4 }}</span></li>
   <li><span>{{ page.a5 }}</span></li>
 </ol>
 
-If you were to receive a message, it would not be some sort of mystical message from the universe. The message simply appeared because it is the combination of bits that can be interpreted by the reader in a way that extends their life. Because of this, we need to consider the limits of interpretation. How powerful is the butterfly effect? Is it possible that you could be shown a seemingly random sequence of glyphs that takes you down the stream of reality where you live the longest?
+If you were to receive a message, it would not be some sort of mystical message from the universe. The message simply appeared because it is the combination of bits that can be interpreted by the reader in a way that extends their life. Because of this, we need to consider the limits of interpretation. How powerful is the butterfly effect? Is it possible that you could be shown a seemingly random sequence of glyphs that guides you down the stream of reality where you live the longest? We need to be able to distinguish a life extending message from the normally expected random characters.
 
 <ol start="6">
   <li><span>{{ page.a6 }}</span></li>
 </ol>
 
-## Proving to Oneself
-
-So, how do you generate quantum random bytes? Luckily for us the folks down under at the [ANU](http://qrng.anu.edu.au/index.php) provide an API for generating these numbers. Since I can't confirm that these numbers are truly quantum random numbers, it must go on the list of assumptions.
+So, how do you generate quantum random bytes? Luckily for us the folks down under at the [ANU](http://qrng.anu.edu.au/index.php) provide an API for generating these numbers. Since I can't confirm that these numbers are truly quantum random numbers, it must go on the list.
 
 <ol start="7">
   <li><span>{{ page.a7 }}</span></li>
@@ -86,9 +84,9 @@ Now we have our complete list of assumptions:
   <li><span>{{ page.a7 }}</span></li>
 </ol>
 
-## Experiment
+## The Experiment
 
-Click below to generate a tweet from the void.
+<p style="text-align: center">Click below to generate a tweet from the void.</p>
 
 <div style="display: flex; flex-direction: column; align-items: center; text-align: center">
   <span style="margin-bottom: 1em">
@@ -223,6 +221,6 @@ If you take an inactive brain and apply a random electric charge to it, does it 
 
 When you die the matter that made up your brain doesn't disappear. Neither does the energy that fired your synapses. The only thing that changes is the structure. Perhaps death is actually an extremely primitive [form](https://en.wikipedia.org/wiki/Hard_problem_of_consciousness) [of](https://en.wikipedia.org/wiki/Panpsychism) [experience](https://en.wikipedia.org/wiki/Integrated_information_theory).
 
-Paradoxically this would mean quantum immortality would rely on us being mortal.
+Paradoxically this would mean quantum immortality would rely on mortality.
 
-I personally hope it is possible to stop experiencing. Immortality sounds exhausting.
+I personally hope it is possible to stop experiencing. Any form of immortality sounds exhausting.
