@@ -29,15 +29,15 @@ Normally a proof should inform the reader enough such that they can come to the 
 
 ## Transforming the Thought Experiment
 
-To disprove quantum suicide, we will transform the thought experiment into an equivalent form and disprove that instead.
+To disprove quantum immortality, we will transform the thought experiment into an equivalent form and use that instead.
 
-We will make a list of assumptions, one of which is the thought experiment being true. The experiment on this page will prove that all the assumptions can not be simultaneously true. Then we will eliminate the very likely assumptions and discuss what remains. Since the thought experiment relies on the many-worlds interpretation being true, that will be our first assumption.
+We will make a list of assumptions, some of which quantum immortality relies on being true. The experiment on this page will prove that all the assumptions can not be simultaneously true. Then we will eliminate the very likely assumptions and discuss what remains. Since the thought experiment relies on the many-worlds interpretation being true, that will be our first assumption.
 
 <ol start="1">
   <li><span>{{ page.a1 }}</span></li>
 </ol>
 
-We need to consider that death isn't instant. It takes time for the bullet to exit the chamber and do its work. This means the outcome of the quantum event is independent of the moment it occurs; the event you experience is the one that doesn't lead to a future death. If we apply this to every quantum event of every moment, that means that every quantum event experienced will be the ones that funnel you down the branch of reality in which you live the longest. This is quantum immortality.
+We need to consider that death isn't instant. It takes time for the bullet to exit the chamber and do its work. This means the outcome of the quantum event is independent of the moment it occurs; the event you experience is the one that doesn't lead to a future death. If we apply this to every quantum event of every moment, that means that every quantum event experienced will be the ones that funnel you down the branch of reality in which you live the longest.
 
 <ol start="2">
   <li><span>{{ page.a2 }}</span></li>
@@ -166,7 +166,7 @@ Click below to generate a tweet from the void.
 
 ## Results & Discussion
 
-I didn't receive a message and I presume you didn't either. If you did, there is still a small chance that message occurred coincidentally. This is why you can't actually prove quantum immortality as a proof implies certainty. This disproof is not disproving it directly either, but rather disproving the simultaneity of our assumptions which is about as close as we can get. (Also if you did receive a message, please don't tell me. I don't want to know that somebody else is likely the protagonist of the reality I live in.)
+I didn't receive a message and I presume you didn't either. If you did, there is still a small chance that message occurred coincidentally. This is why you can't actually prove quantum immortality as a proof implies certainty. This disproof does not disprove quantum immortality directly either, but rather the simultaneity of our assumptions which is about as close as we can get. (Also if you did receive a message, please don't tell me. I don't want to know that somebody else is likely the protagonist of the reality I live in.)
 
 This result means one or more of our assumptions are false. Let's go backwards through them and discuss the likelihood of each.
 
