@@ -60,7 +60,7 @@ Instead of this hypothetical doctor, we will conduct a series of quantum events 
   <li><span>{{ page.a5 }}</span></li>
 </ol>
 
-If you were to receive a message, it would not be some sort of mystical message from the universe. The message simply appeared because it is the combination of bits that can be interpreted by the reader in a way that extends their life. Because of this, we need to consider the limits of interpretation. How powerful is the butterfly effect? Is it possible that you could be shown a seemingly random sequence of glyphs that guides you down the stream of reality where you live the longest? We need to be able to distinguish a life extending message from the normally expected random characters.
+If you were to receive a message, it would not be some sort of mystical message from the universe. The message simply appeared because it is the combination of bytes that can be interpreted by the reader in a way that extends their life. Because of this, we need to consider the limits of interpretation. How powerful is the butterfly effect? Is it possible that you could be shown a seemingly random sequence of glyphs that guides you down the stream of reality where you live the longest? We need to be able to distinguish a life extending message from the normally expected random characters.
 
 <ol start="6">
   <li><span>{{ page.a6 }}</span></li>
@@ -190,7 +190,7 @@ It would be in anyone's own interest to extend their lifespan. I don't see anyon
   <li><span>{{ page.a4 }}</span></li>
 </ol>
 
-I would take this as a certainty. There are so many possible things you could read and each would take you down a different path. The real question is if it is possible in the 140 characters I have allotted in the experiment. This should be fine, one of the possibilities is that it could even send a message asking to run the experiment again with more characters.
+I would take this as a certainty. There are so many possible things you could read and each would take you down a different path. The real question is if it is possible in the 140 characters (about 920 [bits](https://en.wikipedia.org/wiki/Bit) of information) I have allotted in the experiment. This should be fine, one of the possibilities is that it could even send a message asking to run the experiment again with more characters.
 
 <ol start="3">
   <li><span>{{ page.a3 }}</span></li>
