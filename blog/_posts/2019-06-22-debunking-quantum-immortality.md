@@ -2,6 +2,7 @@
 title: How to Disprove Quantum Immortality (Without Risking Your Life)
 author: Kevin Van Kessel
 tags: quantum physics philosophy experiment interactive
+hide: true
 reddit:
 
 a1: The many-worlds interpretation is true.
