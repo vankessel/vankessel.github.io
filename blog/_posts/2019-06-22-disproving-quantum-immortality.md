@@ -184,7 +184,7 @@ This assumption worries me the most. The butterfly effect is powerful, and compo
   <li><span>{{ page.a5 }}</span></li>
 </ol>
 
-It would be in anyone's own interest to extend their lifespan. I don't see anyone realistically disregarding such a message. But people don't always act realistically. Even in the case where someone ignores the message, it would act like the [Oracle](https://en.wikipedia.org/wiki/The_Oracle_(The_Matrix)) from The Matrix. What you read is not necessarily the truth, it is simply exactly what you need to read at that moment to extend your lifespan. The moment you read it, it has already shuffled you down the branch of reality where you live longer.
+It would be in anyone's own interest to extend their lifespan. I don't see anyone realistically disregarding such a message. But people don't always act realistically. Even in the case where someone ignores the message, it would act like the Oracle from The Matrix. What you read is not necessarily the truth, it is simply exactly what you need to read at that moment to extend your lifespan. The moment you read it, it has already shuffled you down the branch of reality where you live longer.
 
 <ol start="4">
   <li><span>{{ page.a4 }}</span></li>
