@@ -21,7 +21,7 @@ a7: The API provides true quantum random numbers.
 
 [Quantum suicide](https://en.wikipedia.org/wiki/Quantum_suicide_and_immortality) is a famous thought experiment. It is similar to the [Schrödinger's cat](https://en.wikipedia.org/wiki/Schr%C3%B6dinger%27s_cat) thought experiment, but from the perspective of the cat. The purpose of it is to speculate on what would happen to the (un)lucky subject under different interpretations of quantum mechanics.
 
-A gun is pointed at your head. The gun is rigged to fire depending on the result of a quantum event. The quantum event has a equal chance of two outcomes just like a coin flip. If the [many-worlds interpretation](https://en.wikipedia.org/wiki/Many-worlds_interpretation) is true, then there must exist a version of you that survived the event. Since you can't possibly experience the timeline in which you are dead, you must experience the one where you survive. Only you would experience this effect. This consequence is also known as quantum immortality. Outside observers will still see you live or die at the expected probability of the quantum event.
+A gun is pointed at your head. The gun is rigged to fire depending on the result of a quantum event. The quantum event has a equal chance of two outcomes just like a coin flip. If the [many-worlds interpretation](https://en.wikipedia.org/wiki/Many-worlds_interpretation) is true, then there must exist a version of you that survived the event. Since you can't possibly experience the timeline in which you are dead, you must experience the one where you survive. This consequence is also known as quantum immortality. Only you would experience this effect. Outside observers will still see you live or die at the expected probability of the quantum event.
 
 ## The Nature of This Proof
 
@@ -43,9 +43,9 @@ We need to consider that death isn't instant. It takes time for the bullet to ex
   <li><span>{{ page.a2 }}</span></li>
 </ol>
 
-Under this assumption we can change the circumstances from a punishment to a reward. Instead imagine a doctor has information about your health. If he tells you about it and you act on the information, you will certainly live a longer life. The doctor will only tell you about the information based the result of the quantum event. If the current assumptions are true, then you should always experience the reality in which the doctor tells you about your unknown ailment.
+Under this assumption we can change the circumstances from a punishment to a reward. Instead of a gun, imagine a doctor has information about your health. If he tells you about it and you act on the information, you will certainly live a longer life. The doctor will only tell you about the information based the result of the quantum event. If the current assumptions are true, then you should always experience the reality in which the doctor tells you about your unknown ailment.
 
-There is a chance that the experiment will fail now because it will be run again in a tomorrow and succeed. Even though you have one less day to use the information, waiting that one day may have caused a [butterfly effect](https://en.wikipedia.org/wiki/Butterfly_effect) where you use that information more effectively. To counteract this, you could repeat the experiment occasionally over a large enough period of time such that a lack of information would certainly affect your lifespan. This is rather inconvenient and uncertain. A slightly better way to ensure you get this information the first time is to only give yourself one chance. You can do this by vowing to only run the experiment once.
+There is a chance that the experiment will fail now because it will be run again tomorrow and succeed. Even though you have one less day to use the information, waiting that one day may have caused a [butterfly effect](https://en.wikipedia.org/wiki/Butterfly_effect) where you use that information more effectively. To counteract this, you could repeat the experiment occasionally over a large enough period of time such that a lack of information would certainly affect your lifespan. This is rather inconvenient and uncertain. A slightly better way to ensure you get this information the first time is to only give yourself one chance. You can do this by vowing to only run the experiment once.
 
 <ol start="3">
   <li><span>{{ page.a3 }}</span></li>
@@ -209,7 +209,7 @@ If the many-worlds interpretation is false, then quantum immortality must be fal
 
 If the many-worlds interpretation is true, then the second assumption must be false.
 
-Under every possibility, quantum immortality is eliminated.
+Under every possibility quantum immortality is eliminated.
 
 ## A Final Thought
 
