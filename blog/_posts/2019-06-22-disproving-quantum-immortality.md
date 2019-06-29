@@ -17,7 +17,7 @@ a7: The API provides true quantum random numbers.
 
 # {{ page.title }}
 
-## What is Quantum Suicide and Quantum Immortality?
+## What Is Quantum Suicide and Quantum Immortality?
 
 [Quantum suicide](https://en.wikipedia.org/wiki/Quantum_suicide_and_immortality) is a famous thought experiment. It is similar to the [Schrödinger's cat](https://en.wikipedia.org/wiki/Schr%C3%B6dinger%27s_cat) thought experiment, but from the perspective of the cat. The purpose of it is to speculate on what would happen to the (un)lucky subject under different interpretations of quantum mechanics.
 

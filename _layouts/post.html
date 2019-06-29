@@ -35,9 +35,11 @@ layout: default
   {% endunless %}
 </div>
 
+{% unless page.hide_subscribe %}
 <div id="subscribe" class="pane pane-outer">
   {% include subscribe.html %}
 </div>
+{% endunless %}
 
 {% if page.reddit %}
 <div id="comments" class="pane pane-outer" data-reddit="{{ page.reddit }}">

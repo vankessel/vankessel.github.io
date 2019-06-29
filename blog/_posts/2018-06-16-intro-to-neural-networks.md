@@ -9,7 +9,7 @@ mimetype: image/png
 
 # {{ page.title }}
 
-## What is a Neural Network?
+## What Is a Neural Network?
 
 A neural network is a black box statistical model inspired by the biological information processing of neurons. These networks are taught how to produce correct outputs by training them with large datasets. A black box is a function in which the inner workings behind the function is unknown. Neural networks are effectively black boxes as they hard to reverse engineer once fully trained. This may not be the case in the future as [work is being done](https://youtu.be/zjaz2mC1KhM) to glean insight into these fascinating and powerful models.
 
