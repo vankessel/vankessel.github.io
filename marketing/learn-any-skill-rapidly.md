@@ -11,7 +11,7 @@ hide_related: true
 
 # {{ page.title }}
 
-I have played many competitive games over the years and have learned very valuable lessons along the way. Lately I've been playing Foosball but these principles apply to anything competitive, like video games and sports. In fact, the first three principles apply to any skill, competitive or not.
+I have played many competitive games over the years and have learned very valuable lessons along the way. Lately I've been playing foosball but these principles apply to anything competitive, like video games and sports. In fact, the first three principles apply to any skill, competitive or not.
 
 Obviously being good at Street Fighter does not necessarily make you good at basketball or foosball. That's because they require vastly different technical skills. Skills vary on a spectrum between foundational and technical. Foundational skills must always be learned before more technical skills. Who do you think would win a match of Street Fighter, someone who has memorized every combo and spams them, or someone who doesn't know a single combo but knows exactly when to attack, block, grab, and jump? It's the latter every time.
 
