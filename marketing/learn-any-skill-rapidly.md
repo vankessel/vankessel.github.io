@@ -2,9 +2,11 @@
 title: Learn Any Skill Rapidly with These Simple Principles
 author: Kevin Van Kessel
 image: /assets/images/learn-any-skill-rapidly/index.jpg
+layout: post
 permalink: learn-any-skill-rapidly
 hide_social: true
 hide_subscribe: true
+hide_related: true
 ---
 
 # {{ page.title }}
