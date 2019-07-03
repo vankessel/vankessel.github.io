@@ -251,6 +251,10 @@ html {
       word-break: break-all;
     }
   }
+  
+  & > h2 > a {
+    word-break: break-all;
+  }
 
   .thing {
     @extend .pane-outer;
