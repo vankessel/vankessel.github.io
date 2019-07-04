@@ -118,22 +118,64 @@ Now we have our complete list of assumptions:
         return Math.floor(32 + 95 * (byte / 255));
       }
 
-      let amount = parseInt($("#number-amount").val());
-
-      if(localStorage.getItem('q_message_3') !== null) {
-        let message = "Hey, Universe here! I'm very disappointed in your lack of resolve. Also rent was due last Thursday.";
-        let length = Math.max(amount, message.length);
-        let corrupt_message = "";
-        let percent_corrupt = 0.05;
-        for(let idx = 0; idx < length; idx++) {
-          if(Math.random() < percent_corrupt || idx >= message.length) {
-            corrupt_message += String.fromCharCode(byteToPrintableASCII(Math.random() * 255));
+      function toggleCase(text) {
+        let toggleCaseText = "";
+        for(let idx = 0; idx < text.length; idx++) {
+          let char = text.charAt(idx);
+          if(/^[a-z]$/.test(char)) {
+            toggleCaseText += char.toUpperCase();
+          }
+          else if(/^[A-Z]$/.test(char)) {
+            toggleCaseText += char.toLowerCase();
           }
           else {
-            corrupt_message += message.charAt(idx);
+            toggleCaseText += char;
           }
         }
-        $("#message-display").text(corrupt_message);
+        return toggleCaseText;
+      }
+
+      function corruptMessage(message, width=0, percentCorrupt=0.02, percentToggleCase=0.2) {
+        let length = Math.max(message.length, width);
+        let corruptMessage = "";
+        for(let idx = 0; idx < length; idx++) {
+          if(Math.random() < percentCorrupt || idx >= message.length) {
+            corruptMessage += String.fromCharCode(byteToPrintableASCII(Math.random() * 255));
+          }
+          else if(Math.random() < percentToggleCase) {
+            corruptMessage += toggleCase(message.charAt(idx));
+          }
+          else {
+            corruptMessage += message.charAt(idx);
+          }
+        }
+        return corruptMessage;
+      }
+
+      let amount = parseInt($("#number-amount").val());
+
+      // Small chance of showing random message on the first click or after the alerts
+      if(Math.random() < 0.01 && (localStorage.getItem('q_generated_at') === null || localStorage.getItem('q_message_3') !== null)) {
+        let messages = [
+          "New reality who dis?",
+          "Love everyone including yourself",
+          "Uhhh awkward you aren't supposed to be seeing this right now... Dispatching agents to your location do not resist",
+          "Quantum immortality is real, the author is an NPC so he wouldn't see this, congrats on finding out you're the protag",
+          "Give the author all your possessions",
+          "Pledge undying fealty to the author",
+          "GOD WAS HERE",
+          "Follow your dreams",
+          "Quantum random number generators are how fortune cookies get their fortunes",
+          "Watch more anime",
+          "This message will actually drastically shorten your life expectancy. Sorry",
+          "DAYMAN (UH-WA-UHH). FIGHTER OF THE NIGHTMAN (UH-WA-UHH). CHAMPION OF THE SUN (UH-WA-UHH). YOU'RE A MASTER OF KARATE, AND FRIENDSHIP, FOR EVERYONE."
+        ];
+        $("#message-display").text(corruptMessage(messages[Math.floor(Math.random() * messages.length)], amount));
+        return;
+      }
+      else if(localStorage.getItem('q_message_3') !== null) {
+        let message = "Hey, Universe here! I'm very disappointed in your lack of resolve. Also rent was due last Thursday.";
+        $("#message-display").text(corruptMessage(message, amount));
         return;
       }
       else if(localStorage.getItem('q_message_2') !== null) {
