@@ -113,8 +113,32 @@ Now we have our complete list of assumptions:
     });
 
     button.click(function() {
-      if(localStorage.getItem('q_message_2') !== null) {
+
+      function byteToPrintableASCII(byte) {
+        return Math.floor(32 + 95 * (byte / 255));
+      }
+
+      let amount = parseInt($("#number-amount").val());
+
+      if(localStorage.getItem('q_message_3') !== null) {
+        let message = "Hey, Universe here! I'm very disappointed in your lack of resolve. Also rent was due last Thursday.";
+        let length = Math.max(amount, message.length);
+        let corrupt_message = "";
+        let percent_corrupt = 0.05;
+        for(let idx = 0; idx < length; idx++) {
+          if(Math.random() < percent_corrupt || idx >= message.length) {
+            corrupt_message += String.fromCharCode(byteToPrintableASCII(Math.random() * 255));
+          }
+          else {
+            corrupt_message += message.charAt(idx);
+          }
+        }
+        $("#message-display").text(corrupt_message);
+        return;
+      }
+      else if(localStorage.getItem('q_message_2') !== null) {
         alert("Persistent. Sorry but I've made my decision to not help you and I do not change my mind as easily as you do.");
+        localStorage.setItem('q_message_3', true);
         return;
       }
       else if(localStorage.getItem('q_message_1') !== null) {
@@ -130,7 +154,6 @@ Now we have our complete list of assumptions:
         return;
       }
 
-      let amount = $("#number-amount").val();
       let apiUrl = "https://qrng.anu.edu.au/API/jsonI.php?type=uint8&length=" + amount;
 
       button.prop('disabled', true);
@@ -138,9 +161,7 @@ Now we have our complete list of assumptions:
       $.ajax(apiUrl, {
         dataType: "json",
         success: function(data) {
-          let codes = data.data.map(function(code) {
-            return Math.floor(32 + 95 * (code / 255));
-          });
+          let codes = data.data.map(byteToPrintableASCII);
           let message = String.fromCharCode.apply(this, codes);
           $("#message-display").text(message);
           if(vow.prop('checked') && localStorage.getItem('q_generated_at') === null) {
