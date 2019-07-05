@@ -135,47 +135,58 @@ Now we have our complete list of assumptions:
         return toggleCaseText;
       }
 
-      function corruptMessage(message, width=0, percentCorrupt=0.02, percentToggleCase=0.2) {
+      function corruptText(message, width=0, percentCorrupt=0.02, percentToggleCase=0.2) {
         let length = Math.max(message.length, width);
-        let corruptMessage = "";
+        let corruptedMessage = "";
         for(let idx = 0; idx < length; idx++) {
           if(Math.random() < percentCorrupt || idx >= message.length) {
-            corruptMessage += String.fromCharCode(byteToPrintableASCII(Math.random() * 255));
+            corruptedMessage += String.fromCharCode(byteToPrintableASCII(Math.random() * 255));
           }
           else if(Math.random() < percentToggleCase) {
-            corruptMessage += toggleCase(message.charAt(idx));
+            corruptedMessage += toggleCase(message.charAt(idx));
           }
           else {
-            corruptMessage += message.charAt(idx);
+            corruptedMessage += message.charAt(idx);
           }
         }
-        return corruptMessage;
+        return corruptedMessage;
       }
 
       let amount = parseInt($("#number-amount").val());
 
+      function showRandomMessage(delayMilliseconds=0) {
+        setTimeout(function() {
+          let messages = [
+            "New reality who dis?",
+            "Love everyone including yourself",
+            "Uhhh awkward you aren't supposed to be seeing this right now... Dispatching agents to your location do not resist",
+            "Quantum immortality is real, the author is an NPC so he wouldn't see this, congrats on finding out you're the protag",
+            "Give the author all your possessions",
+            "Pledge undying fealty to the author",
+            "GOD WAS HERE",
+            "Follow your dreams",
+            "Quantum random number generators are how fortune cookies get their fortunes",
+            "Watch more anime",
+            "This message will drastically shorten your life expectancy, sorry",
+            "DAYMAN (UH-WA-UHH). FIGHTER OF THE NIGHTMAN (UH-WA-UHH). CHAMPION OF THE SUN (UH-WA-UHH). YOU'RE A MASTER OF KARATE, AND FRIENDSHIP, FOR EVERYONE.",
+            "Hey, Universe here! I'm very disappointed in your lack of resolve. Also rent was due last Thursday."
+          ];
+          $("#message-display").text(corruptText(messages[Math.floor(Math.random() * messages.length)], amount));
+        },
+          delayMilliseconds
+        );
+      }
+
       // Small chance of showing random message on the first click or after the alerts
-      if(Math.random() < 0.01 && (localStorage.getItem('q_generated_at') === null || localStorage.getItem('q_message_3') !== null)) {
-        let messages = [
-          "New reality who dis?",
-          "Love everyone including yourself",
-          "Uhhh awkward you aren't supposed to be seeing this right now... Dispatching agents to your location do not resist",
-          "Quantum immortality is real, the author is an NPC so he wouldn't see this, congrats on finding out you're the protag",
-          "Give the author all your possessions",
-          "Pledge undying fealty to the author",
-          "GOD WAS HERE",
-          "Follow your dreams",
-          "Quantum random number generators are how fortune cookies get their fortunes",
-          "Watch more anime",
-          "This message will actually drastically shorten your life expectancy. Sorry",
-          "DAYMAN (UH-WA-UHH). FIGHTER OF THE NIGHTMAN (UH-WA-UHH). CHAMPION OF THE SUN (UH-WA-UHH). YOU'RE A MASTER OF KARATE, AND FRIENDSHIP, FOR EVERYONE."
-        ];
-        $("#message-display").text(corruptMessage(messages[Math.floor(Math.random() * messages.length)], amount));
+
+      if(localStorage.getItem('q_message_4') !== null) {
+        showRandomMessage();
         return;
       }
       else if(localStorage.getItem('q_message_3') !== null) {
         let message = "Hey, Universe here! I'm very disappointed in your lack of resolve. Also rent was due last Thursday.";
-        $("#message-display").text(corruptMessage(message, amount));
+        $("#message-display").text(corruptText(message, amount));
+        localStorage.setItem('q_message_4', true);
         return;
       }
       else if(localStorage.getItem('q_message_2') !== null) {
@@ -195,12 +206,16 @@ Now we have our complete list of assumptions:
         localStorage.setItem('q_message_1', true);
         return;
       }
+      else if(Math.random() < 0.01) {
+        showRandomMessage(2500);
+        return;
+      }
 
-      let apiUrl = "https://qrng.anu.edu.au/API/jsonI.php?type=uint8&length=" + amount;
+      let apiEndpoint = "https://qrng.anu.edu.au/API/jsonI.php?type=uint8&length=" + amount;
 
       button.prop('disabled', true);
 
-      $.ajax(apiUrl, {
+      $.ajax(apiEndpoint, {
         dataType: "json",
         success: function(data) {
           let codes = data.data.map(byteToPrintableASCII);
