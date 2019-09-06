@@ -1,5 +1,5 @@
 ---
-title: How to Disprove Quantum Immortality (Without Risking Your Life)
+title: How You Can Disprove Quantum Immortality (Without Risking Your Life)
 author: Kevin Van Kessel
 tags: philosophy physics quantum experiment interactive
 reddit: r/vankessel/comments/c8qct5
