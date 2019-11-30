@@ -36,7 +36,7 @@
 
 /* VARIABLES */
 
-$box-shadow: 4px 4px 16px 0px rgba(0,0,0,0.3);
+$box-shadow: 2px 2px 8px 2px rgba(0,0,0,0.3);
 $translucent: rgba(255,255,255,0.3);
 $translucent-thick: rgba(255,255,255,0.6);
 $link-color: #2525d4;
@@ -79,7 +79,7 @@ html {
 }
 
 #name-container {
-  $name: "Kevin\AVan Kessel";
+  $name: "Kevin\Avan Kessel";
   $size: 5em;
   $mobileSize: 3em;
   display: table;
@@ -244,16 +244,21 @@ html {
   padding: 2em;
   width: 100%;
 
+  // Allow the preload link to break anywhere to avoid overflow.
+  & > h2 > a {
+    word-break: break-word;
+  }
+
   .reddit-title {
     margin-top: -0.5em;
     margin-bottom: 1.5em;
     & > a {
-      word-break: break-all;
+      word-break: break-word;
     }
   }
-  
-  & > h2 > a {
-    word-break: break-all;
+
+  .reddit-link {
+    margin-top: 0.5em;
   }
 
   .thing {
