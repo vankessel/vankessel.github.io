@@ -251,7 +251,7 @@ It seems as though up until the very last frame pillars of stability and instabi
 
 ### Soft Exponential
 
-{% include video.html url="/assets/videos/visualizing-complex-functions/soft-exp.webm" poster="/assets/images/visualizing-complex-functions/ln(z).jpg" %}
+{% include video.html url="/assets/videos/visualizing-complex-functions/softexponential.webm" poster="/assets/images/visualizing-complex-functions/ln(z).jpg" %}
 
 The [soft exponential](https://arxiv.org/abs/1602.01321) is a rather rare activation function found in machine learning. It is a parameterized function $$f(a, z)$$ where $$a$$ is a parameter that interpolates the function between acting as the natural logarithm or the natural exponential. The important values of $$a$$ are:
 
@@ -262,6 +262,20 @@ f(0, z) &= z \\
 f(1, z) &= \mathrm{e}^z \\
 \end{split}
 $$
+
+### Riemann zeta function
+
+{% include image.html url="/assets/images/visualizing-complex-functions/zeta(z).jpg" desc="Zeta function of z." %}
+
+{% include video.html url="/assets/videos/visualizing-complex-functions/zeta(z).webm" poster="/assets/images/visualizing-complex-functions/zeta(z).jpg" %}
+
+{% include image.html url="/assets/images/visualizing-complex-functions/zeta(z).2.jpg" desc="Important poles of the zeta function." %}
+
+{% include video.html url="/assets/videos/visualizing-complex-functions/zeta(z).2.webm" poster="/assets/images/visualizing-complex-functions/zeta(z).2.jpg" %}
+
+Finally, the granddaddy of complex functions: The [Riemann zeta function](https://en.wikipedia.org/wiki/Riemann_zeta_function). Why is this function so important? Because it's related to the distribution of primes, which is mysterious itself. If you can prove the [Riemann hypothesis](https://en.wikipedia.org/wiki/Riemann_hypothesis), you'll have also proved a bunch of other results about the distribution of primes that rely on the hypothesis being true. You'll also have won yourself [one million dollars](https://en.wikipedia.org/wiki/Millennium_Prize_Problems), but that's not as important.
+
+What is the hypothesis exactly? It's that every nontrivial zero of the zeta function has a real part of $$\frac{1}{2}$$. When I say trivial zeros, that means the poles on the negative real axis you can see in the images above. In the second image you can see the first two nontrivial zeros. These lie at about $$(\frac{1}{2} + 14.1i)$$ and $$(\frac{1}{2} + 21.0i)$$. There seems to be a pattern, but no one has proved it with absolute certainty yet.
 
 ## Conclusion
 
