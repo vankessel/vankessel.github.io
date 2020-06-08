@@ -1,5 +1,6 @@
 ---
 title: Visualizing Complex Functions
+author: Kevin van Kessel
 redirect_from: /blog/2019/01/06/visualizing-complex-functions
 tags: math visualization
 reddit: r/vankessel/comments/afppoh

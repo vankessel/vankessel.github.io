@@ -1,6 +1,7 @@
 ---
 title: Disprove Quantum Immortality Without Risking Your Life
 author: Kevin van Kessel
+redirect_from: /disproving-quantum-immortality
 tags: philosophy physics quantum experiment interactive
 reddit: r/vankessel/comments/c8qct5
 image: /assets/images/disproving-quantum-immortality/index.jpg
