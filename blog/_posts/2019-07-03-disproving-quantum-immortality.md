@@ -1,5 +1,5 @@
 ---
-title: How You Can Disprove Quantum Immortality (Without Risking Your Life)
+title: Disprove Quantum Immortality Without Risking Your Life
 author: Kevin van Kessel
 tags: philosophy physics quantum experiment interactive
 reddit: r/vankessel/comments/c8qct5
@@ -23,13 +23,11 @@ a8: The API provides true quantum random numbers.
 
 A gun is pointed at your head. This gun will not misfire and the shot is always fatal. The gun is rigged to fire depending on the result of a quantum event. The quantum event has a equal chance of two outcomes just like a coin flip.
 
-If the many-worlds interpretation is true, then there must always exist a version of you that survived the event. This is opposed to the Copenhagen interpretation where odds of surviving quickly approach zero.
+If the many-worlds interpretation is true, then there must always exist a version of you that survived the event. This is opposed to the Copenhagen interpretation where odds of surviving quickly approach zero as we would normally expect.
 
-Now that timelines have split, we must ask, can multiple separate conscious yous exist? Or is consciousness singular? If it's the latter, then the argument goes that you can't possibly experience the timeline in which you are dead, so you must experience the one where you survive. (This is an assumption which I will touch on at the very end.)
+There are timelines where you either survive or die. The argument goes that you can't possibly experience the timeline in which you are dead, so you must experience the one where you survive. Now this brings up some questions about [individualism](https://en.wikipedia.org/wiki/Open_individualism), but let's go with it for now and I'll address it a more at the end.
 
-This consequence is also known as quantum immortality. Only you would experience this effect. Outside observers will still see you live or die at the expected probability of the quantum event.
-
-I would like to note everything beyond this point is fun speculation, I do not believe anything rigidly even though I may assert things so.
+This consequence is known as quantum immortality. Only you would experience this effect. Outside observers will still see you live or die at the expected probability of the quantum event.
 
 ### What About Everyone Else?
 
@@ -37,17 +35,17 @@ Does this mean the other timeline yous are [philosophical zombies](https://en.wi
 
 ## Types of Quantum Immortality
 
-I have noticed that people often default to one of two different models quantum immortality. Let's discuss them to limit confusion down the line.
+I have noticed that people often default to one of two different models quantum immortality.
 
 ### Greedy Quantum Immortality
 
-This kind of quantum immortality only makes sure your consciousness persists to the next present moment by branching away from certain death. It does not guarantee any degree of health or lack of suffering. The consequence of this would mean that it's possible for you to be severely maimed, but nonetheless alive. But, if you are maimed, this would likely limit your future possibilities of survival. This would be a local optimum.
+This kind of quantum immortality only makes sure your consciousness persists to the next present moment by branching away from certain death. It does not guarantee any degree of health or lack of suffering. It's possible for you to be severely maimed, but nonetheless alive. If you are maimed, this would likely limit your future possibilities of survival. This would be a local optimum.
 
 ### Perfect Quantum Immortality
 
 This kind of quantum immortality takes the future into account. Every quantum event in the reality where you exist, even before you are born, are the ones that will enable you to live the longest amount of time. This is a global optimum.
 
-Wait a minute, the _longest_ amount of time? That's not infinite, this isn't quantum longevity, it's quantum immortality! Well, longest can include infinite. Also, what if there is more than one infinite timeline? In that case I would say it's either random chance, or there simply is only one infinite timeline. Let me explain with an analogy.
+Wait a minute, the _longest_ amount of time? That's not infinite, this isn't quantum longevity, it's quantum immortality! Well, longest can include infinite. Also, what if there is more than one infinite timeline? It could be chosen arbitrarily, or there simply is only one infinite timeline. Let me explain how that may be with an analogy.
 
 Image you have a staircase with infinite steps. Each step represents a timeline, and its height from the ground is how long you live in that timeline. No matter what step you are on, you can continue moving to an equal or higher position. Now, this staircase could become flat and never increase again. This would mean you would be stuck at a finite height. Let's assume there is no arbitrary upper bound on longevity. This means the staircase does indeed approach infinity as you keep climbing it.
 
