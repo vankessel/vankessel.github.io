@@ -34,7 +34,7 @@ Herein lies the artistic side of programming.
 
 # The Medium is the Message
 
-Why is it that there are so many similarities between writing and software? Data are nouns, functions are verbs, interfaces are adjectives. It is because language is a human approximation to describe the [world-as-it-is](https://en.wikipedia.org/wiki/Thing-in-itself) as concepts. While software is the reverse process of transforming human concepts into a sort of computational reality.
+Why is it that there are so many similarities between writing and software? Data are nouns, functions are verbs, interfaces are adjectives. It is because language breaks its complexity into managable conceptual chunks. While software is the reverse process of transforming human concepts into a sort of computational reality.
 
 This is especially true of [object-oriented programming](https://en.wikipedia.org/wiki/Object-oriented_programming). Human concepts are organized from concrete at the bottom and abstract at the top. So are classes. Every OOP programming language has at least one topmost general class usually named `object`. This high level abstraction is concreted into further subclasses like `Human`, `Athlete`, and `Runner`. A tree of classes is formed with `object` at the trunk. It makes sense that a `Runner` can do everything a `Human` can, so a `Runner` can be used anywhere a `Human` is needed. This is a hierarchical approach to add behaviour.
 
