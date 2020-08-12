@@ -2,6 +2,7 @@
 title: The Common Ground Between Writing and Coding
 author: Kevin van Kessel
 tags: linguistics computer-science programming
+reddit: r/vankessel/comments/i87tct
 image: /assets/images/writing-and-coding/index.jpg
 ---
 
