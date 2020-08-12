@@ -10,14 +10,26 @@
     <a rel="alternate" type="application/rss+xml" href="/feed.xml" class="tab"><i class="fas fa-rss"></i></a>
   </nav>
 
-  <div data-tab-index="0" class="tab-content active">
-    <ul class="post-list">
-      {% for post in site.posts %}
-        {% unless post.hide %}
-        <li><a href="{{ post.url }}">{{ post.title }}</a><div class="date">{{ post.date | date_to_string }}</div></li>
-        {% endunless %}
-      {% endfor %}
-    </ul>
+  <div data-tab-index="0" class="tab-content active" style="margin-bottom: 0">
+    <div class="post-list" style="display: grid; grid-template-columns: auto auto auto; align-items: center; row-gap: 8px; column-gap: 8px">
+        {% assign row = 0 %}
+        {% for post in site.posts %}
+            {% unless post.hide %}
+            {% assign row = row | plus: 1 %}
+            <img src="{{ post.image }}"
+                 style="max-height: 64px; object-fit: contain; border-radius: 4px; margin-right: 0; justify-self: end;
+                        grid-column-start: 1; grid-column-end: 2; grid-row-start: {{ row }}; grid-row-end: {{ row | plus: 1 }}"><img>
+            <svg height="8" width="8" style="margin: 8px;
+                        grid-column-start: 2; grid-column-end: 3; grid-row-start: {{ row }}; grid-row-end: {{ row | plus: 1 }}">
+                <circle cx="4" cy="4" r="2" fill="black" />
+            </svg>
+            <span style="display: inline-block;
+                        grid-column-start: 3; grid-column-end: 4; grid-row-start: {{ row }}; grid-row-end: {{ row | plus: 1 }}">
+                <a href="{{ post.url }}">{{ post.title }}</a><div class="date">{{ post.date | date_to_string }}</div>
+            </span>
+            {% endunless %}
+        {% endfor %}
+    </div>
   </div>
 
   <div data-tab-index="1" class="tab-content">

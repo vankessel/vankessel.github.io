@@ -37,7 +37,7 @@
 /* VARIABLES */
 
 $box-shadow: 2px 2px 8px 2px rgba(0,0,0,0.3);
-$translucent: rgba(255,255,255,0.3);
+$translucent: rgba(255,255,255,0.4);
 $translucent-thick: rgba(255,255,255,0.6);
 $link-color: #2525d4;
 $link-visited-color: #8000a8;
@@ -326,6 +326,16 @@ ul.post-list {
     margin-top: 4px;
     font-size: 0.75em;
   }
+}
+
+code.highlighter-rouge {
+    border-radius: 2px;
+    border-width: 1px;
+    border-color: rgba(22,22,22,.7);
+    border-style: solid;
+    padding: 2px;
+    background-color: rgba(22,22,22,.7);
+    color: #DDDDDD
 }
 
 ol {
