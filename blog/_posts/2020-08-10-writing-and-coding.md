@@ -24,17 +24,17 @@ Shakespeare once said that brevity is the soul of wit. But it's more than that. 
 
 That's not to say to never go into more detail or slow the pace. Sometimes that's exactly what's required.
 
-The benefits of brevity in software engineering are obvious. Every line of code should be contributing maximally to the goal like a fine tuned sports car. But brevity in software engineering goes beyond individual lines of code.
+The benefits of brevity in software engineering are obvious. Every line of code should be contributing maximally to the goal like a fine tuned car. But brevity in software engineering goes beyond individual lines of code.
 
 Functions must attain brevity in the sense that they solve exactly one exact sub-goal, possibly invoking other functions to solve sub-sub-goals. More importantly, this goal must be clearly identified to name the function appropriately. A function's name should be an active verb like `run()`. Sometimes it is not easy to put functions into words, or the technically correct name feels unnatural or unsatisfactory. This can mean the task is so unrelatable to everyday human life that language can't adequately describe it. This is often not the case even when it seems to be. It is most likely that there is an [anti](https://en.wikipedia.org/wiki/Anti-pattern)-[pattern](https://en.wikipedia.org/wiki/Software_design_pattern) somewhere in the code. The harder it is to resolve, the deeper into the foundation of the program's architecture the problem hides.
 
-Similar arguments can be made for data, classes, and interfaces.
+Similar arguments can be made for types and interfaces.
 
 Herein lies the artistic side of programming.
 
 # The Medium is the Message
 
-Why is it that there are so many similarities between writing and software? Data are nouns, functions are verbs, interfaces are adjectives. It is because language breaks its complexity into managable conceptual chunks. While software is the reverse process of transforming human concepts into a sort of computational reality.
+Why is it that there are so many similarities between writing and software? Types are nouns, functions are verbs, interfaces are adjectives. It's because language breaks the complexity of the world into managable conceptual chunks. While software is the reverse process of transforming human concepts into a sort of computational reality.
 
 This is especially true of [object-oriented programming](https://en.wikipedia.org/wiki/Object-oriented_programming). Human concepts are organized from concrete at the bottom and abstract at the top. So are classes. Every OOP programming language has at least one topmost general class usually named `object`. This high level abstraction is concreted into further subclasses like `Human`, `Athlete`, and `Runner`. A tree of classes is formed with `object` at the trunk. It makes sense that a `Runner` can do everything a `Human` can, so a `Runner` can be used anywhere a `Human` is needed. This is a hierarchical approach to add behaviour.
 
