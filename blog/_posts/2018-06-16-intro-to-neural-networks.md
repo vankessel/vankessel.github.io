@@ -16,11 +16,15 @@ A neural network is inspired by the information processing of neurons. The most 
 
 {% include image.html url=page.image desc="The basic structure of a neural network." %}
 
-So, how does one make a neural network? It begins by deciding the architecture. The architecture is the structure of the network, including the number of layers, the types and number of neurons in those layers, the types of connections between layers, and anything else that could be unique to the network. You can think of the architecture of a network being like the specific [connectome](https://en.wikipedia.org/wiki/Connectome) of a brain.
+How does one make a neural network? It begins by deciding the architecture. All common architectures include one or more layers, a number of neurons in each layer, what types of neurons are used, and the types of connections between neurons in adjacent layers. The architecture of a network is like the [connectome](https://en.wikipedia.org/wiki/Connectome) of a brain.
 
-Once you have an architecture, you will need a dataset to train on. A dataset should consist of pairs of inputs and outputs for the network. This is what the network will train against to learn how to correlate an input to an output. There are [some cases](https://arxiv.org/abs/1711.00043) where pairs are not even necessary, only the distribution of the data is needed.
+An architecture needs a dataset to train on. A dataset will usually contain desired input and output pairs that the network must learn to correlate. There are [cases](https://arxiv.org/abs/1711.00043) where pairs are not necessary, the distribution of the data used to learn instead.
 
-Training is performed by passing an input into untrained network. The output will almost certainly be random garbage because it is not yet trained. This garbage output is compared to the expected output, and an error is obtained. This error is propagated back through the network and the result is used to nudge its parameters in a direction that decreases this error. This is repeated many times until the error is reduced to a minimal amount.
+A network is trained with an input-output pair by passing the input through it and comparing the result to the output of the pair.
+The network will produce noise in the beginning.
+The error between the result and desired output is calculated.
+For every adjustable parameter in the network, it is calculated.
+This is repeated many times until the error is reduced to a minimal amount.
 
 
 ## Example Networks
