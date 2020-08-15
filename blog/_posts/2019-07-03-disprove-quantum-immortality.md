@@ -24,23 +24,23 @@ a8: The API provides true quantum random numbers.
 
 A gun is pointed at your head. This gun will not misfire and the shot is always fatal. The gun is rigged to fire depending on the result of a quantum event. The quantum event has a equal chance of two outcomes just like a coin flip.
 
-If the many-worlds interpretation is true, then there must always exist a version of you that survived the event. This is opposed to the Copenhagen interpretation where odds of surviving quickly approach zero as we would normally expect.
+If the many-worlds interpretation is true, then there must always exist a version of you that survived the event. This is opposed to the Copenhagen interpretation where odds of surviving quickly approach zero with each pull of the trigger as typically expected.
 
-There are timelines where you either survive or die. The argument goes that you can't possibly experience the timeline in which you are dead, so you must experience the one where you survive. Now this brings up some questions about [individualism](https://en.wikipedia.org/wiki/Open_individualism), but let's go with it for now and I'll address it a more at the end.
+There are timelines where you either survive or die. The argument goes that you can't possibly experience the timeline in which you are dead, so you must experience the one where you survive. This brings up some questions about [individualism](https://en.wikipedia.org/wiki/Open_individualism), but let's go with it for now and address it at the end.
 
 This consequence is known as quantum immortality. Only you would experience this effect. Outside observers will still see you live or die at the expected probability of the quantum event.
 
 ### What About Everyone Else?
 
-Does this mean the other timeline yous are [philosophical zombies](https://en.wikipedia.org/wiki/Philosophical_zombie)? Not necessarily, it could simply mean that only the consciousness experiencing quantum immortality is [present](https://en.wikipedia.org/wiki/Egocentric_presentism).
+Does this mean that the other versions of yourself that you never experience are [philosophical zombies](https://en.wikipedia.org/wiki/Philosophical_zombie)? Not necessarily, it could simply mean that only the consciousness experiencing quantum immortality is [present](https://en.wikipedia.org/wiki/Egocentric_presentism).
 
 ## Types of Quantum Immortality
 
-I have noticed that people often default to one of two different models quantum immortality.
+People often default to one of two different models of quantum immortality.
 
 ### Greedy Quantum Immortality
 
-This kind of quantum immortality only makes sure your consciousness persists to the next present moment by branching away from certain death. It does not guarantee any degree of health or lack of suffering. It's possible for you to be severely maimed, but nonetheless alive. If you are maimed, this would likely limit your future possibilities of survival. This would be a local optimum.
+This kind of quantum immortality only makes sure your consciousness persists to the next present moment by branching away from certain death. It does not guarantee any degree of health or lack of suffering. It's possible for you to be severely maimed, but nonetheless alive. If you are maimed, this would likely limit your future possibilities of survival. This is a local optimum.
 
 ### Perfect Quantum Immortality
 
@@ -77,7 +77,7 @@ We need to consider that death isn't instant. It takes time for the bullet to ex
 
 Under this assumption we can change the circumstances from a punishment to a reward. Instead of a gun, imagine a doctor has information about your health. If he tells you about it and you act on the information, you will certainly live a longer life. The doctor will only tell you about the information based the result of the quantum event. If the current assumptions are true, then you should always experience the reality in which the doctor tells you about your unknown ailment.
 
-Now this doctor example is only segue into the next section, but why would you even get an illness under the perfect quantum immortality assumption? For all we know, perhaps facing death and surviving turns you into the kind of person who lives there life in a drastically different way, a way that leads to a longer life.
+Now this doctor example is only segue into the next section, but why would you even get an illness under the perfect quantum immortality assumption? For all we know, perhaps facing death and surviving drastically changes the way you live your life, a way that leads to a longer life.
 
 There is a chance that the experiment will fail now because it will be run again tomorrow and succeed. Even though you have one less day to use the information, waiting that one day may have caused a [butterfly effect](https://en.wikipedia.org/wiki/Butterfly_effect) where you use that information more effectively. To counteract this, you could repeat the experiment occasionally over a large enough period of time such that a lack of information would certainly affect your lifespan. This is rather inconvenient and uncertain. A slightly better way to ensure you get this information the first time is to only give yourself one chance. You can do this by vowing to only run the experiment once.
 
@@ -291,7 +291,7 @@ I'm sure that API is doing what it claims. While it would be good to verify this
   <li><span>{{ page.a7 }}</span></li>
 </ol>
 
-This assumption worries me the most. The butterfly effect is powerful, and compounds with time. I think it is not absurd to believe that random symbols could have an unexpectedly strong effect. At the same time, the directness of a message seems like it should have a stronger effect than something intelligible.
+This assumption worries me the most. The butterfly effect is powerful, and compounds with time. I think it is not absurd to believe that random symbols could have an unexpectedly strong effect. At the same time, the directness of a message seems like it should have a stronger effect than something unintelligible.
 
 <ol start="6">
   <li><span>{{ page.a6 }}</span></li>
