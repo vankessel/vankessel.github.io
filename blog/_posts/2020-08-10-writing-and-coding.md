@@ -55,6 +55,6 @@ This is achieved with interfaces and is a compositional approach to add behaviou
 
 Both classes and interfaces define a type of thing. But sometimes the type of a thing depends on an other type. Take a `ShoppingList` for example. If a shopping list of `Food` is needed, it would be inappropriate to put non `Food` items on that list. This could be done by making a `FoodShoppingList` subtype. But if a to-do list or otherwise is also needed it quickly becomes apparent that creating a new list subtype for every possible type of item will become overwhelming. This is where generics come in. With generics, a list is described as `ShoppingList<T> where T: Nameable`. Here `T` is a stand-in for any other type that implements the `Nameable` interface, since it needs to be written down on the shopping list. (That means no shopping for Voldemort, Lovecraftian gods, or that really hard boss from Dark Souls III).
 
-It is evident that this popular programming paradigm codifies natural human conceptualization and abstraction. It begs the question:
+It's evident that this popular programming paradigm codifies human conceptualization and abstraction. It begs the question:
 
-Can analysis of type-theory, programming languages, and programming patterns give us insight into human thought, linguistics, and good writing; and vice-versa?
+Can analysis of type-theory, programming languages, and programming patterns give insight into human thought, linguistics, and good writing; and vice-versa?
