@@ -71,7 +71,7 @@ html {
 #center-container {
   margin: auto;
   @media (orientation: landscape) {
-    max-width: 60%;
+    max-width: 55em;
   }
   @media (orientation: portrait) {
     max-width: 90%;
@@ -241,6 +241,10 @@ html {
   }
 }
 
+#commento {
+  padding: 1em;
+}
+
 #comments {
   margin-top: 1em;
   padding: 2em;
@@ -319,13 +323,11 @@ html {
   backdrop-filter: blur(16px);
 }
 
-ul.post-list {
-  padding-left: 1em;
-  div.date {
-    color: #1a1a1a;
-    margin-top: 4px;
-    font-size: 0.75em;
-  }
+
+div.date {
+  color: #1a1a1a;
+  margin-top: 0.5em;
+  font-size: 0.9em;
 }
 
 code.highlighter-rouge {

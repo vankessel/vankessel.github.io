@@ -11,7 +11,7 @@
   </nav>
 
   <div data-tab-index="0" class="tab-content active" style="margin-bottom: 0">
-    <div class="post-list" style="display: grid; grid-template-columns: auto auto auto; align-items: center; row-gap: 8px; column-gap: 8px">
+    <div class="post-list" style="display: grid; grid-template-columns: auto auto auto; align-items: center; row-gap: 0.5em; column-gap: 0.5em">
         {% assign row = 0 %}
         {% for post in site.posts %}
             {% unless post.hide %}
@@ -25,7 +25,7 @@
             </svg>
             <span style="display: inline-block;
                         grid-column-start: 3; grid-column-end: 4; grid-row-start: {{ row }}; grid-row-end: {{ row | plus: 1 }}">
-                <a href="{{ post.url }}">{{ post.title }}</a><div class="date">{{ post.date | date_to_string }}</div>
+                <a href="{{ post.url }}">{{ post.title }}</a><div class="date">{{ post.date | date_to_long_string: 'ordinal', 'US' }}</div>
             </span>
             {% endunless %}
         {% endfor %}
