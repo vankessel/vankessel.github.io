@@ -14,7 +14,7 @@
     <div class="post-list" style="display: grid; grid-template-columns: auto auto auto; align-items: center; row-gap: 0.5em; column-gap: 0.5em">
         {% assign row = 0 %}
         {% for post in site.posts %}
-            {% unless post.hide %}
+            {% unless post.unlisted %}
             {% assign row = row | plus: 1 %}
             <img src="{{ post.image }}"
                  style="max-height: 64px; object-fit: contain; border-radius: 4px; margin-right: 0; justify-self: end;
