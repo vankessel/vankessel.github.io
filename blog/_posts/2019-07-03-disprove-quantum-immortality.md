@@ -1,10 +1,10 @@
 ---
 title: Disprove Quantum Immortality Without Risking Your Life
 author: Kevin van Kessel
-redirect_from: /disproving-quantum-immortality
 tags: philosophy physics quantum experiment interactive
 reddit: r/vankessel/comments/c8qct5
 image: /assets/images/disproving-quantum-immortality/index.jpg
+redirect_from: /disproving-quantum-immortality
 
 a1: The many-worlds interpretation is true.
 a2: Consciousness experiences the reality in which it lives the longest.
