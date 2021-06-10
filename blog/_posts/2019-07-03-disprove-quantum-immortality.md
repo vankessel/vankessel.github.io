@@ -20,19 +20,15 @@ a8: The API provides true quantum random numbers.
 
 ## What Is Quantum Suicide and Quantum Immortality?
 
-[Quantum suicide](https://en.wikipedia.org/wiki/Quantum_suicide_and_immortality) is a famous thought experiment. It is similar to the [Schrödinger's cat](https://en.wikipedia.org/wiki/Schr%C3%B6dinger%27s_cat) thought experiment, but from the perspective of the cat. The purpose of it is to highlight differences between the [Copenhagen interpretation](https://en.wikipedia.org/wiki/Copenhagen_interpretation) and the [many-worlds interpretation](https://en.wikipedia.org/wiki/Many-worlds_interpretation) of quantum mechanics. This is done by considering what would happen to the (un)lucky subject, from outside and within their point of view.
+[Quantum suicide](https://en.wikipedia.org/wiki/Quantum_suicide_and_immortality) is a famous thought experiment. Similar to the [Schrödinger's cat](https://en.wikipedia.org/wiki/Schr%C3%B6dinger%27s_cat) thought experiment, but from the perspective of the cat. The purpose of it is to highlight differences between the [Copenhagen interpretation](https://en.wikipedia.org/wiki/Copenhagen_interpretation) and the [many-worlds interpretation](https://en.wikipedia.org/wiki/Many-worlds_interpretation) of quantum mechanics. This is done by considering what would happen to the (un)lucky subject, from both outside and within their point of view.
 
 A gun is pointed at your head. This gun will not misfire and the shot is always fatal. The gun is rigged to fire depending on the result of a quantum event. The quantum event has a equal chance of two outcomes just like a coin flip.
 
-If the many-worlds interpretation is true, then there must always exist a version of you that survived the event. This is opposed to the Copenhagen interpretation where odds of surviving quickly approach zero with each pull of the trigger as typically expected.
+If the many-worlds interpretation is true, then there must always exist a version of you that survived the event. This is opposed to the Copenhagen interpretation where the odds of surviving quickly approach zero as expected.
 
-There are timelines where you either survive or die. The argument goes that you can't possibly experience the timeline in which you are dead, so you must experience the one where you survive. This brings up some questions about [individualism](https://en.wikipedia.org/wiki/Open_individualism), but let's go with it for now and address it at the end.
+There are timelines where you either survive or die. The argument goes that you can't possibly experience the timeline in which you are dead, so you must experience the one where you survive. This brings up some questions, but let's go with it for now and address it at the end.
 
 This consequence is known as quantum immortality. Only you would experience this effect. Outside observers will still see you live or die at the expected probability of the quantum event.
-
-### What About Everyone Else?
-
-Does this mean that the other versions of yourself that you never experience are [philosophical zombies](https://en.wikipedia.org/wiki/Philosophical_zombie)? Not necessarily, it could simply mean that only the consciousness experiencing quantum immortality is [present](https://en.wikipedia.org/wiki/Egocentric_presentism).
 
 ## Types of Quantum Immortality
 
@@ -44,15 +40,24 @@ This kind of quantum immortality only makes sure your consciousness persists to 
 
 ### Perfect Quantum Immortality
 
-This kind of quantum immortality takes the future into account. Every quantum event in the reality where you exist, even before you are born, are the ones that will enable you to live the longest amount of time. This is a global optimum.
+Perfect Quantum Immortality takes the future into account. Every quantum event in the reality where you exist, even before you are born, are the ones that will enable you to live the longest amount of time. This is a global optimum.
 
-Wait a minute, the _longest_ amount of time? That's not infinite, this isn't quantum longevity, it's quantum immortality! Well, longest can include infinite. Also, what if there is more than one infinite timeline? It could be chosen arbitrarily, or there simply is only one infinite timeline. Let me explain how that may be with an analogy.
+Wait a minute, the _longest_ amount of time? That's not infinite, this isn't quantum longevity, it's quantum immortality!
 
-Image you have a staircase with infinite steps. Each step represents a timeline, and its height from the ground is how long you live in that timeline. No matter what step you are on, you can continue moving to an equal or higher position. Now, this staircase could become flat and never increase again. This would mean you would be stuck at a finite height. Let's assume there is no arbitrary upper bound on longevity. This means the staircase does indeed approach infinity as you keep climbing it.
+Image you have a staircase with infinite steps. Each step represents a timeline, and its height from the ground is how long you live in that timeline. From any step you can move to another of equal or higher height. This staircase could become flat and never increase again, stuck at a finite height. Let's assume there's no arbitrary upper bound on longevity so the staircase does approach infinity.
 
-Since every position on the staircase is finite in height, so how do you get to infinity? Well, we know that for any step, there is another step that is sufficiently higher. So go with the higher step. Wash, rinse, repeat.
+Existing in this "limit timeline" would only be achievable if every single quantum event is working out in your favor: perfect quantum immortality. (PQI)
 
-Thus there is one timeline that approaches infinity and that is the limit of this staircase. Existing in this "limit timeline" would be only remotely achievable if every single quantum event is working out in your favor: perfect quantum immortality.
+
+### What About Everyone Else?
+
+So if PQI ensures the immortality of the observer, who are the people that we see die?
+
+Perhaps solipsism is true, everyone else are [philosophical zombies](https://en.wikipedia.org/wiki/Philosophical_zombie), reality is a convincing hallucination that arises because there can't be nothing. Or maybe everyone else is conscious, but not [present](https://en.wikipedia.org/wiki/Egocentric_presentism) for some reason.
+
+Perhaps there are [many-minds](https://en.wikipedia.org/wiki/Many-minds_interpretation) each living in their own solipsistic PQI timeline, where the permanence of everyone else is an illusion. In each moment, the other people we see are fleeting cross-sections where their PQI timeline happened to require the same state of the world as our PQI timeline. Each cross-section diverging and being replaced by a new one, from a slightly different but nearly indistinguishable mind with different PQI requirements, sort of like [empty individualism](https://en.wikipedia.org/wiki/Open_individualism).
+
+There is also [open individualism](https://en.wikipedia.org/wiki/Open_individualism). Where there is only one single subjective identity. Each of us being part of that identity but experiencing different lives. The feeling of separation and individuality being a product of the ego. This might imply PQI would preserve the existence of at least one conscious being somewhere in the universe, never going completely extinct. Or if we get [pan-psychic](https://en.wikipedia.org/wiki/Panpsychism) about it and assume matter is conscious on some level too, then there is no need for PQI at all.
 
 ## The Nature of This Proof
 
