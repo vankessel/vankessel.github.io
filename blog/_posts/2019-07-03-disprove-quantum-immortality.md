@@ -48,17 +48,6 @@ Image you have a staircase with infinite steps. Each step represents a timeline,
 
 Existing in this "limit timeline" would only be achievable if every single quantum event is working out in your favor: perfect quantum immortality. (PQI)
 
-
-### What About Everyone Else?
-
-So if PQI ensures the immortality of the observer, who are the people that we see die?
-
-Perhaps solipsism is true, everyone else are [philosophical zombies](https://en.wikipedia.org/wiki/Philosophical_zombie), reality is a convincing hallucination that arises because there can't be nothing. Or maybe everyone else is conscious, but not [present](https://en.wikipedia.org/wiki/Egocentric_presentism) for some reason.
-
-Perhaps there are [many-minds](https://en.wikipedia.org/wiki/Many-minds_interpretation) each living in their own solipsistic PQI timeline, where the permanence of everyone else is an illusion. In each moment, the other people we see are fleeting cross-sections where their PQI timeline happened to require the same state of the world as our PQI timeline. Each cross-section diverging and being replaced by a new one, from a slightly different but nearly indistinguishable mind with different PQI requirements, sort of like [empty individualism](https://en.wikipedia.org/wiki/Open_individualism).
-
-There is also [open individualism](https://en.wikipedia.org/wiki/Open_individualism). Where there is only one single subjective identity. Each of us being part of that identity but experiencing different lives. The feeling of separation and individuality being a product of the ego. This might imply PQI would preserve the existence of at least one conscious being somewhere in the universe, never going completely extinct. Or if we get [pan-psychic](https://en.wikipedia.org/wiki/Panpsychism) about it and assume matter is conscious on some level too, then there is no need for PQI at all.
-
 ## The Nature of This Proof
 
 Normally a proof should inform the reader enough such that they can come to the same conclusion. In this case only the subject of the thought experiment can only be sure of the results. Because of this I will provide an experiment on this page that anyone can run to confirm the result for themselves.
