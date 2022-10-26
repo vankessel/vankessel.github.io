@@ -27,6 +27,17 @@
 
     <!-- Meta Tags -->
     <meta property="fb:app_id" content="457956808338942" />
+
+    <!-- Title -->
+    {% if page.title %}
+    <title>{{ page.title }} | {{ page.author }}</title>
+    <meta property="og:title" content="{{ page.title }} | {{ page.author }}" />
+    {% else %}
+    <title>{{ page.author }}</title>
+    <meta property="og:title" content="{{ page.author }}" />
+    {% endif %}
+
+    <!-- Video -->
     {% if page.video %}
     <meta name="twitter:card" content="player" />
     <meta name="twitter:player" content="{{ page.video | absolute_url | url_decode }}" />
@@ -39,22 +50,12 @@
     <meta name="twitter:site" content="@kevin_vankessel" />
     <meta name="twitter:creator" content="@kevin_vankessel" />
 
-    {% if page.title %}
-    <title>{{ page.title }} | {{ page.author }}</title>
-    <meta property="og:title" content="{{ page.title }} | {{ page.author }}" />
-    {% else %}
-    <title>{{ page.author }}</title>
-    <meta property="og:title" content="{{ page.author }}" />
-    {% endif %}
-
-    <meta property="og:url" content="{{ page.url | absolute_url }}" />
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Kevin van Kessel" />
-
+    <!-- Image -->
     {% if page.image %}
     <meta property="og:image" content="{{ page.image | absolute_url }}" />
     {% endif %}
 
+    <!-- Description -->
     {% if page.description %}
     <meta property="og:description" content="{{ page.description }}" />
     <meta name="description" content="{{ page.description }}" />
@@ -62,6 +63,16 @@
     <meta property="og:description" content="{{ site.description }}" />
     <meta name="description" content="{{ site.description }}" />
     {% endif %}
+
+    <!-- Post type -->
+    {% if page.layout == 'post' %}
+        <meta property="og:type" content="article" />
+    {% else %}
+        <meta property="og:type" content="website" />
+    {% endif %}
+
+    <meta property="og:url" content="{{ page.url | absolute_url }}" />
+    <meta property="og:site_name" content="Kevin van Kessel" />
 
     <meta name="author" content="{{ page.author }}" />
 
@@ -89,10 +100,6 @@
   </head>
 
   <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NFNDQSN"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
 
     <div id="center-container">
 
