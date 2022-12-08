@@ -1,6 +1,7 @@
 {
     "cSpell.words": [
         "browserconfig",
+        "commento",
         "endfor",
         "endunless",
         "msapplication",
@@ -12,5 +13,6 @@
     "cSpell.enableFiletypes": [
         "!plaintext",
         "jekyll"
-    ]
+    ],
+    "liquid.format.enable": true
 }
