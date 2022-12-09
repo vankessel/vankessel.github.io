@@ -24,8 +24,9 @@
                     <b>{{ commenter.name | default: "Anonymous" }}</b>
                     {% endif %}
                     <span id="{{ 'score_' | append: comment.hex }}">{{ comment.score }}
-                        point{% if comment.score != 1 %}s{% endif %}</span> on {{comment.creationDate | date: "%b %d,
-                    %Y" }} <a href="{{ page.url | append: '#' | append: comment.hex }}">permalink</a>
+                        point{% if comment.score != 1 %}s{% endif %}</span> on {{comment.creationDate | date_to_string:
+                    "ordinal", "US" | remove_first: "," }} <a
+                        href="{{ page.url | append: '#' | append: comment.hex }}">permalink</a>
                 </small>
                 <br>
                 <!-- Body -->
@@ -47,7 +48,8 @@
                             <b>{{ replier.name | default: "Anonymous" }}</b>
                             {% endif %}
                             <span id="{{ 'score_' | append: reply.hex }}">{{ reply.score }} point{% if reply.score != 1
-                                %}s{% endif %}</span> on {{reply.creationDate | date: "%b %d, %Y" }} <a
+                                %}s{% endif %}</span> on {{comment.creationDate | date_to_string: "ordinal", "US" |
+                            remove_first: "," }} <a
                                 href='{{ page.url | append: "#" | append: reply.hex }}'>permalink</a>
                         </small>
                         <br>
@@ -68,8 +70,9 @@
                                     <b>{{ replier2.name | default: "Anonymous" }}</b>
                                     {% endif %}
                                     <span id="{{ 'score_' | append: reply2.hex }}">{{ reply2.score }} point{% if
-                                        reply.score != 1 %}s{% endif %}</span> on {{reply2.creationDate | date: "%b %d,
-                                    %Y" }} <a href='{{ page.url | append: "#" | append: reply2.hex }}'>permalink</a>
+                                        reply.score != 1 %}s{% endif %}</span> on {{comment.creationDate |
+                                    date_to_string: "ordinal", "US" | remove_first: "," }} <a
+                                        href='{{ page.url | append: "#" | append: reply2.hex }}'>permalink</a>
                                 </small>
                                 <br>
                                 <div class="comment-body md reply">
