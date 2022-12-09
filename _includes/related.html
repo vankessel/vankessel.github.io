@@ -1,0 +1,8 @@
+<h3>Related Posts</h3>
+<ul class="post-list" style="padding-left: 0.75em">
+    {% for post in site.related_posts limit:3 %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a>
+        <div class="date">{{ post.date | date_to_string }}</div>
+    </li>
+    {% endfor %}
+</ul>

@@ -4,6 +4,7 @@
         "commento",
         "endfor",
         "endunless",
+        "markdownify",
         "msapplication",
         "octo",
         "octocat",

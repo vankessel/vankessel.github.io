@@ -5,6 +5,7 @@ tags: philosophy physics quantum experiment interactive
 reddit: r/vankessel/comments/c8qct5
 image: /assets/images/disproving-quantum-immortality/index.jpg
 redirect_from: /disproving-quantum-immortality
+comments_backup: true
 
 a1: The many-worlds interpretation is true.
 a2: Consciousness experiences the reality in which it lives the longest.
@@ -330,10 +331,10 @@ Quantum immortality relies on the idea that you can't possibly experience the ti
 
 So, is it possible to stop experiencing?
 
-If you take an inactive brain and apply an electric charge to it, does it experience something? Seems like it should, though the perception may be random nonsense. If it does, does the same apply when the atoms of a cremated brain exchange electrons?
+If you take a brain in a vat and stimulate its neurons to fire, does it experience something? Seems like it should, though the perception may be random nonsense. If it does, does the same apply when the atoms of a cremated brain exchange electrons? Where is the line drawn?
 
 When you die the matter that made up your brain doesn't disappear. Neither does the energy that fired your synapses. The only thing that changes is the structure. Perhaps death is actually an extremely primitive [form](https://en.wikipedia.org/wiki/Hard_problem_of_consciousness) [of](https://en.wikipedia.org/wiki/Panpsychism) [experience](https://en.wikipedia.org/wiki/Integrated_information_theory).
 
-Paradoxically this would mean quantum immortality would rely on mortality.
+Almost paradoxically this would mean quantum immortality relies on mortality.
 
 I personally hope it is possible to stop experiencing. Any form of immortality sounds exhausting.

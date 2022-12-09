@@ -1,0 +1,88 @@
+{% assign comments = site.data.comments %}
+{% assign commenters = site.data.commenters %}
+<div>
+    <div class="comments-header">
+        <h4 class="comments-title">Comments
+        </h4>
+    </div>
+    <div class="comments-content">
+        <div>
+            {% for comment in comments %}
+            {% unless comment.url == page.url and comment.parentHex == "root" %}
+            {% continue %}
+            {% endunless %}
+            {% assign commenter = commenters[comment.commenterIdx] %}
+            <!-- Comment1 -->
+            <div id="{{ comment.hex }}" class="comment reddit-link even first-half thing">
+                <!-- Head -->
+                <small>
+                    {% if commenter.link %}
+                    <a href="{{ commenter.link }}">
+                        <b>{{ commenter.name | default: "Anonymous" }}</b>
+                    </a>
+                    {% else %}
+                    <b>{{ commenter.name | default: "Anonymous" }}</b>
+                    {% endif %}
+                    <span id="{{ 'score_' | append: comment.hex }}">{{ comment.score }}
+                        point{% if comment.score != 1 %}s{% endif %}</span> on {{comment.creationDate | date: "%b %d,
+                    %Y" }} <a href="{{ page.url | append: '#' | append: comment.hex }}">permalink</a>
+                </small>
+                <br>
+                <!-- Body -->
+                <div class="comment-body md">
+                    {{ comment.markdown | markdownify }}
+                </div>
+                <!-- Replies (Nested twice as a hack. Implement proper if ever hosting comments.) -->
+                <div class="comment-replies">
+                    {% for replyIdx in comment.childIndices %}
+                    {% assign reply = comments[replyIdx] %}
+                    {% assign replier = commenters[reply.commenterIdx] %}
+                    <div id="{{ reply.hex }}" class="comment reply reddit-link even first-half thing">
+                        <small>
+                            {% if replier.link %}
+                            <a href="{{ replier.link }}">
+                                <b>{{ replier.name | default: "Anonymous" }}</b>
+                            </a>
+                            {% else %}
+                            <b>{{ replier.name | default: "Anonymous" }}</b>
+                            {% endif %}
+                            <span id="{{ 'score_' | append: reply.hex }}">{{ reply.score }} point{% if reply.score != 1
+                                %}s{% endif %}</span> on {{reply.creationDate | date: "%b %d, %Y" }} <a
+                                href='{{ page.url | append: "#" | append: reply.hex }}'>permalink</a>
+                        </small>
+                        <br>
+                        <div class="comment-body md reply">
+                            {{ reply.markdown | markdownify }}
+                        </div>
+                        <div class="comment-replies">
+                            {% for replyIdx2 in reply.childIndices %}
+                            {% assign reply2 = comments[replyIdx2] %}
+                            {% assign replier2 = commenters[reply2.commenterIdx] %}
+                            <div id="{{ reply2.hex }}" class="comment reply reddit-link even first-half thing">
+                                <small>
+                                    {% if replier2.link %}
+                                    <a href="{{ replier2.link }}">
+                                        <b>{{ replier2.name | default: "Anonymous" }}</b>
+                                    </a>
+                                    {% else %}
+                                    <b>{{ replier2.name | default: "Anonymous" }}</b>
+                                    {% endif %}
+                                    <span id="{{ 'score_' | append: reply2.hex }}">{{ reply2.score }} point{% if
+                                        reply.score != 1 %}s{% endif %}</span> on {{reply2.creationDate | date: "%b %d,
+                                    %Y" }} <a href='{{ page.url | append: "#" | append: reply2.hex }}'>permalink</a>
+                                </small>
+                                <br>
+                                <div class="comment-body md reply">
+                                    {{ reply2.markdown | markdownify }}
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

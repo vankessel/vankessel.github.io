@@ -2,14 +2,12 @@
 layout: default
 ---
 
-<script src="/assets/js/post.js" type="text/javascript"></script>
-
 <div id="post" class="pane pane-outer" style="text-align: {{ page.text-align | default: 'left' }};">
   {{ content }}
   {% unless page.hide_social %}
   <nav id="tabs-bottom">
-    <a href="https://www.facebook.com/sharer.php?u={{ page.url | absolute_url | url_encode }}"
-      target="_blank" class="tab">
+    <a href="https://www.facebook.com/sharer.php?u={{ page.url | absolute_url | url_encode }}" target="_blank"
+      class="tab">
       <i class="fab fa-facebook-square"></i>
     </a>
     <a href="https://twitter.com/intent/tweet?via=kevin_vankessel&url={{ page.url | absolute_url | url_encode }}"
@@ -41,23 +39,20 @@ layout: default
 </div>
 {% endunless %}
 
-<script defer src="https://cdn.commento.io/js/commento.js"></script>
-<div id="commento" class="pane pane-outer"><noscript>Please enable JavaScript to load the comments.</noscript></div>
-
 {% if page.reddit %}
-<div id="comments" class="pane pane-outer" data-reddit="{{ page.reddit }}">
-  <h2>Could not load comments from <a href="https://www.reddit.com/{{ page.reddit }}">reddit.com/{{ page.reddit }}</a></h2>
-  <h6>Firefox private browsing, Disconnect, uMatrix, and NoScript can cause this issue.</h6>
+<div id="reddit-comments" class="pane pane-outer" data-reddit="{{ page.reddit }}">
+{% include reddit-comments.html %}
+</div>
+{% endif %}
+
+{% if page.comments_backup %}
+<div id="comments" class="pane pane-outer">
+{% include comments.html %}
 </div>
 {% endif %}
 
 {% unless page.hide_related %}
 <div id="related" class="pane pane-outer">
-  <h3>Related Posts</h3>
-  <ul class="post-list">
-    {% for post in site.related_posts limit:3 %}
-      <li><a href="{{ post.url }}">{{ post.title }}</a><div class="date">{{ post.date | date_to_string }}</div></li>
-    {% endfor %}
-  </ul>
+  {% include related.html %}
 </div>
 {% endunless %}
