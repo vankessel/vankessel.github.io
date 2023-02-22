@@ -1,6 +1,6 @@
 ---
 title: Learn Any Skill Rapidly
-author: Kevin van Kessel
+author: K van Kessel
 image: /assets/images/learn-any-skill-rapidly/index.jpg
 layout: post
 permalink: learn-any-skill-rapidly

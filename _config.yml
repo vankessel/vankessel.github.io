@@ -4,7 +4,7 @@ defaults:
       path: ""
     values:
       layout: "default"
-      author: "Kevin van Kessel"
+      author: "K van Kessel"
   -
     scope:
       path: ""
@@ -18,8 +18,8 @@ port: 8080
 plugins:
   - jekyll-redirect-from
 
-author: "Kevin van Kessel"
-title: "Kevin van Kessel"
+author: "K van Kessel"
+title: "K van Kessel"
 url: https://vankessel.io
 domain: vankessel.io
 description: "A blog about programming, math, and machine learning."
