@@ -47,7 +47,7 @@ Wait a minute, the _longest_ amount of time? That's not infinite, this isn't qua
 
 Image you have a staircase with infinite steps. Each step represents a timeline, and its height from the ground is how long you live in that timeline. From any step you can move to another of equal or higher height. This staircase could become flat and never increase again, stuck at a finite height. Let's assume there's no arbitrary upper bound on longevity so the staircase does approach infinity.
 
-Existing in this "limit timeline" would only be achievable if every single quantum event is working out in your favor: perfect quantum immortality. (PQI)
+Existing in this "limit timeline" would only be achievable if every single quantum event is working out in your favor: perfect quantum immortality.
 
 ## The Nature of This Proof
 
