@@ -14,7 +14,7 @@
     <div class="post-list" style="display: grid; grid-template-columns: auto auto auto; align-items: center; row-gap: 0.5em; column-gap: 0.5em">
         {% assign row = 0 %}
         {% for post in site.posts %}
-            {% unless post.unlisted %}
+            {% unless post.hide %}
             {% assign row = row | plus: 1 %}
             <img src="{{ post.image }}"
                  style="max-height: 64px; object-fit: contain; border-radius: 4px; margin-right: 0; justify-self: end;
@@ -35,7 +35,7 @@
   <div data-tab-index="1" class="tab-content">
     <img id="profile" src="/assets/images/profile.png">
     <p>
-      My name is K van Kessel. I am a polymath creating works in the intersection of art, science, and philosophy. This is a space I use to share my thoughts and teach others. Thanks for reading.
+      My name is Kara van Kessel. I am a polymath creating works in the intersection of art, science, and philosophy. This is a space I use to share my thoughts and teach others. Thanks for reading.
     </p>
     <p>
       If you want to get in touch, contact me at \(\mathrm{a d m i n @ {{ site.domain }} }\)

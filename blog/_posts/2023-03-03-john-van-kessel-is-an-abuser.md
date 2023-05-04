@@ -1,9 +1,8 @@
 ---
 title: John van Kessel beats his kids
-author: K van Kessel
+author: Kara van Kessel
 tags: Johannes Antonius Okanagan Penticton Beachside Motel British Columbia
-image: /assets/images/disproving-quantum-immortality/index.jpg
-unlisted: true
+hide: true
 ---
 
 # {{ page.title }}
