@@ -1,9 +1,11 @@
 {
     "cSpell.words": [
+        "brevo",
         "browserconfig",
         "commento",
         "endfor",
         "endunless",
+        "grecaptcha",
         "markdownify",
         "msapplication",
         "octo",
@@ -15,5 +17,10 @@
         "!plaintext",
         "jekyll"
     ],
-    "liquid.format.enable": true
+    "liquid.format.enable": true,
+    "markdownlint.config": {
+        "MD025": false, // single-title/single-h1
+        "MD026": false, // no-trailing-punctuation
+        "MD033": false, // no-inline-html
+    }
 }
