@@ -312,7 +312,6 @@ html {
 }
 
 .pane-layout {
-  @extend .pane-material;
   box-sizing: border-box;
   margin: 1em auto 1em auto;
   padding: 1em 2em;
@@ -323,7 +322,11 @@ html {
   box-shadow: $box-shadow;
 }
 
-
+.pane {
+  @extend .pane-material;
+  @extend .pane-layout;
+  @extend .pane-shape;
+}
 
 div.date {
   color: #1a1a1a;
