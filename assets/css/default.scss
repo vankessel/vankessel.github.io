@@ -237,7 +237,7 @@ html {
     left: 0;
   }
   figure, img, video, iframe {
-    @extend .pane-outer;
+    @extend .pane-shape;
   }
 }
 
@@ -264,7 +264,7 @@ html {
   }
 
   .thing {
-    @extend .pane-outer;
+    @extend .pane-shape;
     padding: 0.5em;
     background-color: $translucent;
     & > small {
@@ -302,22 +302,27 @@ html {
   }
 }
 
-.pane {
+.blur {
+  backdrop-filter: blur(16px);
+}
+
+.pane-material {
   @extend .blur;
-  box-sizing: border-box;
-  margin: auto auto 1em auto;
-  padding: 1em 2em;
   background-color: $translucent;
 }
 
-.pane-outer {
+.pane-layout {
+  @extend .pane-material;
+  box-sizing: border-box;
+  margin: 1em auto 1em auto;
+  padding: 1em 2em;
+}
+
+.pane-shape {
   border-radius: 4px;
   box-shadow: $box-shadow;
 }
 
-.blur {
-  backdrop-filter: blur(16px);
-}
 
 
 div.date {

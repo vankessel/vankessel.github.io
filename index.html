@@ -1,7 +1,7 @@
 ---
 ---
 
-<div id="content-container" class="pane pane-outer">
+<div id="content-container" class="pane-layout pane-shape">
 
   <nav id="tabs">
     <span data-tab-index="0" class="tab active"><strong>Blog</strong></span>
@@ -11,31 +11,36 @@
   </nav>
 
   <div data-tab-index="0" class="tab-content active" style="margin-bottom: 0">
-    <div class="post-list" style="display: grid; grid-template-columns: auto auto auto; align-items: center; row-gap: 0.5em; column-gap: 0.5em">
-        {% assign row = 0 %}
-        {% for post in site.posts %}
-            {% unless post.hide %}
-            {% assign row = row | plus: 1 %}
-            <img src="{{ post.image }}"
-                 style="max-height: 64px; object-fit: contain; border-radius: 4px; margin-right: 0; justify-self: end;
+    <div class="post-list"
+      style="display: grid; grid-template-columns: auto auto auto; align-items: center; row-gap: 0.5em; column-gap: 0.5em">
+      {% assign row = 0 %}
+      {% for post in site.posts %}
+      {% unless post.hide %}
+      {% assign row = row | plus: 1 %}
+      <img src="{{ post.image }}"
+        style="max-height: 64px; object-fit: contain; border-radius: 4px; margin-right: 0; justify-self: end;
                         grid-column-start: 1; grid-column-end: 2; grid-row-start: {{ row }}; grid-row-end: {{ row | plus: 1 }}"><img>
-            <svg height="8" width="8" style="margin: 8px;
+      <svg height="8" width="8"
+        style="margin: 8px;
                         grid-column-start: 2; grid-column-end: 3; grid-row-start: {{ row }}; grid-row-end: {{ row | plus: 1 }}">
-                <circle cx="4" cy="4" r="2" fill="black" />
-            </svg>
-            <span style="display: inline-block;
+        <circle cx="4" cy="4" r="2" fill="black" />
+      </svg>
+      <span
+        style="display: inline-block;
                         grid-column-start: 3; grid-column-end: 4; grid-row-start: {{ row }}; grid-row-end: {{ row | plus: 1 }}">
-                <a href="{{ post.url }}">{{ post.title }}</a><div class="date">{{ post.date | date_to_long_string: 'ordinal', 'US' }}</div>
-            </span>
-            {% endunless %}
-        {% endfor %}
+        <a href="{{ post.url }}">{{ post.title }}</a>
+        <div class="date">{{ post.date | date_to_long_string: 'ordinal', 'US' }}</div>
+      </span>
+      {% endunless %}
+      {% endfor %}
     </div>
   </div>
 
   <div data-tab-index="1" class="tab-content">
     <img id="profile" src="/assets/images/profile.png">
     <p>
-      My name is Kara van Kessel. I am a polymath creating works in the intersection of art, science, and philosophy. This is a space I use to share my thoughts and teach others. Thanks for reading.
+      My name is Kara van Kessel. I am a polymath creating works in the intersection of art, science, and philosophy.
+      This is a space I use to share my thoughts and teach others. Thanks for reading.
     </p>
     <p>
       If you want to get in touch, contact me at \(\mathrm{a d m i n @ {{ site.domain }} }\)
@@ -50,13 +55,13 @@
 </div>
 
 <script type="text/javascript">
-  $(document).ready(function() {
+  $(document).ready(function () {
     // Initialize effects checkbox and set click event
     let simpleMode = localStorage.getItem('mode') === 'simple';
     let effectsCheckbox = $('#effects');
     effectsCheckbox.prop('checked', simpleMode);
 
-    effectsCheckbox.click(function() {
+    effectsCheckbox.click(function () {
       localStorage.setItem('mode', $(this).prop('checked') ? 'simple' : 'normal');
       location.reload();
     });
@@ -65,7 +70,7 @@
     let tabs = $('.tab[data-tab-index]');
     let tabContents = $('.tab-content');
 
-    tabs.click(function() {
+    tabs.click(function () {
       let idx = $(this).data('tab-index');
       // Can only search by data attributes when hardcoded
       $('#content-container [data-tab-index=' + idx + ']').addClass('active');

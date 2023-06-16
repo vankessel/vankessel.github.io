@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div id="post" class="pane pane-outer" style="text-align: {{ page.text-align | default: 'left' }};">
+<div id="post" class="pane-layout pane-shape" style="text-align: {{ page.text-align | default: 'left' }};">
   {{ content }}
   {% unless page.hide_social %}
   <nav id="tabs-bottom">
@@ -34,25 +34,25 @@ layout: default
 </div>
 
 {% unless page.hide_subscribe %}
-<div id="subscribe" class="pane pane-outer">
+<div id="subscribe" class="pane-layout pane-shape">
   {% include subscribe.html %}
 </div>
 {% endunless %}
 
 {% if page.reddit %}
-<div id="reddit-comments" class="pane pane-outer" data-reddit="{{ page.reddit }}">
-{% include reddit-comments.html %}
+<div id="reddit-comments" class="pane-layout pane-shape" data-reddit="{{ page.reddit }}">
+  {% include reddit-comments.html %}
 </div>
 {% endif %}
 
 {% if page.comments_backup %}
-<div id="comments" class="pane pane-outer">
-{% include comments.html %}
+<div id="comments" class="pane-layout pane-shape">
+  {% include comments.html %}
 </div>
 {% endif %}
 
 {% unless page.hide_related %}
-<div id="related" class="pane pane-outer">
+<div id="related" class="pane-layout pane-shape">
   {% include related.html %}
 </div>
 {% endunless %}
