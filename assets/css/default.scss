@@ -1,37 +1,9 @@
 ---
 ---
 
-/* HELPERS */
-
-@mixin translate($axis: x, $start: 0%, $end: 100%) {
-  from {
-    background-position-#{$axis}: $start;
-  }
-  to {
-    background-position-#{$axis}: $end;
-  }
-}
-
 @mixin filter($arg) {
   -webkit-filter: $arg;
   filter: $arg;
-}
-
-/* KEYFRAMES */
-
-@keyframes translate-x {
-  @include translate(x, 100%, 0%);
-}
-
-@keyframes translate-y {
-  @include translate(y);
-}
-
-/* ANIMATIONS */
-
-@mixin drift($x-period: 16s, $y-period: 16s) {
-  animation: translate-x $x-period ease-in-out              infinite alternate,
-             translate-y $y-period ease-in-out $y-period/-2 infinite alternate;
 }
 
 /* VARIABLES */
@@ -68,65 +40,21 @@ html {
   float: right;
 }
 
-#center-container {
-  margin: auto;
+#main-grid {
+  display: grid;
   @media (orientation: landscape) {
-    max-width: 55em;
+    grid-template-columns: minmax(8px, 1fr) fit-content(55em) minmax(8px, 1fr)
   }
   @media (orientation: portrait) {
-    max-width: 90%;
+    grid-template-columns: minmax(8px, 1fr) 90% minmax(8px, 1fr)
   }
 }
 
-#name-container {
-  $name: "Kara\Avan Kessel";
-  $size: 5em;
-  $mobileSize: 3em;
-  display: table;
-  margin: auto;
-  a {
-    text-decoration: none;
-  }
-  #name {
-    position: relative;
-    text-align: left;
-    color: black;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 1px;
-    @media screen and (orientation: landscape) {
-      background-image: url('../images/heic1509a.jpg');
-      background-size: 1280px 1024px;
-      background-clip: text;
-      -webkit-background-clip: text;
-      @include drift(32s, 512s);
-    }
-    @media all and (orientation: landscape) {
-      font-size: $size;
-      margin-top: $size/16;
-      margin-bottom: $size/16;
-    }
-    @media all and (orientation: portrait) {
-      font-size: $mobileSize;
-      margin-top: $mobileSize/16;
-      margin-bottom: $mobileSize/16;
-    }
-  }
-
-  #name:before {
-    content: $name;
-    white-space: pre;
-  }
-
-  #name:after {
-    content: $name;
-    white-space: pre;
-    position: absolute;
-    top: 0; left: 0;
-    color: black;
-    -webkit-text-fill-color: black;
-    text-shadow: 1px 1px 4px rgba(0,0,0,1);
-    z-index: -1;
-  }
+#grid-center-flex {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 %tabs-shared {

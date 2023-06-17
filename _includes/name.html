@@ -1,0 +1,12 @@
+<head>
+    <style type="text/css">
+        {% capture name_scss %}
+            {% include name.scss %}
+        {% endcapture %}
+        {{ name_scss | scssify }}
+    </style>
+</head>
+
+<div id="name-container">
+    <a href="/"><h1 id="name"></h1></a>
+</div>

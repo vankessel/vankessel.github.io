@@ -99,16 +99,27 @@
 
   <body>
 
-    <div id="center-container">
+    <div id="main-grid">
 
-      <div id="name-container">
-        <a href="/">
-          <h1 id="name">
-          </h1>
-        </a>
-      </div>
+        <div id="grid-upper-left"></div>
 
-      {{ content }}
+        <div id="grid-upper-center">
+            {% include name.html %}
+        </div>
+
+        <div id="grid-upper-right"></div>
+
+        <div id="grid-left-side"></div>
+
+        <div id="grid-center-flex">
+
+            <div id="default-content-container">
+                {{ content }}
+            </div>
+
+        </div>
+
+        <div id="grid-right-side"></div>
 
     </div>
 
