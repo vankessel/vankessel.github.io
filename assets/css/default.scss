@@ -227,7 +227,7 @@ html {
   video {
     width: 100%;
   }
-  iframe {
+  figure > iframe {
     position: absolute;
     display: block;
     margin: auto;
@@ -300,6 +300,11 @@ html {
   h3 {
     text-align: center;
   }
+}
+
+iframe.instagram-media {
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 .blur {
