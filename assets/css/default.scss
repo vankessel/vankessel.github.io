@@ -42,19 +42,83 @@ html {
 
 #main-grid {
   display: grid;
+  grid-template-areas:
+  "ul uc ur"
+  "l  c  r"
+  "ll lc lr";
   @media (orientation: landscape) {
-    grid-template-columns: minmax(8px, 1fr) fit-content(55em) minmax(8px, 1fr)
+    grid-template-columns: minmax(8px, 1fr) fit-content(55em) minmax(8px, 1fr);
   }
   @media (orientation: portrait) {
-    grid-template-columns: minmax(8px, 1fr) 90% minmax(8px, 1fr)
+    grid-template-columns: minmax(8px, 1fr) 90% minmax(8px, 1fr);
+    grid-template-areas:
+    ". uc ."
+    ".  c  ."
+    ". r .";
   }
 }
 
-#grid-center-flex {
+#grid-upper-left {
+  grid-area: ul;
+}
+
+#grid-upper-center {
+  grid-area: uc;
+}
+
+#grid-upper-right {
+  grid-area: ur;
+}
+
+#grid-left {
+  grid-area: l;
+}
+
+#grid-center {
+  grid-area: c;
+}
+
+#grid-right {
+  grid-area: r;
+}
+
+#grid-lower-left {
+  grid-area: ll;
+}
+
+#grid-lower-center {
+  grid-area: lc;
+}
+
+#grid-lower-right {
+  grid-area: lr;
+}
+
+#center-flex {
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
   align-items: center;
+}
+
+#right-flex {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.insta-post-container {
+  @extend .pane;
+  margin: 1em !important;
+  padding: 1em !important;
+
+  & > iframe {
+    min-width: 0 !important;
+    margin-bottom: 0 !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
 }
 
 %tabs-shared {
@@ -115,7 +179,7 @@ html {
 }
 
 #content-container {
-  display: table;
+  display: block;
 
   .tab-content {
     display: none;
@@ -228,11 +292,6 @@ html {
   h3 {
     text-align: center;
   }
-}
-
-iframe.instagram-media {
-  margin-left: auto !important;
-  margin-right: auto !important;
 }
 
 .blur {

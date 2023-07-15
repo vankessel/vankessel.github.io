@@ -109,17 +109,34 @@
 
         <div id="grid-upper-right"></div>
 
-        <div id="grid-left-side"></div>
+        <div id="grid-left"></div>
 
-        <div id="grid-center-flex">
+        <div id="grid-center">
 
-            <div id="default-content-container">
+            <div id="center-flex">
                 {{ content }}
             </div>
 
         </div>
 
-        <div id="grid-right-side"></div>
+        <div id="grid-right">
+            <div id="right-flex">
+                {% for insta_post in site.data.insta-posts %}
+                {% unless insta_post.hide %}
+                <div class="insta-post-container">
+                {% include insta-embed.html data=insta_post %}
+                </div>
+                {% break %}
+                {% endunless %}
+                {% endfor %}
+            </div>
+        </div>
+
+        <div id="grid-lower-left"></div>
+
+        <div id="grid-lower-center"></div>
+
+        <div id="grid-lower-right"></div>
 
     </div>
 
@@ -164,6 +181,16 @@
         }
     </style>
 
+    <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+    <script>
+    kofiWidgetOverlay.draw('vankessel', {
+        'type': 'floating-chat',
+        'floating-chat.donateButton.text': 'Support me',
+        'floating-chat.donateButton.background-color': '#ff38b8',
+        'floating-chat.donateButton.text-color': '#fff'
+    });
+    </script>
+    <script async src="/assets/js/insta-embed.js"></script>
     <script src="//instant.page/5.2.0" type="module" integrity="sha384-jnZyxPjiipYXnSU0ygqeac2q7CVYMbh84q0uHVRRxEtvFPiQYbXWUorga2aqZJ0z"></script>
 </body>
 
