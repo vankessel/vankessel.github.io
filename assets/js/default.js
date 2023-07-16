@@ -37,8 +37,8 @@ function generateBackground(seed = null) {
     return;
   }
 
-  let w = $(window).width();
-  let h = $(window).height();
+  let w = window.outerWidth;
+  let h = window.outerHeight;
 
   let cell_size = Math.min(Math.max(192, w*h*0.000005722), 384);
 

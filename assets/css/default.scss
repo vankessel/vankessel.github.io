@@ -237,18 +237,11 @@ html {
   margin-top: 1em;
   padding: 2em;
   width: 100%;
-
-  // Allow the preload link to break anywhere to avoid overflow.
-  & > h2 > a {
-    word-break: break-word;
-  }
+  overflow-wrap: break-word;
 
   .reddit-title {
     margin-top: -0.5em;
     margin-bottom: 1.5em;
-    & > a {
-      word-break: break-word;
-    }
   }
 
   .reddit-link {
