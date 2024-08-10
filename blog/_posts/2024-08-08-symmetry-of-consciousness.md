@@ -4,6 +4,7 @@ author: Kara van Kessel
 tags: philosophy quantum physics math
 image: /assets/images/symmetry-of-consciousness/index.webp
 reddit: r/vankessel/comments/1ep1hbz
+redirect_from: /thoughts-on-the-hard-problem-symmetry-of-consciousness
 ---
 
 # {{ page.title }}
