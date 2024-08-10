@@ -3,6 +3,7 @@ title: "Thoughts on the Hard Problem: Symmetry of Consciousness"
 author: Kara van Kessel
 tags: philosophy quantum physics math
 image: /assets/images/symmetry-of-consciousness/index.avif
+reddit: r/vankessel/comments/1ep1hbz
 ---
 
 # {{ page.title }}
@@ -43,7 +44,7 @@ Will sure feels like it directs experience. Is our will the tangent space?
 
 Should the manifold and tangent space be not of individual experiences and wills, but the collective experiences and wills of all, to account for clashing wills with others or [of nature](https://en.wikipedia.org/wiki/Panpsychism)?
 
-If the manifold is of possible experiences, where does usual objective material reality fit in to this?
+If the manifold is of possible experiences, where does usual objective material reality fit into this?
 
 Is the duality not between mind and matter, but mind and phenomena?
 
