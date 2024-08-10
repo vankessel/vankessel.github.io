@@ -2,7 +2,7 @@
 title: "Thoughts on the Hard Problem: Symmetry of Consciousness"
 author: Kara van Kessel
 tags: philosophy quantum physics math
-image: /assets/images/symmetry-of-consciousness/index.avif
+image: /assets/images/symmetry-of-consciousness/index.webp
 reddit: r/vankessel/comments/1ep1hbz
 ---
 
