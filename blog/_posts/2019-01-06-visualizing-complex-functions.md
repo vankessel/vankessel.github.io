@@ -33,7 +33,7 @@ $$z = x + yi$$
 
 ### Polar Coordinates
 
-While the axes directly correspond to each component, it is actually often times easier to think of a complex number as a magnitude ($$r$$) and angle ($$\theta$$) from the origin. This way of representing a point on the plane is called a [polar coordinate system](https://en.wikipedia.org/wiki/Polar_coordinate_system). The reason it is easier is because when you multiply two complex numbers, the result's magnitude is the product of the two original magnitudes, and the result's angle is the sum of the the two original angles. $$i$$ has a magnitude of $$1$$ and an angle of $$\frac{\pi}{2}$$ [radians](https://en.wikipedia.org/wiki/Radian) ($$90$$ degrees) counterclockwise from the positive x-axis, so multiplying by $$i$$ can be thought of as rotating a point on the plane by $$\frac{\pi}{2}$$ radians counterclockwise.
+While the axes directly correspond to each component, it is actually often times easier to think of a complex number as a magnitude ($$r$$) and angle ($$\theta$$) from the origin. This way of representing a point on the plane is called a [polar coordinate system](https://en.wikipedia.org/wiki/Polar_coordinate_system). The reason it is easier is because when you multiply two complex numbers, the result's magnitude is the product of the two original magnitudes, and the result's angle is the sum of the two original angles. $$i$$ has a magnitude of $$1$$ and an angle of $$\frac{\pi}{2}$$ [radians](https://en.wikipedia.org/wiki/Radian) ($$90$$ degrees) counterclockwise from the positive x-axis, so multiplying by $$i$$ can be thought of as rotating a point on the plane by $$\frac{\pi}{2}$$ radians counterclockwise.
 
 $$z = r\mathrm{e}^{\theta i}$$
 
