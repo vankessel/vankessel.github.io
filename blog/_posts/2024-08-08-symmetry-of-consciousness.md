@@ -31,6 +31,8 @@ I think the best place to start is to identify any symmetries.
 
 Pre-birth and post-death seem to likely be the same state of (non-)consciousness. That would make the two ends of every lifetime symmetric.
 
+May it be that _any_ two conscious experiences are symmetric? Like how you may consider different [permutations of a Rubik's cube](https://en.wikipedia.org/wiki/Rubik's_Cube_group) to be symmetric despite the labels not matching?
+
 Does that mean [Lie Theory](https://en.wikipedia.org/wiki/Lie_theory), the study of continuous symmetries, can be applied to our continuous experience from birth to death?
 
 At any instant, are we are moving infinitesimally in a direction tangent to the manifold of [phenomenal](https://en.wikipedia.org/wiki/Phenomenon#Philosophy) experiences?
