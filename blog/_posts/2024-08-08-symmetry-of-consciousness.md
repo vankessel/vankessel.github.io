@@ -19,7 +19,7 @@ The point is, duals are symmetries that can look very different. And reality is 
 
 It could very well be that consciousness is the dual of something that looks nothing like it. Like physical reality.
 
-If dual, could one have still have slight precedence? Like oneself vs one's mirror reflection?
+If dual, could one still have slight precedence? Like oneself vs one's mirror reflection?
 
 Our perspective is the only of the two that can _have_ a perspective. So if not intrinsically primary, perhaps a kind of pseudo-primary.
 
