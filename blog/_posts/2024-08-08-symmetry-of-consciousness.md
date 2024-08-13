@@ -11,7 +11,7 @@ redirect_from: /thoughts-on-the-hard-problem-symmetry-of-consciousness
 
 It is not the atom or quark, but symmetry that is the building block of everything.
 
-The most interesting physics always involves symmetries. Matter and anti-matter. [Charge-Parity-Time (CPT) symmetry](https://en.wikipedia.org/wiki/CPT_symmetry). [Gauge symmetries](https://en.wikipedia.org/wiki/Gauge_symmetry_(mathematics)). [Supersymmetry](https://en.wikipedia.org/wiki/Supersymmetry). ["Holographic duality"](https://en.wikipedia.org/wiki/AdS/CFT_correspondence). [Gravitoelectromagnetism](https://en.wikipedia.org/wiki/Gravitoelectromagnetism).
+The most interesting physics always involves symmetries. Matter and anti-matter. [Charge-Parity-Time (CPT) symmetry](https://en.wikipedia.org/wiki/CPT_symmetry). [Noether's theorem](https://en.wikipedia.org/wiki/Noether%27s_theorem). [Gauge symmetries](https://en.wikipedia.org/wiki/Gauge_symmetry_(mathematics)). [Supersymmetry](https://en.wikipedia.org/wiki/Supersymmetry). ["Holographic duality"](https://en.wikipedia.org/wiki/AdS/CFT_correspondence). [Gravitoelectromagnetism](https://en.wikipedia.org/wiki/Gravitoelectromagnetism).
 
 In math you have many examples of duality. It's a kind of symmetry, but it may be complicated or unintuitive. Functions and their [Fourier transform](https://en.wikipedia.org/wiki/Fourier_transform). Vectors and [bivectors](https://en.wikipedia.org/wiki/Bivector) in 3D space. [Langlands](https://en.wikipedia.org/wiki/Langlands_program).
 
@@ -39,7 +39,7 @@ At any instant, are we are moving infinitesimally in a direction tangent to the 
 
 The places on the manifold of consciousness we never visit, do they exist independently? Is this the same as asking if the many-worlds interpretation is true?
 
-What would the tangent space of the manifold of experiences represent?
+What would the [tangent space](https://en.wikipedia.org/wiki/Tangent_space) of the manifold of experiences represent?
 
 Will?
 
