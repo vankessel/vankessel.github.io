@@ -45,8 +45,11 @@
   </div>
 
   <div data-tab-index="2" class="tab-content">
-    <input id="effects" name="effects" type="checkbox">
-    <label for="effects">Turn off effects</label>
+    <input  id="effects-option" name="effects" type="checkbox">
+    <label for="effects-option">Turn off effects</label>
+    </br>
+    <input  id="insta-option" name="effects" type="checkbox">
+    <label for="insta-option">Hide instagram panel</label>
   </div>
 
 </div>
@@ -55,11 +58,23 @@
   $(document).ready(function () {
     // Initialize effects checkbox and set click event
     let simpleMode = localStorage.getItem('mode') === 'simple';
-    let effectsCheckbox = $('#effects');
+    let effectsCheckbox = $('#effects-option');
     effectsCheckbox.prop('checked', simpleMode);
 
     effectsCheckbox.click(function () {
       localStorage.setItem('mode', $(this).prop('checked') ? 'simple' : 'normal');
+      location.reload();
+    });
+
+    // Insta visibility
+    console.log(localStorage.getItem('hide-insta'));
+    let hideInsta = localStorage.getItem('hide-insta') === 'true';
+    let instaCheckbox = $('#insta-option');
+    instaCheckbox.prop('checked', hideInsta);
+
+    instaCheckbox.click(function () {
+      console.log($(this).prop('checked'));
+      localStorage.setItem('hide-insta', $(this).prop('checked'));
       location.reload();
     });
 
