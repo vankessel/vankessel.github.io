@@ -96,11 +96,11 @@ So, what does this look like? Here is the most basic example, the identity funct
 
 {% include video.html url="/assets/videos/visualizing-complex-functions/z^2.webm" poster="/assets/images/visualizing-complex-functions/z^2.jpg" %}
 
-In the image, each hue is repeated twice and the density of the contours has doubled. The video is an interpolation between $$z$$ and $$f(z) = z^2$$. The points where the contours seem to converge are [zeros and poles](https://en.wikipedia.org/wiki/Zeros_and_poles). Poles are points on the graph that diverge to infinity.
+In the image, each hue is repeated twice and the density of the contours has doubled. The video is an interpolation between $$z$$ and $$f(z) = z^2$$. The points where the contours seem to converge are [zeros and poles](https://en.wikipedia.org/wiki/Zeros_and_poles). Poles are points that diverge to infinity.
 
 From here on I will refer to both zeros and infinities as poles for brevity. Which feels acceptable considering they are both poles on the [Riemann sphere](https://en.wikipedia.org/wiki/Riemann_sphere).
 
-In this interpolation you can see a pole appear along the negative axis and merge into the original pole.
+In this interpolation you can see a pole appear along the negative axis and merge into the original pole. The choice of linear interpolation is rather arbitrary, but it's curious how the poles move along the animation. Do they trace out interesting curves? Can we come up with a equation for those curves? That's for another post. For now let's see the rest!
 
 ### Cube
 
