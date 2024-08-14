@@ -19,7 +19,7 @@ comments_backup: true
 
 Despite the name, complex numbers are easier to understand than they sound. A complex number is actually made of two numbers, or components, a real component and an imaginary component. Think of a complex number as a point on a 2D plane, instead of the usual real number line.
 
-What is an imaginary number exactly? It is any multiple of square root of negative one, or $$i$$. $$i^2 = -1$$.
+What is an imaginary number? It is any real number multiplied by $$i$$ where $$i = \sqrt{-1}$$.
 
 The reason $$i$$ is because with it all polynomials have a root. They make taking the square root or logarithm of negative numbers possible and more. In fact most functions have a natural extension to the complex domain. They also provide way of defining the multiplication and division of 2D vectors, alongside the usual addition and subtraction.
 
