@@ -21,7 +21,7 @@ Despite the name, complex numbers are easier to understand than they sound. A co
 
 What is an imaginary number? It is any real number multiplied by $$i$$ where $$i = \sqrt{-1}$$.
 
-The reason $$i$$ is because with it all polynomials have a root. They make taking the square root or logarithm of negative numbers possible and more. In fact most functions have a natural extension to the complex domain. They also provide way of defining the multiplication and division of 2D vectors, alongside the usual addition and subtraction.
+A big reason $$i$$ is useful is because with it, all polynomials have a root. They make taking the square root or logarithm of negative numbers possible and more. In fact most functions have a natural extension to the complex domain. They also provide way of defining the multiplication and division of 2D vectors, alongside the usual addition and subtraction.
 
 Imaginary is a poor name for them. Gauss' lateral number is much better. They exist and are as useful as negative numbers!
 
