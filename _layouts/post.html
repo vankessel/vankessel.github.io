@@ -8,6 +8,10 @@ layout: default
 
   {% unless page.hide_social %}
   <nav id="tabs-bottom">
+    <a href="https://bsky.app/intent/compose?text={{ page.url | absolute_url | url_encode }}"
+      target="_blank" class="tab">
+      <i class="fab fa-bluesky"></i>
+    </a>
     <a href="mailto:?body={{ page.url | absolute_url | url_encode }}&subject={{ page.title | url_encode }}" class="tab">
       <i class="fas fa-envelope-square"></i>
     </a>
@@ -26,10 +30,6 @@ layout: default
     <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ page.url | absolute_url | url_encode }}"
       target="_blank" class="tab">
       <i class="fab fa-linkedin"></i>
-    </a>
-    <a href="#"
-      target="_blank" class="tab">
-      <i class="fab fa-bluesky"></i>
     </a>
   </nav>
   {% endunless %}
