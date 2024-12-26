@@ -88,13 +88,13 @@ Like multiple consciousnesses are "in the same room" so to speak. Can be very un
 
 ### What else may this apply to?
 
-Any so called "quantum woo" or phenomena that can be claimed to function using quantum mechanics. This experiment could be modified to test if there's a QM aspect to remote viewing or the law of attraction if such things exist.
+Most any quantum woo. I can think of ways this experiment can be modified to disprove a quantum explanation for things like remote viewing or the law of attraction, but telempathy is weird enough so I'll leave that as an exercise for the reader.
 
 ### Why? How?
 
-Evolution maybe? Before language, evolutionary advantage would be for the group that can communicate better given two otherwise equal packs of humans. Evolution is pretty good a searching large solution spaces.
+Evolution maybe? Before language, evolutionary advantage would be for the group that can communicate better given two otherwise equal packs. Evolution is pretty good a searching large solution spaces.
 
-It reminds me of [this article](https://www.damninteresting.com/on-the-origin-of-circuits/) describing how an artificially evolved FPGA learned to exploit magnetic side-effects to arrive to a solution. Yeah it may be artificial, but so are forest fire and viral disease simulations and they aren't useless for learning from.
+It reminds me of [this article](https://www.damninteresting.com/on-the-origin-of-circuits/) describing how an artificially evolved [FPGA](https://en.wikipedia.org/wiki/Field-programmable_gate_array) learned to exploit magnetic side-effects to arrive to a solution. Yeah it may be artificial, but so are forest fire and viral disease simulations and they aren't useless for learning from.
 
 [Some suggest](https://www.researchgate.net/publication/265935637_The_Electromagnetic_Induction_of_Mystical_and_Altered_States_within_the_Laboratory) magnetic fields could be involved.
 
