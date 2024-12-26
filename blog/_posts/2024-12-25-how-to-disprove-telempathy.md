@@ -84,7 +84,9 @@ I'll give it a try and provide an update later. Let me know if you try something
 
 ### What does it feel like?
 
-Like multiple consciousnesses are "in the same room" so to speak. Can be very uncomfortable at first, realizing the lack of privacy and trying to fight off inappropriate intrusive thoughts. But if there is no information transfer than this lack of privacy is more felt and actual.
+Like multiple consciousnesses are "in the same room" so to speak.
+
+Can be very uncomfortable at first, realizing the lack of privacy and trying to fight off inappropriate intrusive thoughts. But if there is no information transfer, this lack of privacy is more felt than actual.
 
 ### What else may this apply to?
 
@@ -94,7 +96,7 @@ Most any quantum woo. I can think of ways this experiment can be modified to dis
 
 Evolution maybe? Before language, evolutionary advantage would be for the group that can communicate better given two otherwise equal packs. Evolution is pretty good a searching large solution spaces.
 
-It reminds me of [this article](https://www.damninteresting.com/on-the-origin-of-circuits/) describing how an artificially evolved [FPGA](https://en.wikipedia.org/wiki/Field-programmable_gate_array) learned to exploit magnetic side-effects to arrive to a solution. Yeah it may be artificial, but so are forest fire and viral disease simulations and they aren't useless for learning from.
+It reminds me of [this article](https://www.damninteresting.com/on-the-origin-of-circuits/) describing how an artificially evolved [FPGA](https://en.wikipedia.org/wiki/Field-programmable_gate_array) learned to exploit magnetic side-effects to arrive at a solution. Yeah it may be artificial, but so are forest fire and viral disease simulations and they aren't useless for learning from.
 
 [Some suggest](https://www.researchgate.net/publication/265935637_The_Electromagnetic_Induction_of_Mystical_and_Altered_States_within_the_Laboratory) magnetic fields could be involved.
 
