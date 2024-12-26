@@ -8,11 +8,16 @@ reddit: r/vankessel/comments/1hlwt6j
 
 # {{ page.title }}
 
+<div style="color: #444444; padding-left: 2em; padding-right: 2em; padding-up: 2em; padding-down: 2em;">
+{% capture disc %}
 Disclaimer: Don't take anything too seriously. I enjoy taking ideas to their logical extremes just to see where things may lead. In this case, it has led to an experiment that should be able to detect the presence of a quantum advantage across all sorts of weird phenomena.
 
 Okay, maybe take it a _little_ bit seriously. How cool would it be if some of this wild nonsense were actually true? You're a _damned liar_ if you say the prospect doesn't excite you even a bit.
 
 It's okay! _Breathe_. We _can_ talk about this stuff as long as we don't commit any logical fallacies! I try not to make any but am only human. Let me know if there are any and I'll try to correct them.
+{% endcapture %}
+{{ disc | markdownify}}
+</div>
 
 ## Speaking without speaking
 
@@ -91,7 +96,7 @@ Evolution maybe? Before language, evolutionary advantage would be for the group 
 
 It reminds me of [this article](https://www.damninteresting.com/on-the-origin-of-circuits/) describing how an artificially evolved FPGA learned to exploit magnetic side-effects to arrive to a solution. Yeah it may be artificial, but so are forest fire and viral disease simulations and they aren't useless for learning from.
 
-[Some suggest](https://www.researchgate.net/publication/265935637_The_Electromagnetic_Induction_of_Mystical_and_Altered_States_within_the_Laboratory) magnetic fields are involved.
+[Some suggest](https://www.researchgate.net/publication/265935637_The_Electromagnetic_Induction_of_Mystical_and_Altered_States_within_the_Laboratory) magnetic fields could be involved.
 
 ### What may help?
 
