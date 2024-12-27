@@ -82,13 +82,13 @@ Players should be separated well enough to minimize [sensory leakage](https://en
 
 We are testing telempathy not telepathy. Enhanced communication may just not work when there is zero information content to enhance in the first place.
 
-If they do matter, a possible option to minimize leakage could be to have subjects periodically meet for a duration before returning to separated testing. Assuming contact helps and lasts long enough when separated again.
+If that's the case, a possible option to minimize leakage could be to have subjects periodically meet for some time before returning to separated testing. Assuming contact helps and lasts long enough when separated again.
 
 ## Statistics
 
 Will probably need to model this as a [beta-binomial distribution](https://en.wikipedia.org/wiki/Beta-binomial_distribution).
 
-I'll give it a try and provide an update later. Let me know if you try something yourself.
+I'll give it a try and provide an update in the future. Let me know if you try something yourself.
 
 ## FAQ
 
@@ -106,7 +106,7 @@ Most any quantum woo. I can think of ways this experiment can be modified to dis
 
 Evolution maybe? Before language, evolutionary advantage would be for the group that can communicate better given two otherwise equal packs. Evolution is pretty good a searching large solution spaces.
 
-It reminds me of [this article](https://www.damninteresting.com/on-the-origin-of-circuits/) describing how an artificially evolved [FPGA](https://en.wikipedia.org/wiki/Field-programmable_gate_array) learned to exploit magnetic side-effects to arrive at a solution. Yeah it may be artificial, but so are forest fire and viral disease simulations and they aren't useless for learning from.
+It reminds me of [this article](https://www.damninteresting.com/on-the-origin-of-circuits/) describing how an artificially evolved [FPGA](https://en.wikipedia.org/wiki/Field-programmable_gate_array) learned to exploit magnetic side-effects to arrive at a solution. Yeah it may be artificial, but so are forest fire and viral disease simulations and they aren't useless to learn from.
 
 [Some suggest](https://www.researchgate.net/publication/265935637_The_Electromagnetic_Induction_of_Mystical_and_Altered_States_within_the_Laboratory) magnetic fields could be involved.
 
