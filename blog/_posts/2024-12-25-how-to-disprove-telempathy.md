@@ -34,11 +34,11 @@ Not _mere_ body language though. Enhanced somehow. Possibly by quantum mechanics
 
 The brain is not "too warm & wet for quantum mechanics," as [proven this April](https://pubs.acs.org/doi/10.1021/acs.jpcb.3c07936). (Tryptophan is a key player. Curious, considering the connection to psychedelics.)
 
-Telepathy is a misnomer. There is [no communication of information](https://en.wikipedia.org/wiki/Quantum_pseudo-telepathy). Telempathy is a better name for it.
+Telepathy is a misnomer. There is [no communication](https://en.wikipedia.org/wiki/No-communication_theorem) of information. Telempathy is a better [name for it](https://en.wikipedia.org/wiki/Quantum_pseudo-telepathy).
 
 How is there an advantage if there is no communication of information?
 
-Like a [quantum algorithm](https://en.wikipedia.org/wiki/Quantum_algorithm), we can [exploit](https://en.wikipedia.org/wiki/CHSH_inequality) [quantum correlations](https://en.wikipedia.org/wiki/Quantum_correlation) to [do something](https://en.wikipedia.org/wiki/BQP) that [appears](https://en.wikipedia.org/wiki/Quantum_pseudo-telepathy) [remarkable](https://en.wikipedia.org/wiki/Shor%27s_algorithm).
+Like a [quantum algorithm](https://en.wikipedia.org/wiki/Quantum_algorithm), we can [exploit](https://en.wikipedia.org/wiki/Bell%27s_theorem) [quantum correlations](https://en.wikipedia.org/wiki/Quantum_correlation) to [do something](https://en.wikipedia.org/wiki/BQP) that [appears](https://en.wikipedia.org/wiki/Shor%27s_algorithm) [remarkable](https://en.wikipedia.org/wiki/Grover%27s_algorithm).
 
 ## The experiment
 
@@ -50,15 +50,19 @@ Telempathy is either not physically real, or does not require quantum entangleme
 
 ### Experiment
 
-Two players experiencing telempathy attempt to cooperatively win [the Mermin-Peres magic square game](https://en.wikipedia.org/wiki/Quantum_pseudo-telepathy#The_magic_square_game). This game can only be won 8/9 of the time classically, and 100% of the time with one pair of entangled qubits.
+Two players experiencing telempathy attempt to cooperatively win rounds of [the Mermin-Peres magic square game](https://en.wikipedia.org/wiki/Quantum_pseudo-telepathy#The_magic_square_game). This game can only be won 8/9 of the time classically, and 100% of the time with one pair of entangled qubits.
 
 ### Best case success
 
-Telempathic coordination is easy. The players win statistically-significantly more than 8/9 of the time.
+Telempathic coordination is easy. The players win [statistically-significantly](https://en.wikipedia.org/wiki/Statistical_significance) more than 8/9 of the time.
 
 ### Worst case success
 
-Telempathic coordination is hard. The players win statistically-significantly more than a pair of AI models trained to replicate their decision probabilities. (Failing to beat 8/9 may just mean there is noise. In this case the baseline to compare against should be a purely classical simulation of the players.) Perhaps a sufficiently high-order Markov chain. I'm open to suggestions on how to approach this statistically.
+Telempathic coordination is hard. The players win statistically-significantly more than a pair of AI models trained to replicate their decision probabilities classically. Perhaps a sufficiently high-order [Markov chain](https://en.wikipedia.org/wiki/Markov_chain). I'm open to suggestions on how to approach this statistically.
+
+In this case it would help to know how many rounds into the past significantly influence a player's current choice. Each extra round into the past greatly increases the data needed to train a Markov chain.
+
+Hopefully shorter than [7±2](https://en.wikipedia.org/wiki/The_Magical_Number_Seven%2C_Plus_or_Minus_Two#Other_cognitive_numeric_limits), since players aren't usually trying to remember past choices.
 
 ## The Mermin-Peres magic squares game
 
@@ -74,9 +78,15 @@ With a single entangled qubit, the players can win every time. No additional inf
 
 Thankfully each round of the game doesn't take long to complete so gathering data shouldn't be too painful.
 
-Players should be separated well enough to minimize [sensory-leakage](https://en.wikipedia.org/wiki/Sensory_leakage), but not so far than testing becomes impossible if distance or physical obstacles do matter.
+Players should be separated well enough to minimize [sensory leakage](https://en.wikipedia.org/wiki/Sensory_leakage), but not so far than testing becomes impossible, if distance or physical obstacles do matter.
 
-Will probably need to model this as a beta-binomial distribution.
+We are testing telempathy not telepathy. Enhanced communication may just not work when there is zero information content to enhance in the first place.
+
+If they do matter, a possible option to minimize leakage could be to have subjects periodically meet for a duration before returning to separated testing. Assuming contact helps and lasts long enough when separated again.
+
+## Statistics
+
+Will probably need to model this as a [beta-binomial distribution](https://en.wikipedia.org/wiki/Beta-binomial_distribution).
 
 I'll give it a try and provide an update later. Let me know if you try something yourself.
 
@@ -99,6 +109,12 @@ Evolution maybe? Before language, evolutionary advantage would be for the group 
 It reminds me of [this article](https://www.damninteresting.com/on-the-origin-of-circuits/) describing how an artificially evolved [FPGA](https://en.wikipedia.org/wiki/Field-programmable_gate_array) learned to exploit magnetic side-effects to arrive at a solution. Yeah it may be artificial, but so are forest fire and viral disease simulations and they aren't useless for learning from.
 
 [Some suggest](https://www.researchgate.net/publication/265935637_The_Electromagnetic_Induction_of_Mystical_and_Altered_States_within_the_Laboratory) magnetic fields could be involved.
+
+### The brain may use quantum mechanics, but how can entanglement occur over the air?
+
+I don't know. Skepticism is healthy. Not even long ago suggesting a quantum aspect to the brain would be laughed at, but it turns out nature is more clever than us. Is biological entanglement over the air that much more of an impossibility?
+
+Not saying this is how, but for example: photons can encode quantum states, and ["the human body literally glimmers" visible light](https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0006256&type=printable).
 
 ### What may help?
 
