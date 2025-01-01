@@ -16,7 +16,7 @@ Okay, maybe take it a _little_ bit seriously. How cool would it be if some of th
 
 It's okay! _Breathe_. We _can_ talk about this stuff as long as we don't commit any logical fallacies! I try not to make any but am only human. Let me know if there are any and I'll try to correct them.
 {% endcapture %}
-{{ disc | markdownify}}
+{{ disc | markdownify }}
 </div>
 
 ## Speaking without speaking
@@ -70,7 +70,7 @@ In [this game](https://en.wikipedia.org/wiki/Quantum_pseudo-telepathy#The_magic_
 
 To win, they must both make the same choice where the row and column overlap.
 
-Classically, the best strategy is to memorize the a solution which fills the grid correctly for all but 1 of the 9 squares.
+Classically, the best strategy is to memorize a solution which fills the grid correctly for all but 1 of the 9 squares.
 
 With a single entangled qubit, the players can win every time. No additional information required.
 
