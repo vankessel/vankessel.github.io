@@ -1,0 +1,61 @@
+{% unless accordion_style %}
+{% assign accordion_style = true %}
+<style>
+
+.accordion {
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  box-shadow: none;
+}
+
+.active, .accordion:hover {
+  box-shadow: 2px 2px 8px 2px rgba(0,0,0,0.3);
+}
+
+.accordion-content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+}
+</style>
+{% endunless %}
+
+<div>
+
+    <button class="accordion pane">
+        <i class="fa-solid fa-circle-chevron-right" style="display: inline-block;">&nbsp;
+        </i>
+        <h4 style="display: inline-block;">
+            {{ include.label }}
+        </h4>
+    </button>
+    <div class="accordion-content">
+        {{ include.content }}
+    </div>
+</div>
+
+{% unless accordion_script %}
+{% assign accordion_script = true %}
+<script type="text/javascript">
+$(document).ready(function () {
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    });
+    }
+});
+</script>
+{% endunless %}

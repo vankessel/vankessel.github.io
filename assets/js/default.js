@@ -1,5 +1,7 @@
-let jQueryPromise = new Promise((resolve, reject) => {
+let jQueryReadyPromise = new Promise((resolve, reject) => {
   $(document).ready(function() {
+    // resolve() will not return the function, which is okay.
+    // Promise only needs to know jQuery is ready.
     resolve();
 
     generateBackground();
@@ -23,7 +25,7 @@ let mathJaxPromise = new Promise((resolve, reject) => {
   });
 });
 
-Promise.all([jQueryPromise, mathJaxPromise]).then(() => {
+Promise.all([jQueryReadyPromise, mathJaxPromise]).then(() => {
   // Sometimes MathJax overflows if the svg is too long.
   // Fix this by setting the max-width to 100% for both the svg and its container.
   // Remove fixed height attribute so scaled image maintains aspect ratio.
