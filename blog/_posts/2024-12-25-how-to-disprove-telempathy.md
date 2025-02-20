@@ -46,7 +46,7 @@ None of this useful if something can't be made [falsifiable](https://en.wikipedi
 
 ### Null hypothesis
 
-Telempathy is either not physically real, or does not require quantum entanglement to function.
+Telempathy is either not real, or does not require quantum entanglement to function.
 
 ### Experiment
 
