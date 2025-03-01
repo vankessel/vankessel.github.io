@@ -34,7 +34,7 @@ Not _mere_ body language though. Enhanced somehow. Possibly by quantum mechanics
 
 The brain is not "too warm & wet for quantum mechanics," as [proven this April](https://pubs.acs.org/doi/10.1021/acs.jpcb.3c07936). (Tryptophan is a key player. Curious, considering the connection to psychedelics.)
 
-Telepathy is a misnomer. There is [no communication](https://en.wikipedia.org/wiki/No-communication_theorem) of information. Telempathy is a better [name for it](https://en.wikipedia.org/wiki/Quantum_pseudo-telepathy).
+Telepathy is a misnomer. There is [no additional communication](https://en.wikipedia.org/wiki/No-communication_theorem) of information. Telempathy is a better [name for it](https://en.wikipedia.org/wiki/Quantum_pseudo-telepathy).
 
 How is there an advantage if there is no communication of information?
 
@@ -96,7 +96,7 @@ I'll give it a try and provide an update in the future. Let me know if you try s
 
 Like multiple consciousnesses are "in the same room" so to speak.
 
-Can be very uncomfortable at first, realizing the lack of privacy and trying to fight off inappropriate intrusive thoughts. But if there is no information transfer, this lack of privacy is more felt than actual.
+Can be very uncomfortable at first, realizing the lack of privacy and trying to fight off inappropriate intrusive thoughts. But if there is no additional information transfer, this lack of privacy is more felt than actual.
 
 ### What else may this apply to?
 
