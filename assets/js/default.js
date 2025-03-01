@@ -1,3 +1,19 @@
+const wiki_regex = /wikipedia.org\/wiki\/([^\/]+)$/
+
+let cached_wiki_data = {}
+
+function get_wiki_data(topic, callback) {
+  if (topic in cached_wiki_data) {
+    callback(cached_wiki_data[topic])
+  } else {
+    $.get("https://en.wikipedia.org/api/rest_v1/page/summary/" + topic, function(data) {
+      cached_wiki_data[topic] = data;
+      callback(data);
+    })
+  }
+
+}
+
 let jQueryReadyPromise = new Promise((resolve, reject) => {
   $(document).ready(function() {
     // resolve() will not return the function, which is okay.
@@ -16,6 +32,40 @@ let jQueryReadyPromise = new Promise((resolve, reject) => {
         "background-image": "none"
       });
     }
+
+    let root = document.documentElement;
+    root.addEventListener("mousemove", e => {
+      root.style.setProperty('--mouse-x', e.pageX + "px");
+      root.style.setProperty('--mouse-y', e.pageY + "px");
+    });
+
+
+    $('a').on( "mouseenter", function() {
+      let match = $(this).attr("href").match(wiki_regex)
+      if (match != null) {
+        let root = document.documentElement;
+        let offset = $(this).offset()
+        offset['left'] += $(this).outerWidth() * 0.5
+        offset['top'] += $(this).outerHeight()
+        root.style.setProperty('--wiki-x', Math.round(offset['left']) + 'px');
+        root.style.setProperty('--wiki-y', Math.round(offset['top']) + 'px');
+        get_wiki_data(match[1], function (data) {
+          $('#wiki-desc').html(data["extract_html"])
+          if ("thumbnail" in data && "source" in data["thumbnail"]) {
+            $('#wiki-image').attr("src", data["thumbnail"]["source"])
+            $('#wiki-image').css("display", "block")
+          } else {
+            $('#wiki-image').attr("src", null)
+            $('#wiki-image').css("display", "none")
+          }
+        });
+        $('#wiki-preview').css("display", "block");
+      }
+    }).on( "mouseleave", function() {
+      $('#wiki-preview').css("display", "none");
+      $('#wiki-image').attr("src", null)
+      $('#wiki-desc').html(null)
+    });
   });
 });
 
