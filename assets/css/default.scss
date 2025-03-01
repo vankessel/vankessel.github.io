@@ -6,6 +6,12 @@
   filter: $arg;
 }
 
+/* CUSTOM PROPERTIES */
+:root {
+  --mouse-x: 0px;
+  --mouse-y: 0px;
+}
+
 /* VARIABLES */
 
 $box-shadow: 2px 2px 8px 2px rgba(0,0,0,0.3);
