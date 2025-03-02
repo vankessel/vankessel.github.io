@@ -120,7 +120,7 @@ Not saying this is how, but for example: photons can encode quantum states, and 
 
 Maybe:
 
-Psychedelics. I don't recommended these if they are illegal for you where you are. I suspect Ketamine, LSD, DMT, and psilocybin mushrooms may help induce such a state, in approximate order of effectiveness.
+Entheogens. I don't recommended these if they are illegal for you where you are. I suspect Ketamine, LSD, DMT, and psilocybin mushrooms may help induce such a state, in approximate order of effectiveness.
 
 Meditation.
 
