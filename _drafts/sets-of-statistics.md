@@ -1,0 +1,1 @@
+Taking R of inf many things. Explains why single point doesn't make sense.
