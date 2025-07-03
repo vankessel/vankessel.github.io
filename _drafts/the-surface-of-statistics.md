@@ -17,13 +17,13 @@ Multiplication scales. Addition translates.
 
 Similarly, exponentiation has an interesting geometric interpretation:
 
-For $$b = ae^x$$, __a__ is the starting position, __b__ is the ending position, and __x__ is the velocity.
+For $b = ae^x$, __a__ is the starting position, __b__ is the ending position, and __x__ is the velocity.
 
 The [exponential](https://en.wikipedia.org/wiki/Exponential_map_(Lie_theory)) takes points and [flows](https://en.wikipedia.org/wiki/Parallel_transport) them along some [surface](https://en.wikipedia.org/wiki/Manifold).
 
 ## The manifold of probability
 
-I can't help but consider this viewpoint whenever I see $$e^x$$ or $$\ln{x}$$ now.
+I can't help but consider this whenever I see $e^x$ or $\ln{x}$ now.
 
 One common area to encounter them is statistics.
 
@@ -41,17 +41,17 @@ In our interpretation, the magnitude of the logarithm tells us the "surprise." T
 
 Another way to think of the negative result of the logarithm is as a kind of "suppression." The most suppressed outcomes are most surprising.
 
-A 100% certain event is completely unsurprising. ($$ \ln{1} = 0 $$)
+A 100% certain event is completely unsurprising. ($ \ln{1} = 0 $)
 
-A 50% chance is nicely surprising. ($$ \ln{\frac{1}{2}} \approx -0.69 $$)
+A 50% chance is somewhat surprising. ($ \ln{\frac{1}{2}} \approx -0.69 $)
 
-An impossible event is infinitely surprising! ($$ \lim\limits_{x \to {0^+}} \ln{x} = -\infty $$)
+An impossible event is infinitely surprising! ($ \lim\limits_{x \to {0^+}} \ln{x} = -\infty $)
 
 ## The type of information
 
 If there's any chance of discovering some kind of manifold of statistics, we need to think bigger than the real numbers. Exponentiation of real numbers won't get you anything very interesting. It gets more interesting the complicated the mathematical object you put up there.
 
-For [example](https://en.wikipedia.org/wiki/Shift_operator): $$ e^{t \frac{d}{dx}} f(x) = f(x + t) $$
+For [example](https://en.wikipedia.org/wiki/Shift_operator): $ e^{t \frac{d}{dx}} f(x) = f(x + t) $
 
 From quantum mechanics we know that probabilities are better understood as the magnitude of a complex number, rather than a purely real number.
 
@@ -97,7 +97,7 @@ It may also imply a dual version of you exists going backwards through time...
 
 It almost sort of makes sense. To a "future dual self" going backward into the past, everything should be at least 100% since the past embodies certainty while the future embodies uncertainty.
 
-Extremely large probabilities approaching $$\infty$$% would be dual to probabilities close to 0%. These are just as "surprising" as the small probabilities. This can be understood as the fact there were very few possible pasts that could have led to this future.
+Extremely large probabilities approaching $\infty$% would be dual to probabilities close to 0%. These are just as "surprising" as the small probabilities. This can be understood as the fact there were very few possible pasts that could have led to this future.
 
 Would this imply the [many-worlds interpretation](https://en.wikipedia.org/wiki/Many-worlds_interpretation) in both directions of time? Many pasts and many futures?
 
@@ -128,3 +128,7 @@ $$ e^{\ln{(\sqrt{2\pi})}\frac{1}{2}x\overline{x}} $$
 $$ \zeta'(0) = -\frac{1}{2}\ln{(2\pi)} = -\ln{(\sqrt{2\pi})} $$
 
 $$ \prod_{n}n! = \sqrt{2\pi} $$
+
+## Moment-generating functions
+
+https://en.wikipedia.org/wiki/Moment-generating_function
