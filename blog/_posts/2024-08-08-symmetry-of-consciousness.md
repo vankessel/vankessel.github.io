@@ -1,5 +1,5 @@
 ---
-title: "Thoughts on the Hard Problem: Symmetry of Consciousness"
+title: "Symmetry of Consciousness"
 author: Kara van Kessel
 tags: philosophy quantum physics math
 image: /assets/images/symmetry-of-consciousness/index.webp
