@@ -1,16 +1,19 @@
 ---
-title: "How to Disprove Telempathy"
+title: "How to Disprove Quantum Woo"
 author: Kara van Kessel
 tags: philosophy quantum experiment
-image: /assets/images/how-to-disprove-telempathy/index.jpg
+image: /assets/images/how-to-disprove-quantum-woo/index.jpg
 reddit: r/vankessel/comments/1hlwt6j
+redirect_from: /how-to-disprove-telempathy
 ---
 
 # {{ page.title }}
 
-<div style="color: #444444; padding-left: 2em; padding-right: 2em; padding-up: 2em; padding-down: 2em;">
+<div style="color: #2c2c2cff; padding-left: 2em; padding-right: 2em; padding-up: 2em; padding-down: 2em;">
 {% capture disc %}
-Disclaimer: Don't take anything too seriously. I enjoy taking ideas to their logical extremes just to see where things may lead. In this case, it has led to an experiment that should be able to detect the presence of a quantum advantage across all sorts of weird phenomena.
+Disclaimer: None of this requires or endorses magical thinking.
+
+Don't take anything too seriously. I enjoy taking ideas to their logical extremes just to see where things may lead. In this case, it has led to an experiment that should be able to detect the presence of a quantum advantage across all sorts of weird phenomena.
 
 Okay, maybe take it a _little_ bit seriously. How cool would it be if some of this wild nonsense were actually true? You're a _damned liar_ if you say the prospect doesn't excite you even a bit.
 
