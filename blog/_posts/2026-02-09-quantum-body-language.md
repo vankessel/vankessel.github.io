@@ -74,9 +74,11 @@ Then, we compare the results of each population using [Kuiper's test](https://en
 
 If the test determines the results are not coming from the same distribution, this will indicate that there is a difference between these classical and quantum models!
 
-This means that performing this experiment with real life people could have the potential of detecting such a model of quantum body language if it exists. 
+A postive result like that would mean that performing this experiment with real life people could have the potential of detecting such a model of quantum body language if it exists.
 
-And that is exciting.
+I would expect the quantum distribution to have larger tails than the classical distribution. Which could be detectable.
+
+And that is an exciting prospect.
 
 I haven't found the time to do so yet, but there is enough information here for anyone to code these simulations themself.
 
