@@ -26,7 +26,7 @@ I think it might be a bit more than either.
 
 The brain is not "too warm & wet for quantum mechanics," as [proven this April](https://pubs.acs.org/doi/10.1021/acs.jpcb.3c07936). (Tryptophan is a key player. Curious, considering the connection to psychedelics.)
 
-Telepathy is a misnomer. There is [no additional communication](https://en.wikipedia.org/wiki/No-communication_theorem) of information.
+This telepathy does not seem to involve [any additional communication](https://en.wikipedia.org/wiki/No-communication_theorem) of information.
 
 How is there an advantage if there is no communication of information?
 
@@ -40,7 +40,7 @@ Is there any way to distinguish the correct model of this experience through exp
 
 Two players attempt to cooperatively win rounds of [the Mermin-Peres magic square game](https://en.wikipedia.org/wiki/Quantum_pseudo-telepathy#The_magic_square_game).
 
-They can communicate before to strategize, but not during. Measuring the states of entangled qubits can not communicate information.
+They can communicate before to strategize, but not during. It's impossible to communicate by measuring entangled qubits, so that is fine.
 
 This game can only be won 8/9 of the time classically, and 100% of the time with only a single pair of entangled qubits.
 
