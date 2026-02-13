@@ -24,7 +24,7 @@ Explanations usually fall into two categories:
 
 I think it might be a bit more than either.
 
-The brain is not "too warm & wet for quantum mechanics," as [proven this April](https://pubs.acs.org/doi/10.1021/acs.jpcb.3c07936). (Tryptophan is a key player. Curious, considering the connection to psychedelics.)
+The brain is not "too warm & wet for quantum mechanics," as [proven April 2024](https://pubs.acs.org/doi/10.1021/acs.jpcb.3c07936). (Tryptophan is a key player. Curious, considering the connection to psychedelics.)
 
 This telepathy does not seem to involve [any additional communication](https://en.wikipedia.org/wiki/No-communication_theorem) of information.
 
