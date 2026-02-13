@@ -70,7 +70,7 @@ The first [population](https://en.wikipedia.org/wiki/Statistical_population) con
 
 The second contains people who choose the coefficients for the first few [spherical harmonics](https://en.wikipedia.org/wiki/Spherical_harmonics)—representing the probability where on the [Bloch sphere](https://en.wikipedia.org/wiki/Bloch_sphere) the [basis](https://en.wikipedia.org/wiki/Basis_(linear_algebra)) of quantum measurement is chosen. The Markov chain describes the probability, for each square on the 3x3 grid, of which basis to measure in.
 
-Then, we compare the results of each population using [Kuiper's test](https://en.wikipedia.org/wiki/Kuiper%27s_test) or some other [goodness-of-fit](https://en.wikipedia.org/wiki/Goodness_of_fit) test to see if they are truly coming from the same distribution. Uniformly distributed Markov coefficients should result in uniform results in the limit as the population and sample sizes go to infinity.
+People play the magic square games amongst their own population, then we compare the results between the populations using [Kuiper's test](https://en.wikipedia.org/wiki/Kuiper%27s_test) or some other [goodness-of-fit](https://en.wikipedia.org/wiki/Goodness_of_fit) test. To see if they are truly coming from the same distribution. Uniformly distributed Markov coefficients should generate uniform results in the limit as the population and sample sizes go to infinity.
 
 If the test determines the results are not coming from the same distribution, this will indicate that there is a difference between these classical and quantum models!
 
