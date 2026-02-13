@@ -96,7 +96,7 @@ It reminds me of [this article](https://www.damninteresting.com/on-the-origin-of
 
 Don't know that either. Skepticism is healthy and should be maintained. Don't forget that not even long ago suggesting a quantum aspect to the brain would be laughed at. Now nature has been proven cleverer than us once again.
 
-Is biological entanglement over the air that much more of an impossibility? The body is strong enough [to glow]((https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0006256&type=printable)).
+Is biological entanglement over the air that much more of an impossibility? The body is strong enough [to glow](https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0006256&type=printable).
 
 ---
 
