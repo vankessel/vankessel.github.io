@@ -3,7 +3,7 @@ title: "Quantum Body Language"
 author: Kara van Kessel
 tags: philosophy quantum experiment
 image: /assets/images/quantum-body-language/index.jpg
-reddit: r/vankessel/comments/1hlwt6j
+reddit: r/vankessel/comments/1r3bygz
 redirect_from: 
   - /how-to-disprove-telempathy
   - /how-to-disprove-quantum-woo
