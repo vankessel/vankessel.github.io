@@ -86,7 +86,7 @@ I haven't found the time to do so yet, but there is enough information here for 
 
 ### Why? How?
 
-I don't know. Evolution? Before language, evolutionary advantage would be for the group that can communicate better given two otherwise equal packs. Evolution is pretty good a searching large solution spaces.
+I don't know. Evolution? Before language, evolutionary advantage would be for the group that can communicate better given two otherwise equal packs. Evolution is pretty good at searching large solution spaces.
 
 It reminds me of [this article](https://www.damninteresting.com/on-the-origin-of-circuits/) describing how an artificially evolved [FPGA](https://en.wikipedia.org/wiki/Field-programmable_gate_array) learned to exploit magnetic side-effects to arrive at a solution. Yeah it may be artificial, but so are forest fire and viral disease simulations and they aren't useless to learn from.
 
