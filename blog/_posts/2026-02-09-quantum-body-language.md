@@ -30,7 +30,7 @@ This telepathy does not seem to involve [any additional communication](https://e
 
 How is there an advantage if there is no communication of information?
 
-It's merely that the same amount information is more efficiently used.
+It's merely that the same amount of information is more efficiently used.
 
 Like a [quantum algorithm](https://en.wikipedia.org/wiki/Quantum_algorithm), it's possible to [exploit](https://en.wikipedia.org/wiki/Bell%27s_theorem) [quantum correlations](https://en.wikipedia.org/wiki/Quantum_correlation) to [do something](https://en.wikipedia.org/wiki/BQP) that [appears](https://en.wikipedia.org/wiki/Shor%27s_algorithm) [remarkable](https://en.wikipedia.org/wiki/Grover%27s_algorithm).
 
