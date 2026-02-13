@@ -46,7 +46,9 @@ This game can only be won 8/9 of the time classically, and 100% of the time with
 
 This seems like a good starting point.
 
-I approached devising an experiment using this game. It's solid on all counts except for how to manage player coordination.
+I approached devising an experiment using this game. It's logically sound, but there is one problem—player coordination.
+
+(Aside: I learned about em-dashes from ID'ing artificial ~~intelligence~~ imitators—but I do not use or like them.)
 
 In the classical case, the best outcome involves agreeing beforehand on fixed answers (0 or 1) for each of the 9 board positions.
 
