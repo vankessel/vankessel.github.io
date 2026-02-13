@@ -62,13 +62,13 @@ What if we make it so it doesn't matter if the players are able to coordinate an
 
 ## A Solution?
 
-Let's model people as Markov chains. (Higher-order Markov chains. With say, a memory of the past 3 or 4 choices made.)
+Let's model people as [Markov chains](https://en.wikipedia.org/wiki/Markov_chain). (Higher-order Markov chains. With say, a memory of the past 3 or 4 choices made.)
 
-Create two distributions of these "people." The coefficients of their Markov chains being uniformly distributed.
+Create two [distributions](https://en.wikipedia.org/wiki/Probability_distribution) of these "people." The coefficients of their Markov chains being uniformly distributed.
 
-The first population contains people choosing 0s or 1s. The Markov chain describes the probability, for each square on the 3x3 grid, of putting a 1 instead of 0 on that square.
+The first [population](https://en.wikipedia.org/wiki/Statistical_population) contains people choosing 0s or 1s. The Markov chain describes the probability, for each square on the 3x3 grid, of putting a 1 instead of 0 on that square.
 
-The second contains people who choose the coefficients for the first few spherical harmonics—representing the probability where on the Bloch sphere the basis of quantum measurement is chosen. The Markov chain describes the probability, for each square on the 3x3 grid, of which basis to measure in.
+The second contains people who choose the coefficients for the first few [spherical harmonics](https://en.wikipedia.org/wiki/Spherical_harmonics)—representing the probability where on the [Bloch sphere](https://en.wikipedia.org/wiki/Bloch_sphere) the [basis](https://en.wikipedia.org/wiki/Basis_(linear_algebra)) of quantum measurement is chosen. The Markov chain describes the probability, for each square on the 3x3 grid, of which basis to measure in.
 
 Then, we compare the results of each population using [Kuiper's test](https://en.wikipedia.org/wiki/Kuiper%27s_test) or some other [goodness-of-fit](https://en.wikipedia.org/wiki/Goodness_of_fit) test to see if they are truly coming from the same distribution. Uniformly distributed Markov coefficients should result in uniform results in the limit as the population and sample sizes go to infinity.
 
@@ -76,11 +76,11 @@ If the test determines the results are not coming from the same distribution, th
 
 A postive result like that would mean that performing this experiment with real life people could have the potential of detecting such a model of quantum body language if it exists.
 
-I would expect the quantum distribution to have larger tails than the classical distribution. Which could be detectable.
+I would expect the quantum distribution to have larger [tails](https://en.wikipedia.org/wiki/Kurtosis) than the classical distribution. Which could be detectable.
 
 And that is an exciting prospect.
 
-I haven't found the time to do so yet, but there is enough information here for anyone to code these simulations themself.
+I haven't found the time to do so yet, but there is enough information here for anyone to code these simulations themselves.
 
 ---
 
@@ -92,7 +92,7 @@ It reminds me of [this article](https://www.damninteresting.com/on-the-origin-of
 
 ### The brain may use quantum mechanics, but how can entanglement occur over the air?
 
-Don't know that either. Skepticism is healthy and should be maintained. Don't forget that not even long ago suggesting a quantum aspect to the brain would be laughed at. Now nature has been proven cleverer than us once again.
+Don't know that either. Skepticism is healthy and should be maintained. Don't forget that not even long ago suggesting a quantum aspect to the brain would be laughed at.
 
 Is biological entanglement over the air that much more of an impossibility? The body is strong enough [to glow](https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0006256&type=printable).
 
