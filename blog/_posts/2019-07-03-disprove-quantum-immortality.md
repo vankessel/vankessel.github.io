@@ -63,7 +63,7 @@ We will make a list of assumptions, some of which quantum immortality relies on 
   <li><span>{{ page.a1 }}</span></li>
 </ol>
 
-We need to consider that death isn't instant. It takes time for the bullet to exit the chamber and do its work. This means the outcome of the quantum event is independent of the moment death occurs; the event you experience is the one that doesn't lead to a future death. That means that every quantum event that has ever happened are the ones that will funnel you down the branch of reality in which you live your longest life, possibly infinitely long. This is [perfect quantum immortality](#perfect-quantum-immortality).
+We need to consider that death isn't instant. It takes time for the bullet to exit the chamber and do its work. This means the outcome of the quantum event is independent of the moment death occurs; the event you experience is the one that doesn't lead to a future death. That would mean more quantum events would have to happen to funnel you down the branch of reality in which you live your longest life. Possibly infinitely long. This is [perfect quantum immortality](#perfect-quantum-immortality).
 
 <ol start="2">
   <li><span>{{ page.a2 }}</span></li>
