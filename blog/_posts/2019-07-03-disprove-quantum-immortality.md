@@ -272,7 +272,7 @@ Now we have our complete list of assumptions:
 
 ## Results & Discussion
 
-I didn't receive a message and I presume you didn't either. If you did, there is still a small chance that message occurred coincidentally. This is why you can't actually prove quantum immortality as a proof implies certainty. This disproof does not disprove quantum immortality directly either, but rather the simultaneity of our assumptions which is about as close as we can get. (If you did receive a message, please don't tell me. I don't want to know that somebody else is the protagonist of the reality I live in.)
+I didn't receive a message and I presume you didn't either. If you did, there is still a small chance that message occurred coincidentally. This is why you can't actually prove quantum immortality as a proof implies certainty. This disproof does not disprove quantum immortality directly either, but rather the simultaneity of our assumptions which is about as close as we can get. (If you did receive a message, please don't tell me. I don't want to know that somebody else is the protagonist of the reality I live in ;P)
 
 This result means one or more of our assumptions are false. Let's go backwards through them and discuss the likelihood of each.
 
@@ -280,7 +280,7 @@ This result means one or more of our assumptions are false. Let's go backwards t
   <li><span>{{ page.a8 }}</span></li>
 </ol>
 
-I'm sure that API is doing what it claims. While it would be good to verify this I'm not going to audit the ANU for a blog post.
+I'm sure that API is doing what it claims. I trust a service coming from a university.
 
 <ol start="7">
   <li><span>{{ page.a7 }}</span></li>
@@ -336,5 +336,3 @@ If you take a brain in a vat and stimulate its neurons to fire, does it experien
 When you die the matter that made up your brain doesn't disappear. Neither does the energy that fired your synapses. The only thing that changes is the structure. Perhaps death is actually an extremely primitive [form](https://en.wikipedia.org/wiki/Hard_problem_of_consciousness) [of](https://en.wikipedia.org/wiki/Panpsychism) [experience](https://en.wikipedia.org/wiki/Integrated_information_theory).
 
 Almost paradoxically this would mean quantum immortality relies on mortality.
-
-I personally hope it is possible to stop experiencing. Any form of immortality sounds exhausting.
