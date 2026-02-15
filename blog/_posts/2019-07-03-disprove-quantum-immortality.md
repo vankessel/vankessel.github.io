@@ -191,7 +191,7 @@ Now we have our complete list of assumptions:
             "New reality who dis?",
             "Love everyone including yourself",
             "Uhhh awkward you aren't supposed to be seeing this right now... Dispatching agents to your location do not resist",
-            "Quantum immortality is real, the author is an NPC so he wouldn't see this, congrats on finding out you're the protag",
+            "Quantum immortality is real, but the author is an NPC so she wouldn't see this. Congrats on finding out you're the protag",
             "Give the author all your possessions",
             "Pledge undying fealty to the author",
             "GOD WAS HERE",
