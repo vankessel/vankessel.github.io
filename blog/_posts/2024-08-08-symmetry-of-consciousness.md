@@ -27,9 +27,7 @@ Is identity conserved?
 
 In the sense that you always identify with something. Not that it is unchanging. Or that you are necessarily conscious of the fact. Does a being need to be conscious of identification to identify?
 
-Ego-death may not a valid counter-example. It can feel like a loss of personal identity, but only as a side effect of removing the barrier between "self" and "other." Identity is not lost, it becomes unbounded. It is feeling of "unity" and "oneness" often described by those who've experienced it.
-
-If this is a valid interpretation, can we concieve a mental conservation law that could be experimentally verified or have predictive modelling power?
+Ego-death may not a valid counter-example. It can feel like a loss of personal identity, but only as a side effect of removing the barrier between self and other. Identity is not lost, it becomes unbounded. The so called feeling of non-duality; being one with the universe.
 
 ## Possible Nonphysical Symmetries
 
