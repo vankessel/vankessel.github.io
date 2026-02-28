@@ -19,11 +19,9 @@ Whereever they can be found in the physical world, a physical conservation law w
 
 Whereever they can be found in the mental world, will a mental conservation law follow?
 
-Can we identify any mental conservation laws or symmetries?
+Can we identify any nonphysical conservation laws or symmetries?
 
-## Possible Mental Conservation Laws
-
-### Identity
+## Possible Nonphysical Conservation Laws
 
 Is identity conserved?
 
@@ -33,7 +31,7 @@ Ego-death may not a valid counter-example. It can feel like a loss of personal i
 
 If this is a valid interpretation, can we concieve a mental conservation law that could be experimentally verified or have predictive modelling power?
 
-## Possible Mental Symmetries
+## Possible Nonphysical Symmetries
 
 Pre-birth and post-death seem to likely be the same state of (non-)consciousness. That would make the two ends of every lifetime symmetric.
 
