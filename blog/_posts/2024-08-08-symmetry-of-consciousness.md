@@ -25,15 +25,13 @@ Can we identify any mental conservation laws or symmetries?
 
 ### Identity
 
-Is identity conserved.
+Is identity conserved?
 
-In the sense that you always identify with something. Not that it is unchanging. Or that you are conscious of the fact.
+In the sense that you always identify with something. Not that it is unchanging. Or that you are necessarily conscious of the fact. Does a being need to be conscious of identification to identify?
 
 Ego-death may not a valid counter-example. It can feel like a loss of personal identity, but only as a side effect of removing the barrier between "self" and "other." Identity is not lost, it becomes unbounded. It is feeling of "unity" and "oneness" often described by those who've experienced it.
 
-Does a being need to be conscious of identification to identify?
-
-If this is a valid interpretation, can this be used as a starting point that could make a dent in the hard problem? Can we concieve such a mental conservation law that could be experimentally verified or have predictive modelling power?
+If this is a valid interpretation, can we concieve a mental conservation law that could be experimentally verified or have predictive modelling power?
 
 ## Possible Mental Symmetries
 
