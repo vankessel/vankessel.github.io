@@ -46,7 +46,7 @@ This game can only be won 8/9 of the time classically, and 100% of the time with
 
 This seems like a good starting point.
 
-I approached devising an experiment using this game. It's logically sound, but there is a problem of player coordination.
+I approached devising an experiment using this game. The only difficulty being how to manage player coordination.
 
 In the classical case, the best outcome involves agreeing beforehand on fixed answers (0 or 1) for each of the 9 board positions.
 
@@ -54,11 +54,11 @@ In the quantum case, the best outcome involves agreeing beforehand on a fixed qu
 
 ## The Problem
 
-It's easy to memorize a 9 zeros or ones.
+It's easy to memorize 9 zeros or ones.
 
 But it's not even clear if it's possible to consciously choose the quantum basis to measure in.
 
-What if we make it so it doesn't matter if the players are able to coordinate and execute a plan or not?
+Could test it using this game anyway and hope for the best—but what if we make it so it doesn't matter if the players are able to coordinate and execute a plan or not?
 
 ## A Solution?
 
@@ -70,17 +70,29 @@ The first [population](https://en.wikipedia.org/wiki/Statistical_population) con
 
 The second contains people who choose the coefficients for the first few [spherical harmonics](https://en.wikipedia.org/wiki/Spherical_harmonics)—representing the probability where on the [Bloch sphere](https://en.wikipedia.org/wiki/Bloch_sphere) the [basis](https://en.wikipedia.org/wiki/Basis_(linear_algebra)) of quantum measurement is chosen. The Markov chain describes the probability, for each square on the 3x3 grid, of which basis to measure in.
 
-People play the magic square games amongst their own population, then we compare the results between the populations using [Kuiper's test](https://en.wikipedia.org/wiki/Kuiper%27s_test) or some other [goodness-of-fit](https://en.wikipedia.org/wiki/Goodness_of_fit) test. To see if they are truly coming from the same distribution. Uniformly distributed Markov coefficients should generate uniform results in the limit as the population and sample sizes go to infinity.
+Players within each population play the game with each other and the win rate of those pairs are recorded.
 
-If the test determines the results are not coming from the same distribution, this will indicate that there is a difference between these classical and quantum models!
+The resulting distributions can be compared using [nonparametric](https://en.wikipedia.org/wiki/Nonparametric_statistics) [tests](https://en.wikipedia.org/wiki/List_of_statistical_tests).
 
-A postive result like that would mean that performing this experiment with real life people could have the potential of detecting such a model of quantum body language if it exists.
+We can expect that recording win rates between all possible pairs will indeed show different distributions between the quantum and classical cases since only the quantum case has pairings that will result in a 100% win rate.
 
-I would expect the quantum distribution to have larger [tails](https://en.wikipedia.org/wiki/Kurtosis) than the classical distribution. Which could be detectable.
+Comparing the populations entirely is unrealistic anyway since humans almost certainly have biases for and against certain configurations. We can instead compare random subsets of those populations instead. (And if data is gathered on those biases, we can pick those subsets with a better initial guess of a distribution than just uniformly random.)
 
-And that is an exciting prospect.
+A useful question is: how _often_ can we distinguish random subsets? This may need to be approximated using [Monte-Carlo simulation](https://en.wikipedia.org/wiki/Monte_Carlo_method).
 
-I haven't found the time to do so yet, but there is enough information here for anyone to code these simulations themselves.
+A high percentage would mean that performing this experiment with real life people could have the potential of detecting such a model of quantum body language if it exists. Even if coordination between players is unfeasible.
+
+And that is exciting.
+
+I haven't found the time to do so yet and likely won't for a while since I have other projects I am focusing on, but there is enough information here for anyone to code these simulations themself.
+
+---
+
+Need to brush up on my statistics before I can say any of these are appropriate, but some things that may be useful:
+
+- [Robust Bayesian analysis](https://en.wikipedia.org/wiki/Robust_Bayesian_analysis)
+- [Importance sampling](https://en.wikipedia.org/wiki/Importance_sampling)
+- [Resampling](https://en.wikipedia.org/wiki/Resampling_(statistics)) (Specifically [stationary bootstrap](https://en.wikipedia.org/wiki/Bootstrapping_(statistics)#Time_series:_Moving_block_bootstrap))
 
 ---
 
@@ -88,7 +100,7 @@ I haven't found the time to do so yet, but there is enough information here for 
 
 I don't know. Evolution? Before language, evolutionary advantage would be for the group that can communicate better given two otherwise equal packs. Evolution is pretty good at searching large solution spaces.
 
-It reminds me of [this article](https://www.damninteresting.com/on-the-origin-of-circuits/) describing how an artificially evolved [FPGA](https://en.wikipedia.org/wiki/Field-programmable_gate_array) learned to exploit magnetic side-effects to arrive at a solution. Yeah it may be artificial, but so are forest fire and viral disease simulations and they aren't useless to learn from.
+It reminds me of [this article](https://www.damninteresting.com/on-the-origin-of-circuits/) describing how an artificially evolved [FPGA](https://en.wikipedia.org/wiki/Field-programmable_gate_array) learned to exploit magnetic side-effects to arrive at a solution. Yeah it may be artificial. So are forest fire and viral disease simulations but they aren't useless to learn from.
 
 ### The brain may use quantum mechanics, but how can entanglement occur over the air?
 
@@ -104,7 +116,7 @@ It would be nice if:
 - It requires sufficient empathy to function and be experienced.
 - It becomes trendy to try this out.
 
-Maybe such could encourage positive shift towards increased empathy across the globe?
+Maybe such a thing could encourage a positive shift towards increased empathy across the globe?
 
 How many empathy-deficient people would work to better themselves for the opportunity to experience something that feels like magic?
 
