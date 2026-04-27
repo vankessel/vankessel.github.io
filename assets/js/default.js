@@ -1,17 +1,20 @@
 const wiki_regex = /wikipedia.org\/wiki\/([^\/]+)$/
 
-let cached_wiki_data = {}
+const full_day_in_ms = 24 * 60 * 60 * 1000;
 
 function get_wiki_data(topic, callback) {
-  if (topic in cached_wiki_data) {
-    callback(cached_wiki_data[topic])
+  let data_json = localStorage.getItem(topic);
+  let time = localStorage.getItem(topic + "_time_ms");
+  let now = Date.now();
+  if (data_json != null && time != null && now - parseInt(time) < full_day_in_ms) {
+    callback(JSON.parse(data_json));
   } else {
     $.get("https://en.wikipedia.org/api/rest_v1/page/summary/" + topic, function(data) {
-      cached_wiki_data[topic] = data;
+      localStorage.setItem(topic, JSON.stringify(data));
+      localStorage.setItem(topic + "_time_ms", now.toString());
       callback(data);
     })
   }
-
 }
 
 let jQueryReadyPromise = new Promise((resolve, reject) => {
